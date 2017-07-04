@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9E556DD1F0BD3F900567110 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556DC1F0BD3F900567110 /* main.m */; };
+		E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556DF1F0BD3F900567110 /* AppDelegate.m */; };
+		E9E556E31F0BD3F900567110 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556E21F0BD3F900567110 /* ViewController.m */; };
+		E9E556E61F0BD3F900567110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E556E41F0BD3F900567110 /* Main.storyboard */; };
+		E9E556E91F0BD3F900567110 /* HDAVPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E556E71F0BD3F900567110 /* HDAVPlayer.xcdatamodeld */; };
+		E9E556EB1F0BD3F900567110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E556EA1F0BD3F900567110 /* Assets.xcassets */; };
+		E9E556EE1F0BD3F900567110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E556EC1F0BD3F900567110 /* LaunchScreen.storyboard */; };
+		E9E556F91F0BD3F900567110 /* HDAVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556F81F0BD3F900567110 /* HDAVPlayerTests.m */; };
+		E9E557041F0BD3F900567110 /* HDAVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E557031F0BD3F900567110 /* HDAVPlayerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9E556F51F0BD3F900567110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E556D01F0BD3F900567110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E556D71F0BD3F900567110;
+			remoteInfo = HDAVPlayer;
+		};
+		E9E557001F0BD3F900567110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E556D01F0BD3F900567110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E556D71F0BD3F900567110;
+			remoteInfo = HDAVPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9E556D81F0BD3F900567110 /* HDAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E556DC1F0BD3F900567110 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9E556DE1F0BD3F900567110 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9E556DF1F0BD3F900567110 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9E556E11F0BD3F900567110 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9E556E21F0BD3F900567110 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9E556E51F0BD3F900567110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9E556E81F0BD3F900567110 /* HDAVPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HDAVPlayer.xcdatamodel; sourceTree = "<group>"; };
+		E9E556EA1F0BD3F900567110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9E556ED1F0BD3F900567110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9E556EF1F0BD3F900567110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E556F41F0BD3F900567110 /* HDAVPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDAVPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E556F81F0BD3F900567110 /* HDAVPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAVPlayerTests.m; sourceTree = "<group>"; };
+		E9E556FA1F0BD3F900567110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E556FF1F0BD3F900567110 /* HDAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E557031F0BD3F900567110 /* HDAVPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAVPlayerUITests.m; sourceTree = "<group>"; };
+		E9E557051F0BD3F900567110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9E556D51F0BD3F900567110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E556F11F0BD3F900567110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E556FC1F0BD3F900567110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9E556CF1F0BD3F900567110 = {
+			isa = PBXGroup;
+			children = (
+				E9E556DA1F0BD3F900567110 /* HDAVPlayer */,
+				E9E556F71F0BD3F900567110 /* HDAVPlayerTests */,
+				E9E557021F0BD3F900567110 /* HDAVPlayerUITests */,
+				E9E556D91F0BD3F900567110 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9E556D91F0BD3F900567110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9E556D81F0BD3F900567110 /* HDAVPlayer.app */,
+				E9E556F41F0BD3F900567110 /* HDAVPlayerTests.xctest */,
+				E9E556FF1F0BD3F900567110 /* HDAVPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9E556DA1F0BD3F900567110 /* HDAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E9E556DE1F0BD3F900567110 /* AppDelegate.h */,
+				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
+				E9E556E11F0BD3F900567110 /* ViewController.h */,
+				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9E556E41F0BD3F900567110 /* Main.storyboard */,
+				E9E556EA1F0BD3F900567110 /* Assets.xcassets */,
+				E9E556EC1F0BD3F900567110 /* LaunchScreen.storyboard */,
+				E9E556EF1F0BD3F900567110 /* Info.plist */,
+				E9E556E71F0BD3F900567110 /* HDAVPlayer.xcdatamodeld */,
+				E9E556DB1F0BD3F900567110 /* Supporting Files */,
+			);
+			path = HDAVPlayer;
+			sourceTree = "<group>";
+		};
+		E9E556DB1F0BD3F900567110 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9E556DC1F0BD3F900567110 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9E556F71F0BD3F900567110 /* HDAVPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E556F81F0BD3F900567110 /* HDAVPlayerTests.m */,
+				E9E556FA1F0BD3F900567110 /* Info.plist */,
+			);
+			path = HDAVPlayerTests;
+			sourceTree = "<group>";
+		};
+		E9E557021F0BD3F900567110 /* HDAVPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E557031F0BD3F900567110 /* HDAVPlayerUITests.m */,
+				E9E557051F0BD3F900567110 /* Info.plist */,
+			);
+			path = HDAVPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9E556D71F0BD3F900567110 /* HDAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E557081F0BD3F900567110 /* Build configuration list for PBXNativeTarget "HDAVPlayer" */;
+			buildPhases = (
+				E9E556D41F0BD3F900567110 /* Sources */,
+				E9E556D51F0BD3F900567110 /* Frameworks */,
+				E9E556D61F0BD3F900567110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDAVPlayer;
+			productName = HDAVPlayer;
+			productReference = E9E556D81F0BD3F900567110 /* HDAVPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9E556F31F0BD3F900567110 /* HDAVPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E5570B1F0BD3F900567110 /* Build configuration list for PBXNativeTarget "HDAVPlayerTests" */;
+			buildPhases = (
+				E9E556F01F0BD3F900567110 /* Sources */,
+				E9E556F11F0BD3F900567110 /* Frameworks */,
+				E9E556F21F0BD3F900567110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E556F61F0BD3F900567110 /* PBXTargetDependency */,
+			);
+			name = HDAVPlayerTests;
+			productName = HDAVPlayerTests;
+			productReference = E9E556F41F0BD3F900567110 /* HDAVPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9E556FE1F0BD3F900567110 /* HDAVPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E5570E1F0BD3F900567110 /* Build configuration list for PBXNativeTarget "HDAVPlayerUITests" */;
+			buildPhases = (
+				E9E556FB1F0BD3F900567110 /* Sources */,
+				E9E556FC1F0BD3F900567110 /* Frameworks */,
+				E9E556FD1F0BD3F900567110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E557011F0BD3F900567110 /* PBXTargetDependency */,
+			);
+			name = HDAVPlayerUITests;
+			productName = HDAVPlayerUITests;
+			productReference = E9E556FF1F0BD3F900567110 /* HDAVPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9E556D01F0BD3F900567110 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "崔玉冠";
+				TargetAttributes = {
+					E9E556D71F0BD3F900567110 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 56MY3ZN5V7;
+						ProvisioningStyle = Automatic;
+					};
+					E9E556F31F0BD3F900567110 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 56MY3ZN5V7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9E556D71F0BD3F900567110;
+					};
+					E9E556FE1F0BD3F900567110 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 56MY3ZN5V7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9E556D71F0BD3F900567110;
+					};
+				};
+			};
+			buildConfigurationList = E9E556D31F0BD3F900567110 /* Build configuration list for PBXProject "HDAVPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9E556CF1F0BD3F900567110;
+			productRefGroup = E9E556D91F0BD3F900567110 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9E556D71F0BD3F900567110 /* HDAVPlayer */,
+				E9E556F31F0BD3F900567110 /* HDAVPlayerTests */,
+				E9E556FE1F0BD3F900567110 /* HDAVPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9E556D61F0BD3F900567110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E556EE1F0BD3F900567110 /* LaunchScreen.storyboard in Resources */,
+				E9E556EB1F0BD3F900567110 /* Assets.xcassets in Resources */,
+				E9E556E61F0BD3F900567110 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E556F21F0BD3F900567110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E556FD1F0BD3F900567110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9E556D41F0BD3F900567110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E556E31F0BD3F900567110 /* ViewController.m in Sources */,
+				E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */,
+				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
+				E9E556E91F0BD3F900567110 /* HDAVPlayer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E556F01F0BD3F900567110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E556F91F0BD3F900567110 /* HDAVPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E556FB1F0BD3F900567110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E557041F0BD3F900567110 /* HDAVPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9E556F61F0BD3F900567110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E556D71F0BD3F900567110 /* HDAVPlayer */;
+			targetProxy = E9E556F51F0BD3F900567110 /* PBXContainerItemProxy */;
+		};
+		E9E557011F0BD3F900567110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E556D71F0BD3F900567110 /* HDAVPlayer */;
+			targetProxy = E9E557001F0BD3F900567110 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9E556E41F0BD3F900567110 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E556E51F0BD3F900567110 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9E556EC1F0BD3F900567110 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E556ED1F0BD3F900567110 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9E557061F0BD3F900567110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9E557071F0BD3F900567110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9E557091F0BD3F900567110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				INFOPLIST_FILE = HDAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9E5570A1F0BD3F900567110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				INFOPLIST_FILE = HDAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9E5570C1F0BD3F900567110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				INFOPLIST_FILE = HDAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDAVPlayer.app/HDAVPlayer";
+			};
+			name = Debug;
+		};
+		E9E5570D1F0BD3F900567110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				INFOPLIST_FILE = HDAVPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDAVPlayer.app/HDAVPlayer";
+			};
+			name = Release;
+		};
+		E9E5570F1F0BD3F900567110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				INFOPLIST_FILE = HDAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HDAVPlayer;
+			};
+			name = Debug;
+		};
+		E9E557101F0BD3F900567110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				INFOPLIST_FILE = HDAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HDAVPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9E556D31F0BD3F900567110 /* Build configuration list for PBXProject "HDAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E557061F0BD3F900567110 /* Debug */,
+				E9E557071F0BD3F900567110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E557081F0BD3F900567110 /* Build configuration list for PBXNativeTarget "HDAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E557091F0BD3F900567110 /* Debug */,
+				E9E5570A1F0BD3F900567110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9E5570B1F0BD3F900567110 /* Build configuration list for PBXNativeTarget "HDAVPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E5570C1F0BD3F900567110 /* Debug */,
+				E9E5570D1F0BD3F900567110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9E5570E1F0BD3F900567110 /* Build configuration list for PBXNativeTarget "HDAVPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E5570F1F0BD3F900567110 /* Debug */,
+				E9E557101F0BD3F900567110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9E556E71F0BD3F900567110 /* HDAVPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9E556E81F0BD3F900567110 /* HDAVPlayer.xcdatamodel */,
+			);
+			currentVersion = E9E556E81F0BD3F900567110 /* HDAVPlayer.xcdatamodel */;
+			path = HDAVPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9E556D01F0BD3F900567110 /* Project object */;
+}
