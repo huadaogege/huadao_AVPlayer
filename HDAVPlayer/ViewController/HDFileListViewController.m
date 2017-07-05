@@ -10,6 +10,7 @@
 #import "HDFileViewCell.h"
 #import "HDFileManager.h"
 #import "HDDatabaseManager.h"
+#import "MJRefresh.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
@@ -27,6 +28,11 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     self.dataArray = [NSMutableArray arrayWithCapacity:1];
+    MJRefreshNormalHeader *freshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self fetchFileData];
+        [self.tableView.mj_header endRefreshing];
+    }];
+    self.tableView.mj_header = freshHeader;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
