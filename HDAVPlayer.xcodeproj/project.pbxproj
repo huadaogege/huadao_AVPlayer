@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9B6EC691F0C75450072938A /* HDFileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC661F0C75450072938A /* HDFileListViewController.m */; };
+		E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC681F0C75450072938A /* HDViewController.m */; };
+		E9B6EC6D1F0C75500072938A /* HDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC6C1F0C75500072938A /* HDFileManager.m */; };
+		E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC6F1F0C75A80072938A /* HDFileModel.m */; };
+		E9B6EC731F0C75A80072938A /* HDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC711F0C75A80072938A /* HDModel.m */; };
+		E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC751F0C75B10072938A /* HDFileViewCell.m */; };
 		E9E556DD1F0BD3F900567110 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556DC1F0BD3F900567110 /* main.m */; };
 		E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556DF1F0BD3F900567110 /* AppDelegate.m */; };
 		E9E556E31F0BD3F900567110 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556E21F0BD3F900567110 /* ViewController.m */; };
@@ -37,6 +43,20 @@
 
 /* Begin PBXFileReference section */
 		E97E7EC51F0BD796002A0356 /* HDAVPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDAVPlayer.entitlements; sourceTree = "<group>"; };
+		E9B6EC651F0C75450072938A /* HDFileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileListViewController.h; sourceTree = "<group>"; };
+		E9B6EC661F0C75450072938A /* HDFileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileListViewController.m; sourceTree = "<group>"; };
+		E9B6EC671F0C75450072938A /* HDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewController.h; sourceTree = "<group>"; };
+		E9B6EC681F0C75450072938A /* HDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDViewController.m; sourceTree = "<group>"; };
+		E9B6EC6B1F0C75500072938A /* HDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileManager.h; sourceTree = "<group>"; };
+		E9B6EC6C1F0C75500072938A /* HDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileManager.m; sourceTree = "<group>"; };
+		E9B6EC6E1F0C75A80072938A /* HDFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileModel.h; sourceTree = "<group>"; };
+		E9B6EC6F1F0C75A80072938A /* HDFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileModel.m; sourceTree = "<group>"; };
+		E9B6EC701F0C75A80072938A /* HDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDModel.h; sourceTree = "<group>"; };
+		E9B6EC711F0C75A80072938A /* HDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDModel.m; sourceTree = "<group>"; };
+		E9B6EC741F0C75B10072938A /* HDFileViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileViewCell.h; sourceTree = "<group>"; };
+		E9B6EC751F0C75B10072938A /* HDFileViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileViewCell.m; sourceTree = "<group>"; };
+		E9B6EC771F0C762B0072938A /* Common_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common_Macro.h; sourceTree = "<group>"; };
+		E9B6EC781F0C762B0072938A /* HD_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HD_Prefix.pch; sourceTree = "<group>"; };
 		E9E556D81F0BD3F900567110 /* HDAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E556DC1F0BD3F900567110 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E556DE1F0BD3F900567110 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +101,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9B6EC601F0C73FE0072938A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9B6EC741F0C75B10072938A /* HDFileViewCell.h */,
+				E9B6EC751F0C75B10072938A /* HDFileViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9B6EC611F0C74030072938A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9B6EC6E1F0C75A80072938A /* HDFileModel.h */,
+				E9B6EC6F1F0C75A80072938A /* HDFileModel.m */,
+				E9B6EC701F0C75A80072938A /* HDModel.h */,
+				E9B6EC711F0C75A80072938A /* HDModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9B6EC621F0C74080072938A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		E9B6EC631F0C740B0072938A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E9B6EC6B1F0C75500072938A /* HDFileManager.h */,
+				E9B6EC6C1F0C75500072938A /* HDFileManager.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E9B6EC641F0C74380072938A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9B6EC651F0C75450072938A /* HDFileListViewController.h */,
+				E9B6EC661F0C75450072938A /* HDFileListViewController.m */,
+				E9B6EC671F0C75450072938A /* HDViewController.h */,
+				E9B6EC681F0C75450072938A /* HDViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		E9E556CF1F0BD3F900567110 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +176,11 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9B6EC641F0C74380072938A /* ViewController */,
+				E9B6EC631F0C740B0072938A /* Utility */,
+				E9B6EC621F0C74080072938A /* Library */,
+				E9B6EC611F0C74030072938A /* Model */,
+				E9B6EC601F0C73FE0072938A /* View */,
 				E9E556E41F0BD3F900567110 /* Main.storyboard */,
 				E9E556EA1F0BD3F900567110 /* Assets.xcassets */,
 				E9E556EC1F0BD3F900567110 /* LaunchScreen.storyboard */,
@@ -123,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				E9E556DC1F0BD3F900567110 /* main.m */,
+				E9B6EC771F0C762B0072938A /* Common_Macro.h */,
+				E9B6EC781F0C762B0072938A /* HD_Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,8 +360,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */,
+				E9B6EC691F0C75450072938A /* HDFileListViewController.m in Sources */,
+				E9B6EC6D1F0C75500072938A /* HDFileManager.m in Sources */,
 				E9E556E31F0BD3F900567110 /* ViewController.m in Sources */,
+				E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */,
+				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */,
+				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,
 				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
 				E9E556E91F0BD3F900567110 /* HDAVPlayer.xcdatamodeld in Sources */,
 			);
@@ -441,6 +521,8 @@
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HDAVPlayer/HD_Prefix.pch;
 				INFOPLIST_FILE = HDAVPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -456,6 +538,8 @@
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HDAVPlayer/HD_Prefix.pch;
 				INFOPLIST_FILE = HDAVPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

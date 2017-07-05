@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "HDFileListViewController.h"
 @interface ViewController ()
+
+@property (nonatomic, strong) HDFileListViewController *fileListViewController;
 
 @end
 
@@ -16,9 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.fileListViewController = [[HDFileListViewController alloc] init];
+    [self initRootViewController:self.fileListViewController];
 }
 
+- (void)initRootViewController:(HDViewController *)viewController {
+    [self.view addSubview:viewController.view];
+    [self addChildViewController:viewController];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
