@@ -9,6 +9,7 @@
 #import "HDFileListViewController.h"
 #import "HDFileViewCell.h"
 #import "HDFileManager.h"
+#import "HDDatabaseManager.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 

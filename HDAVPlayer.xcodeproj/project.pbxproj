@@ -13,6 +13,8 @@
 		E992B6C01F0CC0FE0002292C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BF1F0CC0FE0002292C /* UIKit.framework */; };
 		E992B6C51F0CC2150002292C /* HDDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B6C41F0CC2150002292C /* HDDatabaseManager.m */; };
 		E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B6C71F0CC21D0002292C /* HDFileManager.m */; };
+		E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72B1F0CC9130002292C /* GTMBase64.m */; };
+		E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */; };
 		E9B6EC691F0C75450072938A /* HDFileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC661F0C75450072938A /* HDFileListViewController.m */; };
 		E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC681F0C75450072938A /* HDViewController.m */; };
 		E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC6F1F0C75A80072938A /* HDFileModel.m */; };
@@ -28,7 +30,6 @@
 		E9B6ECC81F0C7A290072938A /* LMAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6ECC61F0C7A290072938A /* LMAppController.m */; };
 		E9B6ECCD1F0C7A300072938A /* DBGuestureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6ECCA1F0C7A300072938A /* DBGuestureButton.m */; };
 		E9B6ECCE1F0C7A300072938A /* DBGuestureLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6ECCC1F0C7A300072938A /* DBGuestureLock.m */; };
-		E9B6ECD21F0C7A380072938A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6ECD01F0C7A380072938A /* GTMBase64.m */; };
 		E9B6ECD51F0C7A400072938A /* JSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6ECD41F0C7A400072938A /* JSBadgeView.m */; };
 		E9B6ECE31F0C7AA80072938A /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6ECDC1F0C7AA80072938A /* JSONModel.m */; };
 		E9B6ECE41F0C7AA80072938A /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6ECDE1F0C7AA80072938A /* JSONModelArray.m */; };
@@ -161,6 +162,15 @@
 		E992B6C41F0CC2150002292C /* HDDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDDatabaseManager.m; sourceTree = "<group>"; };
 		E992B6C61F0CC21D0002292C /* HDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileManager.h; sourceTree = "<group>"; };
 		E992B6C71F0CC21D0002292C /* HDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileManager.m; sourceTree = "<group>"; };
+		E992B7251F0CC8DE0002292C /* HDFileBasicInfo+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDFileBasicInfo+CoreDataClass.h"; sourceTree = "<group>"; };
+		E992B7261F0CC8DE0002292C /* HDFileBasicInfo+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDFileBasicInfo+CoreDataClass.m"; sourceTree = "<group>"; };
+		E992B7271F0CC8DE0002292C /* HDFileBasicInfo+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDFileBasicInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E992B7281F0CC8DE0002292C /* HDFileBasicInfo+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDFileBasicInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E992B72A1F0CC9130002292C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E992B72B1F0CC9130002292C /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		E992B72C1F0CC9130002292C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E992B72E1F0CC9B10002292C /* HDFileBasicInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileBasicInfoModel.h; sourceTree = "<group>"; };
+		E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileBasicInfoModel.m; sourceTree = "<group>"; };
 		E9B6EC651F0C75450072938A /* HDFileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileListViewController.h; sourceTree = "<group>"; };
 		E9B6EC661F0C75450072938A /* HDFileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileListViewController.m; sourceTree = "<group>"; };
 		E9B6EC671F0C75450072938A /* HDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewController.h; sourceTree = "<group>"; };
@@ -194,9 +204,6 @@
 		E9B6ECCA1F0C7A300072938A /* DBGuestureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGuestureButton.m; sourceTree = "<group>"; };
 		E9B6ECCB1F0C7A300072938A /* DBGuestureLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGuestureLock.h; sourceTree = "<group>"; };
 		E9B6ECCC1F0C7A300072938A /* DBGuestureLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGuestureLock.m; sourceTree = "<group>"; };
-		E9B6ECCF1F0C7A380072938A /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		E9B6ECD01F0C7A380072938A /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		E9B6ECD11F0C7A380072938A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E9B6ECD31F0C7A400072938A /* JSBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBadgeView.h; sourceTree = "<group>"; };
 		E9B6ECD41F0C7A400072938A /* JSBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBadgeView.m; sourceTree = "<group>"; };
 		E9B6ECD61F0C7A520072938A /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
@@ -469,8 +476,22 @@
 			children = (
 				E992B6C31F0CC2150002292C /* HDDatabaseManager.h */,
 				E992B6C41F0CC2150002292C /* HDDatabaseManager.m */,
+				E992B7251F0CC8DE0002292C /* HDFileBasicInfo+CoreDataClass.h */,
+				E992B7261F0CC8DE0002292C /* HDFileBasicInfo+CoreDataClass.m */,
+				E992B7271F0CC8DE0002292C /* HDFileBasicInfo+CoreDataProperties.h */,
+				E992B7281F0CC8DE0002292C /* HDFileBasicInfo+CoreDataProperties.m */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E992B7291F0CC9030002292C /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				E992B72A1F0CC9130002292C /* GTMBase64.h */,
+				E992B72B1F0CC9130002292C /* GTMBase64.m */,
+				E992B72C1F0CC9130002292C /* GTMDefines.h */,
+			);
+			path = GTMBase64;
 			sourceTree = "<group>";
 		};
 		E9B6EC601F0C73FE0072938A /* View */ = {
@@ -489,6 +510,8 @@
 				E9B6EC6F1F0C75A80072938A /* HDFileModel.m */,
 				E9B6EC701F0C75A80072938A /* HDModel.h */,
 				E9B6EC711F0C75A80072938A /* HDModel.m */,
+				E992B72E1F0CC9B10002292C /* HDFileBasicInfoModel.h */,
+				E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,10 +519,10 @@
 		E9B6EC621F0C74080072938A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				E992B7291F0CC9030002292C /* GTMBase64 */,
 				E9B6ECAF1F0C793A0072938A /* AFNetworking */,
 				E9B6ECAE1F0C79370072938A /* AppPrivateAPI */,
 				E9B6ECAD1F0C79350072938A /* DBGuestureLock */,
-				E9B6ECAC1F0C79330072938A /* GTMBase64 */,
 				E9B6ECAB1F0C79310072938A /* JSBadgeView */,
 				E9B6ECAA1F0C792F0072938A /* JSONModel */,
 				E9B6ECA91F0C792D0072938A /* marsXloger */,
@@ -702,16 +725,6 @@
 				E9B6ECD41F0C7A400072938A /* JSBadgeView.m */,
 			);
 			path = JSBadgeView;
-			sourceTree = "<group>";
-		};
-		E9B6ECAC1F0C79330072938A /* GTMBase64 */ = {
-			isa = PBXGroup;
-			children = (
-				E9B6ECCF1F0C7A380072938A /* GTMBase64.h */,
-				E9B6ECD01F0C7A380072938A /* GTMBase64.m */,
-				E9B6ECD11F0C7A380072938A /* GTMDefines.h */,
-			);
-			path = GTMBase64;
 			sourceTree = "<group>";
 		};
 		E9B6ECAD1F0C79350072938A /* DBGuestureLock */ = {
@@ -1173,6 +1186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B6EDB21F0C7CA70072938A /* ioapi.c in Sources */,
+				E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */,
 				E9B6ED7A1F0C7C5F0072938A /* SDWebImageDownloaderOperation.m in Sources */,
 				E9B6ECF01F0C7AB80072938A /* JSONAPI.m in Sources */,
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,
@@ -1200,6 +1214,7 @@
 				E9B6ECC11F0C7A210072938A /* AFURLResponseSerialization.m in Sources */,
 				E9B6EDDF1F0C7CE40072938A /* SSLocalizationInfo.m in Sources */,
 				E9B6ED321F0C7BFD0072938A /* MJRefreshStateHeader.m in Sources */,
+				E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */,
 				E9B6EDA81F0C7C9F0072938A /* sha1.c in Sources */,
 				E9B6ECF21F0C7AB80072938A /* JSONModel+networking.m in Sources */,
 				E9B6ED801F0C7C5F0072938A /* UIImage+WebP.m in Sources */,
@@ -1235,7 +1250,6 @@
 				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E9B6EDD71F0C7CE40072938A /* SSAccelerometerInfo.m in Sources */,
 				E9B6ED231F0C7B9B0072938A /* MJRefreshAutoFooter.m in Sources */,
-				E9B6ECD21F0C7A380072938A /* GTMBase64.m in Sources */,
 				E9B6EDA41F0C7C9F0072938A /* fileenc.c in Sources */,
 				E9B6ED7C1F0C7C5F0072938A /* SDWebImagePrefetcher.m in Sources */,
 				E9B6ED131F0C7ADB0072938A /* MJRefreshConst.m in Sources */,

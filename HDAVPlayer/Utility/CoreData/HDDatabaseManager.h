@@ -3,11 +3,12 @@
 //  HDAVPlayer
 //
 //  Created by huadao on 2017/7/5.
-//  Copyright © 2017年 崔玉冠. All rights reserved.
+//  Copyright © 2017年 huadao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
+#import "HDFileBasicInfo+CoreDataClass.h"
+#import "HDFileBasicInfoModel.h"
 
 @interface HDDatabaseManager : NSObject
 
@@ -15,8 +16,8 @@
 
 + (HDDatabaseManager *)shareInstance;
 
-//- (HDFileInfo *)insertFileBasicInfoIntoSource:(HDFileBasicInfoModel*)model tableName:(NSString *)tableName;
-//
-//- (NSArray *)objectsFromSourceWithTableName:(NSString *)tableName;
+- (HDFileBasicInfo *)insertFileBasicInfoIntoSource:(HDFileBasicInfoModel*)model tableName:(NSString *)tableName;
+
+- (NSArray *)objectsFromSourceWithTableName:(NSString *)tableName;
 
 @end
