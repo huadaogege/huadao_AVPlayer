@@ -2,8 +2,8 @@
 //  ViewController.m
 //  HDAVPlayer
 //
-//  Created by 崔玉冠 on 17/7/4.
-//  Copyright © 2017年 崔玉冠. All rights reserved.
+//  Created by huadao on 17/7/4.
+//  Copyright © 2017年 huadao. All rights reserved.
 //
 
 #import "ViewController.h"
