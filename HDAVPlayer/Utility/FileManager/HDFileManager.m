@@ -9,6 +9,8 @@
 #import "HDFileManager.h"
 #import "HDFileModel.h"
 
+#define Except_Sql_FileName @"hd.sqlite" //数据库文件过滤掉不显示
+
 @implementation HDFileManager
 
 + (HDFileManager *)shareInstance {
@@ -31,6 +33,9 @@
     NSMutableArray *filesArray = [NSMutableArray arrayWithCapacity:1.0];
     NSArray *documentFiles = [self.fileManager contentsOfDirectoryAtPath:desFilePath error:nil];
     for (NSString *fileName in documentFiles) {
+        if ([fileName containsString:Except_Sql_FileName]) {
+            continue;
+        }
         NSString *filePath = [desFilePath stringByAppendingPathComponent:fileName];
         HDFileModel *model = [[HDFileModel alloc] init];
         [model setFileName:fileName];
