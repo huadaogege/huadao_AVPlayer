@@ -9,7 +9,6 @@
 
 #import "DBGuestureLock.h"
 #import "DBGuestureButton.h"
-#import "UUAppLockManager.h"
 
 @interface DBGuestureLock()
 @property (nonatomic, assign)BOOL isUnLockType;
