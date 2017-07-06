@@ -34,7 +34,7 @@
 
 - (NSMutableArray *)fetchLocalFilesWithDesPath:(NSString *)desFilePath {
     if (!self.openSecrect) {
-        return nil;
+//        return nil;
     }
     NSMutableArray *filesArray = [NSMutableArray arrayWithCapacity:1.0];
     NSArray *documentFiles = [self.fileManager contentsOfDirectoryAtPath:desFilePath error:nil];

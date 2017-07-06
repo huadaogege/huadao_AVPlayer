@@ -8,11 +8,16 @@
 
 #import "HDPlayerViewController.h"
 #import <AVFoundation/AVFoundation.h>
-@interface HDPlayerViewController ()
+#import "HDProgressView.h"
+@interface HDPlayerViewController () <HDProgressViewDelegate>
 
 @property (strong, nonatomic) NSString *filePath;
 
 @property (strong, nonatomic) AVPlayer *player;
+
+@property (assign, nonatomic) Float64 totalTime;
+
+@property (strong, nonatomic) HDProgressView *progressView;
 
 @end
 
@@ -22,6 +27,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self initControlView];
+    [self initProgressView];
 }
 
 - (void)initControlView {
@@ -34,6 +40,12 @@
     [pauseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
     [bottomView addSubview:pauseButton];
+    
+    UIButton *playButton = [[UIButton alloc] initWithFrame:CGRectMake((Screen_width - 60.0) / 2.0, 0, 60.0, 40.0)];
+    [playButton setTitle:@"play" forState:UIControlStateNormal];
+    [playButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
+    [bottomView addSubview:playButton];
     
     UIButton *stopButton = [[UIButton alloc] initWithFrame:CGRectMake(Screen_width - 60.0, 0, 60.0, 40.0)];
     [stopButton setTitle:@"done" forState:UIControlStateNormal];
@@ -49,7 +61,8 @@
     CGRect playerFrame = CGRectMake(0, 0, self.view.layer.bounds.size.height, self.view.layer.bounds.size.width);
     AVURLAsset *asset = [AVURLAsset assetWithURL:[NSURL fileURLWithPath:self.filePath]];
     
-//    Float64 duration = CMTimeGetSeconds(asset.duration);
+    Float64 duration = CMTimeGetSeconds(asset.duration);
+    self.totalTime = duration;
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
     self.player = [AVPlayer playerWithPlayerItem:playerItem];
     
@@ -60,21 +73,43 @@
     [self.view.layer addSublayer:playerLayer];
 }
 
+- (void)initProgressView {
+    self.progressView = [[HDProgressView alloc] initWithFrame:CGRectMake(20.0, Screen_height - 100.0, Screen_width - 40.0, 20.0)];
+    self.progressView.progressDelegate = self;
+    [self.view addSubview:self.progressView];
+}
+
 - (void)playWithFilePath:(NSString *)filePath {
     self.filePath = filePath;
     [self initPlayer];
     [self.player play];
 }
 
+- (void)setAnyPositionToPlay:(Float64)progress {
+    CMTime moveToTime = CMTimeMakeWithSeconds(progress*self.totalTime, 1.0);
+    [self.player seekToTime:moveToTime completionHandler:^(BOOL finished) {
+        [self.player play];
+    }];
+}
+
 - (void)pause {
     [self.player pause];
+}
+
+- (void)play {
+    [self.player play];
 }
 
 - (void)stop {
     [self dismissViewControllerAnimated:YES completion:^{
         [self.player pause];
         self.player = nil;
+        self.progressView.progressDelegate = nil;
     }];
+}
+
+- (void)progressMoveToPoint:(CGFloat)value {
+    [self setAnyPositionToPlay:value];
 }
 
 - (void)didReceiveMemoryWarning {
