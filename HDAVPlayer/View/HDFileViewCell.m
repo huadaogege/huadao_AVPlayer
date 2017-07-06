@@ -16,7 +16,7 @@
     if (self) {
         CGFloat cellHeigth = 60.0;
 //        self.frame.size.height;
-        self.iconImageV.frame = CGRectMake(20.0, (cellHeigth - 40.0) / 2.0, 40.0, 40.0);
+        self.iconImageV.frame = CGRectMake(20.0, (cellHeigth - 40.0) / 2.0, 60.0, 40.0);
         [self addSubview:self.iconImageV];
         
         CGFloat iconOrigin_X = self.iconImageV.frame.origin.x + self.iconImageV.frame.size.width + 10.0;
@@ -34,7 +34,7 @@
     return _iconImageV;
 }
 
--(UILabel *)fileNameLabel {
+- (UILabel *)fileNameLabel {
     if (!_fileNameLabel) {
         _fileNameLabel = [[UILabel alloc] init];
         _fileNameLabel.textAlignment = NSTextAlignmentLeft;
@@ -46,6 +46,7 @@
 
 - (void)setCellModel:(HDFileModel *)model {
     self.fileNameLabel.text = model.fileName;
+    self.iconImageV.image = model.iconImg;
 }
 
 - (void)awakeFromNib {
