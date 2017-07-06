@@ -11,6 +11,7 @@
 #import "HDFileManager.h"
 #import "HDDatabaseManager.h"
 #import "MJRefresh.h"
+#import "HDPlayerViewController.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
@@ -80,16 +81,29 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    HDFileModel *model = self.dataArray[indexPath.row];
+    NSString *filePath = model.filePath;
+    HDPlayerViewController *playerViewController = [[HDPlayerViewController alloc] init];
+    [self.navigationController presentViewController:playerViewController animated:YES completion:^{
+        [playerViewController playWithFilePath:filePath];
+    }];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        HDFileModel *model = self.dataArray[indexPath.row];
-        NSString *filePath = model.filePath;
-        [[HDFileManager shareInstance].fileManager removeItemAtPath:filePath error:nil];
-        [self.dataArray removeObject:model];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"呕血提醒" message:@"确定不要了？" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *actionDone = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            HDFileModel *model = self.dataArray[indexPath.row];
+            NSString *filePath = model.filePath;
+            [[HDFileManager shareInstance].fileManager removeItemAtPath:filePath error:nil];
+            [self.dataArray removeObject:model];
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }];
+        UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        [alertController addAction:actionDone];
+        [alertController addAction:actionCancel];
+        [self.navigationController presentViewController:alertController animated:YES completion:nil];
     }
 }
 
@@ -102,7 +116,7 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return @"不要了";//默认文字为 Delete
+    return @"不要了";
 }
 
 - (void)didReceiveMemoryWarning {
