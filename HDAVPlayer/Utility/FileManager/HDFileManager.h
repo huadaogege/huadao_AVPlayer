@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) NSFileManager *fileManager;
 
+@property (nonatomic, assign) BOOL openSecrect;
+
 + (HDFileManager *)shareInstance;
 
 

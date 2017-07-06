@@ -33,6 +33,9 @@
 }
 
 - (NSMutableArray *)fetchLocalFilesWithDesPath:(NSString *)desFilePath {
+    if (!self.openSecrect) {
+        return nil;
+    }
     NSMutableArray *filesArray = [NSMutableArray arrayWithCapacity:1.0];
     NSArray *documentFiles = [self.fileManager contentsOfDirectoryAtPath:desFilePath error:nil];
     for (NSString *fileName in documentFiles) {
@@ -65,14 +68,14 @@
         CGImageRef image = [gen copyCGImageAtTime:time actualTime:&actualTime error:&error];
         if (error) {
             UIImage *placeHoldImg = [UIImage imageNamed:@"placeholder"];
-            return nil;
+            return placeHoldImg;
         }
         UIImage *thumb = [[UIImage alloc] initWithCGImage:image];
         CGImageRelease(image);
         return thumb;
     } else {
         UIImage *placeHoldImg = [UIImage imageNamed:@"placeholder"];
-        return nil;
+        return placeHoldImg;
     }
 }
 
