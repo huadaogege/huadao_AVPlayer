@@ -42,7 +42,10 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [event.allTouches anyObject];
     CGPoint touchBeginPoint = [touch locationInView:self];
-    BOOL locationInDot = CGRectContainsPoint(CGRectMake(self.controlDot.frame.origin.x - 20.0, self.controlDot.frame.origin.y - 20.0, self.controlDot.frame.size.width + 40.0, self.controlDot.frame.size.height + 40.0), touchBeginPoint);
+    BOOL locationInDot = CGRectContainsPoint(CGRectMake(self.controlDot.frame.origin.x - 20.0,
+                                                        self.controlDot.frame.origin.y - 20.0,
+                                                        self.controlDot.frame.size.width + 40.0,
+                                                        self.controlDot.frame.size.height + 40.0), touchBeginPoint);
     self.IsMoving = locationInDot;
 }
 
