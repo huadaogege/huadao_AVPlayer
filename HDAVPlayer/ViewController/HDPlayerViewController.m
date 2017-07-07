@@ -23,6 +23,8 @@
 
 @property (strong, nonatomic) CADisplayLink *displayLink;
 
+@property (strong, nonatomic) AVPlayerLayer *playerLayer;
+
 @end
 
 @implementation HDPlayerViewController
@@ -31,7 +33,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self initControlView];
-    [self initProgressView];
+//    [self initProgressView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 }
 
 /**
@@ -61,6 +64,19 @@
     [bottomView addSubview:stopButton];
 }
 
+- (void)statusBarOrientationChange:(NSNotification *)notification {
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (orientation == UIInterfaceOrientationLandscapeRight) {// home键靠右
+        self.playerLayer.frame = [self playerLandscapeFrame];
+    } else if (orientation ==UIInterfaceOrientationLandscapeLeft) {// home键靠左
+        self.playerLayer.frame = [self playerLandscapeFrame];
+    } else if (orientation == UIInterfaceOrientationPortrait) {
+        self.playerLayer.frame = [self playerPortraitFrame];
+    } if (orientation == UIInterfaceOrientationPortraitUpsideDown) {
+        self.playerLayer.frame = [self playerPortraitFrame];
+    }
+}
+
 /**
  初始化播放器
  */
@@ -68,7 +84,7 @@
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
     
-    CGRect playerFrame = CGRectMake(0, 0, self.view.layer.bounds.size.height, self.view.layer.bounds.size.width);
+    CGRect playerFrame = [self playerPortraitFrame];
     AVURLAsset *asset = [AVURLAsset assetWithURL:[NSURL fileURLWithPath:self.filePath]];
     
     Float64 duration = CMTimeGetSeconds(asset.duration);
@@ -76,18 +92,27 @@
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
     self.player = [AVPlayer playerWithPlayerItem:playerItem];
     
-    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
-    playerLayer.frame = playerFrame;
-    playerLayer.videoGravity = AVLayerVideoGravityResize;
-    [self.view.layer addSublayer:playerLayer];
+    self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+    self.playerLayer.frame = playerFrame;
+    self.playerLayer.videoGravity = AVLayerVideoGravityResize;
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showOrHiddenProgress)];
+    gesture.numberOfTapsRequired = 1;
+    [self.view addGestureRecognizer:gesture];
+    [self.view.layer addSublayer:self.playerLayer];
+    [self initProgressView];
     [self createCADisplauLink];
+}
+
+- (void)showOrHiddenProgress {
+    self.progressView.hidden = !self.progressView.hidden;
 }
 
 /**
  初始化进度条
  */
 - (void)initProgressView {
-    self.progressView = [[HDProgressView alloc] initWithFrame:CGRectMake(20.0, Screen_height - 100.0, Screen_width - 40.0, 20.0)];
+    CGRect playerFrame = [self playerPortraitFrame];
+    self.progressView = [[HDProgressView alloc] initWithFrame:CGRectMake(0, playerFrame.origin.y, Screen_width, 20.0)];
     self.progressView.progressDelegate = self;
     [self.view addSubview:self.progressView];
 }
@@ -163,9 +188,21 @@
     }];
 }
 
+- (CGRect)playerLandscapeFrame {
+    CGRect frame = CGRectMake(0, 0, Screen_width, Screen_height);
+    self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
+    return frame;
+}
+
+- (CGRect)playerPortraitFrame {
+    CGFloat height = Screen_width * (Screen_width/Screen_height*1.0);
+    CGRect frame = CGRectMake(0, (Screen_height - height) / 2.0, Screen_width, height);
+    self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
+    return frame;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

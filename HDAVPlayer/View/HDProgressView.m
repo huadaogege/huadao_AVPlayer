@@ -13,12 +13,17 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.progressView.frame = CGRectMake(0, (frame.size.height - 4.0) / 2.0, frame.size.width, 4.0);
-        self.controlDot.frame = CGRectMake(0, (self.progressView.frame.size.height - 12.0) / 2.0, 4.0, 12.0);
         [self.progressView addSubview:self.controlDot];
         [self addSubview:self.progressView];
     }
     return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    CGRect frame = self.frame;
+    self.progressView.frame = CGRectMake(0, (frame.size.height - 4.0) / 2.0, frame.size.width, 4.0);
+    self.controlDot.frame = CGRectMake(0, (self.progressView.frame.size.height - 12.0) / 2.0, 4.0, 12.0);
 }
 
 - (UIView *)progressView {
