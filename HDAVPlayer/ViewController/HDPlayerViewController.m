@@ -19,6 +19,12 @@
 
 @property (strong, nonatomic) HDProgressView *progressView;
 
+@property (strong, nonatomic) UIButton *pauseButton;
+
+@property (strong, nonatomic) UIButton *playButton;
+
+@property (strong, nonatomic) UIButton *stopButton;
+
 @property (strong, nonatomic) UIView *bottomView;
 
 @property (assign, nonatomic) CGFloat progressValue;
@@ -45,23 +51,23 @@
     self.bottomView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.bottomView];
     
-    UIButton *pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60.0, 40.0)];
-    [pauseButton setTitle:@"pause" forState:UIControlStateNormal];
-    [pauseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
-    [self.bottomView addSubview:pauseButton];
+    self.pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60.0, 40.0)];
+    [self.pauseButton setTitle:@"pause" forState:UIControlStateNormal];
+    [self.pauseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
+    [self.bottomView addSubview:self.pauseButton];
     
-    UIButton *playButton = [[UIButton alloc] initWithFrame:CGRectMake((Screen_width - 60.0) / 2.0, 0, 60.0, 40.0)];
-    [playButton setTitle:@"play" forState:UIControlStateNormal];
-    [playButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
-    [self.bottomView addSubview:playButton];
+    self.playButton = [[UIButton alloc] initWithFrame:CGRectMake((Screen_width - 60.0) / 2.0, 0, 60.0, 40.0)];
+    [self.playButton setTitle:@"play" forState:UIControlStateNormal];
+    [self.playButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
+    [self.bottomView addSubview:self.playButton];
     
-    UIButton *stopButton = [[UIButton alloc] initWithFrame:CGRectMake(Screen_width - 60.0, 0, 60.0, 40.0)];
-    [stopButton setTitle:@"done" forState:UIControlStateNormal];
-    [stopButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [stopButton addTarget:self action:@selector(stop) forControlEvents:UIControlEventTouchUpInside];
-    [self.bottomView addSubview:stopButton];
+    self.stopButton = [[UIButton alloc] initWithFrame:CGRectMake(Screen_width - 60.0, 0, 60.0, 40.0)];
+    [self.stopButton setTitle:@"done" forState:UIControlStateNormal];
+    [self.stopButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.stopButton addTarget:self action:@selector(stop) forControlEvents:UIControlEventTouchUpInside];
+    [self.bottomView addSubview:self.stopButton];
 }
 
 /**
@@ -123,6 +129,8 @@
     CGRect frame = CGRectMake(0, 0, Screen_width, Screen_height);
     self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
     self.bottomView.frame = CGRectMake(0, frame.size.height - 40.0, frame.size.width, 40.0);
+    self.playButton.frame = CGRectMake((Screen_width - 60.0) / 2.0, 0, 60.0, 40.0);
+    self.stopButton.frame = CGRectMake(Screen_width - 60.0, 0, 60.0, 40.0);
     return frame;
 }
 
@@ -131,6 +139,8 @@
     CGRect frame = CGRectMake(0, (Screen_height - height) / 2.0, Screen_width, height);
     self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
     self.bottomView.frame = CGRectMake(0, Screen_height - 40.0, Screen_width, 40.0);
+    self.playButton.frame = CGRectMake((Screen_height - 60.0) / 2.0, 0, 60.0, 40.0);
+    self.stopButton.frame = CGRectMake(Screen_height - 60.0, 0, 60.0, 40.0);
     return frame;
 }
 
