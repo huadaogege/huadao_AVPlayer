@@ -19,6 +19,8 @@
 
 @property (strong, nonatomic) HDProgressView *progressView;
 
+@property (strong, nonatomic) UIView *bottomView;
+
 @property (assign, nonatomic) CGFloat progressValue;
 
 @property (strong, nonatomic) CADisplayLink *displayLink;
@@ -32,8 +34,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self initControlView];
-//    [self initProgressView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 }
 
@@ -41,27 +41,37 @@
  初始化控件
  */
 - (void)initControlView {
-    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, Screen_height - 40.0, Screen_width, 40.0)];
-    bottomView.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:bottomView];
+    self.bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, Screen_height - 40.0, Screen_width, 40.0)];
+    self.bottomView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:self.bottomView];
     
     UIButton *pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60.0, 40.0)];
     [pauseButton setTitle:@"pause" forState:UIControlStateNormal];
     [pauseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:pauseButton];
+    [self.bottomView addSubview:pauseButton];
     
     UIButton *playButton = [[UIButton alloc] initWithFrame:CGRectMake((Screen_width - 60.0) / 2.0, 0, 60.0, 40.0)];
     [playButton setTitle:@"play" forState:UIControlStateNormal];
     [playButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:playButton];
+    [self.bottomView addSubview:playButton];
     
     UIButton *stopButton = [[UIButton alloc] initWithFrame:CGRectMake(Screen_width - 60.0, 0, 60.0, 40.0)];
     [stopButton setTitle:@"done" forState:UIControlStateNormal];
     [stopButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [stopButton addTarget:self action:@selector(stop) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:stopButton];
+    [self.bottomView addSubview:stopButton];
+}
+
+/**
+ 初始化进度条
+ */
+- (void)initProgressView {
+    CGRect playerFrame = [self playerPortraitFrame];
+    self.progressView = [[HDProgressView alloc] initWithFrame:CGRectMake(0, playerFrame.origin.y, Screen_width, 20.0)];
+    self.progressView.progressDelegate = self;
+    [self.view addSubview:self.progressView];
 }
 
 - (void)statusBarOrientationChange:(NSNotification *)notification {
@@ -99,22 +109,29 @@
     gesture.numberOfTapsRequired = 1;
     [self.view addGestureRecognizer:gesture];
     [self.view.layer addSublayer:self.playerLayer];
+    [self initControlView];
     [self initProgressView];
     [self createCADisplauLink];
 }
 
 - (void)showOrHiddenProgress {
     self.progressView.hidden = !self.progressView.hidden;
+    self.bottomView.hidden = !self.bottomView.hidden;
 }
 
-/**
- 初始化进度条
- */
-- (void)initProgressView {
-    CGRect playerFrame = [self playerPortraitFrame];
-    self.progressView = [[HDProgressView alloc] initWithFrame:CGRectMake(0, playerFrame.origin.y, Screen_width, 20.0)];
-    self.progressView.progressDelegate = self;
-    [self.view addSubview:self.progressView];
+- (CGRect)playerLandscapeFrame {
+    CGRect frame = CGRectMake(0, 0, Screen_width, Screen_height);
+    self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
+    self.bottomView.frame = CGRectMake(0, frame.size.height - 40.0, frame.size.width, 40.0);
+    return frame;
+}
+
+- (CGRect)playerPortraitFrame {
+    CGFloat height = Screen_width * (Screen_width/Screen_height*1.0);
+    CGRect frame = CGRectMake(0, (Screen_height - height) / 2.0, Screen_width, height);
+    self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
+    self.bottomView.frame = CGRectMake(0, Screen_height - 40.0, Screen_width, 40.0);
+    return frame;
 }
 
 /**
@@ -186,19 +203,6 @@
         self.displayLink = nil;
         self.progressView.progressDelegate = nil;
     }];
-}
-
-- (CGRect)playerLandscapeFrame {
-    CGRect frame = CGRectMake(0, 0, Screen_width, Screen_height);
-    self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
-    return frame;
-}
-
-- (CGRect)playerPortraitFrame {
-    CGFloat height = Screen_width * (Screen_width/Screen_height*1.0);
-    CGRect frame = CGRectMake(0, (Screen_height - height) / 2.0, Screen_width, height);
-    self.progressView.frame = CGRectMake(0, frame.origin.y, frame.size.width, 20.0);
-    return frame;
 }
 
 - (void)didReceiveMemoryWarning {
