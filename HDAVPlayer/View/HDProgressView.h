@@ -20,6 +20,8 @@
 
 @property (strong, nonatomic) UIView *progressView;
 
+@property (assign, nonatomic) CGFloat progressValue;
+
 @property (assign, nonatomic) BOOL IsMoving;
 
 @property (weak, nonatomic) id<HDProgressViewDelegate>progressDelegate;

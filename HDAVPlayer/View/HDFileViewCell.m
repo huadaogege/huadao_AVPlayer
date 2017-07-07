@@ -15,7 +15,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         CGFloat cellHeigth = 60.0;
-//        self.frame.size.height;
         self.iconImageV.frame = CGRectMake(20.0, (cellHeigth - 40.0) / 2.0, 60.0, 40.0);
         [self addSubview:self.iconImageV];
         

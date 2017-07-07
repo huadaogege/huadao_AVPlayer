@@ -34,11 +34,22 @@
     if (!_controlDot) {
         _controlDot = [[UIView alloc] init];
         _controlDot.backgroundColor = [UIColor greenColor];
-//        _controlDot.layer.cornerRadius = 5.0;
     }
     return _controlDot;
 }
 
+- (void)setProgressValue:(CGFloat)progressValue {
+    CGFloat X = progressValue * self.progressView.frame.size.width;
+    [self updateControlDots:X];
+}
+
+- (void)updateControlDots:(CGFloat)value {
+    CGFloat X = value;
+    CGRect frame = self.controlDot.frame;
+    self.controlDot.frame = CGRectMake(X, frame.origin.y, frame.size.width, frame.size.height);
+}
+
+#pragma mark -- touchEvent --
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [event.allTouches anyObject];
     CGPoint touchBeginPoint = [touch locationInView:self];
@@ -54,8 +65,10 @@
         UITouch *touch = [event.allTouches anyObject];
         CGPoint movingPoint = [touch locationInView:self];
         CGFloat X = movingPoint.x;
-        CGRect frame = self.controlDot.frame;
-        self.controlDot.frame = CGRectMake(X, frame.origin.y, frame.size.width, frame.size.height);
+        if (X >= self.progressView.frame.size.width) {
+            X = self.progressView.frame.size.width;
+        }
+        [self updateControlDots:X];
         CGFloat progressView = self.controlDot.frame.origin.x / self.progressView.frame.size.width;
         if (self.progressDelegate && [self.progressDelegate respondsToSelector:@selector(progressMoveToPoint:)]) {
             [self.progressDelegate progressMoveToPoint:progressView];
