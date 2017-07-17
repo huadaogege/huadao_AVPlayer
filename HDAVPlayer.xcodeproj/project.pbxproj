@@ -16,6 +16,8 @@
 		E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B6C71F0CC21D0002292C /* HDFileManager.m */; };
 		E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72B1F0CC9130002292C /* GTMBase64.m */; };
 		E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */; };
+		E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC521F1D0B5000807899 /* NSString+Editer.m */; };
+		E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC551F1D0E2500807899 /* HDPlayerViewModel.m */; };
 		E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188E41F1C5C5A00640D53 /* HDRequest.m */; };
 		E9A188E81F1C5EA900640D53 /* HDJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188E71F1C5EA900640D53 /* HDJSONRequest.m */; };
 		E9A188EA1F1C600F00640D53 /* RequestList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9A188E91F1C600F00640D53 /* RequestList.plist */; };
@@ -194,6 +196,10 @@
 		E992B72C1F0CC9130002292C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E992B72E1F0CC9B10002292C /* HDFileBasicInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileBasicInfoModel.h; sourceTree = "<group>"; };
 		E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileBasicInfoModel.m; sourceTree = "<group>"; };
+		E99FFC511F1D0B5000807899 /* NSString+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Editer.h"; sourceTree = "<group>"; };
+		E99FFC521F1D0B5000807899 /* NSString+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Editer.m"; sourceTree = "<group>"; };
+		E99FFC541F1D0E2500807899 /* HDPlayerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPlayerViewModel.h; sourceTree = "<group>"; };
+		E99FFC551F1D0E2500807899 /* HDPlayerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPlayerViewModel.m; sourceTree = "<group>"; };
 		E9A188E31F1C5C5A00640D53 /* HDRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDRequest.h; sourceTree = "<group>"; };
 		E9A188E41F1C5C5A00640D53 /* HDRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDRequest.m; sourceTree = "<group>"; };
 		E9A188E61F1C5EA900640D53 /* HDJSONRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDJSONRequest.h; sourceTree = "<group>"; };
@@ -621,6 +627,8 @@
 			children = (
 				E9A189241F1CD2DA00640D53 /* UIImage+Editer.h */,
 				E9A189251F1CD2DA00640D53 /* UIImage+Editer.m */,
+				E99FFC511F1D0B5000807899 /* NSString+Editer.h */,
+				E99FFC521F1D0B5000807899 /* NSString+Editer.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -634,6 +642,8 @@
 				E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */,
 				E9A1892E1F1CE24500640D53 /* HDFuncViewModel.h */,
 				E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */,
+				E99FFC541F1D0E2500807899 /* HDPlayerViewModel.h */,
+				E99FFC551F1D0E2500807899 /* HDPlayerViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1349,8 +1359,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */,
 				E9B6EDB21F0C7CA70072938A /* ioapi.c in Sources */,
 				E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */,
+				E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */,
 				E9B6ED7A1F0C7C5F0072938A /* SDWebImageDownloaderOperation.m in Sources */,
 				E9B6ECF01F0C7AB80072938A /* JSONAPI.m in Sources */,
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,

@@ -10,6 +10,13 @@
 
 @interface UIImage (Editer)
 
+
+/**
+ 修改图片大小,获取一张小于屏幕的图片
+
+ @param image 原图
+ @return 修剪之后的图
+ */
 + (UIImage *)imageSizeWithScreenImage:(UIImage *)image;
 
 /**

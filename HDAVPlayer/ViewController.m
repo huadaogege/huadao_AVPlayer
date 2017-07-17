@@ -8,11 +8,8 @@
 
 #import "ViewController.h"
 #import "HDFuncViewController.h"
-#import "HDFileManager.h"
 #import "HDConfig.h"
 @interface ViewController ()
-
-//@property (nonatomic, strong) HDFileListViewController *fileListViewController;
 
 @end
 

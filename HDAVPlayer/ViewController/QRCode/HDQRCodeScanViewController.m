@@ -55,7 +55,7 @@
 }
 
 - (void)QRCodeAlbumManagerDidCancel {
-
+    NSLog(@"取消选择相册");
 }
 
 - (void)QRCodeAlbumManagerDidFinishPickingMediaWithResult:(NSString *)result {

@@ -7,31 +7,13 @@
 //
 
 #import "HDPlayerViewController.h"
-#import <AVFoundation/AVFoundation.h>
-#import "HDProgressView.h"
-@interface HDPlayerViewController () <HDProgressViewDelegate>
+#import "HDPlayerViewModel.h"
 
-@property (strong, nonatomic) NSString *filePath;
+@interface HDPlayerViewController () 
 
-@property (strong, nonatomic) AVPlayer *player;
+@property (strong, nonatomic) HDPlayerViewModel *playerViewModel;
 
-@property (assign, nonatomic) Float64 totalTime;
 
-@property (strong, nonatomic) HDProgressView *progressView;
-
-@property (strong, nonatomic) UIButton *pauseButton;
-
-@property (strong, nonatomic) UIButton *playButton;
-
-@property (strong, nonatomic) UIButton *stopButton;
-
-@property (strong, nonatomic) UIView *bottomView;
-
-@property (assign, nonatomic) CGFloat progressValue;
-
-@property (strong, nonatomic) CADisplayLink *displayLink;
-
-@property (strong, nonatomic) AVPlayerLayer *playerLayer;
 
 @end
 
@@ -40,35 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.playerViewModel = [[HDPlayerViewModel alloc] init];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 }
 
-/**
- 初始化控件
- */
-- (void)initControlView {
-    self.bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, Screen_height - 40.0, Screen_width, 40.0)];
-    self.bottomView.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:self.bottomView];
-    
-    self.pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60.0, 40.0)];
-    [self.pauseButton setTitle:@"pause" forState:UIControlStateNormal];
-    [self.pauseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.pauseButton addTarget:self action:@selector(pause) forControlEvents:UIControlEventTouchUpInside];
-    [self.bottomView addSubview:self.pauseButton];
-    
-    self.playButton = [[UIButton alloc] initWithFrame:CGRectMake((Screen_width - 60.0) / 2.0, 0, 60.0, 40.0)];
-    [self.playButton setTitle:@"play" forState:UIControlStateNormal];
-    [self.playButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.playButton addTarget:self action:@selector(play) forControlEvents:UIControlEventTouchUpInside];
-    [self.bottomView addSubview:self.playButton];
-    
-    self.stopButton = [[UIButton alloc] initWithFrame:CGRectMake(Screen_width - 60.0, 0, 60.0, 40.0)];
-    [self.stopButton setTitle:@"done" forState:UIControlStateNormal];
-    [self.stopButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.stopButton addTarget:self action:@selector(stop) forControlEvents:UIControlEventTouchUpInside];
-    [self.bottomView addSubview:self.stopButton];
-}
+
 
 /**
  初始化进度条
@@ -115,7 +73,7 @@
     gesture.numberOfTapsRequired = 1;
     [self.view addGestureRecognizer:gesture];
     [self.view.layer addSublayer:self.playerLayer];
-    [self initControlView];
+    [self.playerViewModel initWithControlller:self];
     [self initProgressView];
     [self createCADisplauLink];
 }
@@ -195,25 +153,7 @@
     [self setAnyPositionToPlay:value];
 }
 
-- (void)pause {
-    [self.player pause];
-    self.displayLink.paused = YES;
-}
 
-- (void)play {
-    [self.player play];
-    self.displayLink.paused = NO;
-}
-
-- (void)stop {
-    [self dismissViewControllerAnimated:YES completion:^{
-        [self.player pause];
-        self.player = nil;
-        self.displayLink.paused = YES;
-        self.displayLink = nil;
-        self.progressView.progressDelegate = nil;
-    }];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

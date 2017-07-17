@@ -8,6 +8,7 @@
 
 #import "HDQRCodeShowViewController.h"
 #import "HDQRCodeManager.h"
+#import "NSString+Editer.h"
 @interface HDQRCodeShowViewController ()
 
 @end
@@ -21,28 +22,10 @@
 
 - (IBAction)createQRCode:(id)sender {
     CGFloat width = self.qrcodeImageView.frame.size.width;
-    NSString *infoString = [[self randomString] stringByAppendingString:self.qrcodeTextField.text];
+    NSString *infoString = [[NSString randomStringLength:16 spackMark:@"$$$$$"] stringByAppendingString:self.qrcodeTextField.text];
     UIImage *qrcodeImage = [[HDQRCodeManager shareInstance] produceQRCodeImageWith:infoString imageViewSizeWith:width];
     self.qrcodeImageView.image = qrcodeImage;
     [self.qrcodeTextField resignFirstResponder];
-}
-
-- (NSString *)randomString {
-    NSString *string = [[NSString alloc]init];
-    for (int i = 0; i < 32; i++) {
-        int number = arc4random() % 36;
-        if (number < 10) {
-            int figure = arc4random() % 10;
-            NSString *tempString = [NSString stringWithFormat:@"%d", figure];
-            string = [string stringByAppendingString:tempString];
-        }else {
-            int figure = (arc4random() % 26) + 97;
-            char character = figure;
-            NSString *tempString = [NSString stringWithFormat:@"%c", character];
-            string = [string stringByAppendingString:tempString];
-        }
-    }
-    return [string stringByAppendingString:@"$$$$$"];
 }
 
 - (void)didReceiveMemoryWarning {

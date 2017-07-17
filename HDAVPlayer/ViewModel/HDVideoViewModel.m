@@ -10,6 +10,7 @@
 #import "HDFileManager.h"
 #import "HDFileViewCell.h"
 #import "HDPlayerViewController.h"
+#import "MJRefresh.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
@@ -21,6 +22,12 @@
         [_tableView registerClass:[HDFileViewCell class] forCellReuseIdentifier:Cell_Identifier];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        WeakSelf;
+        MJRefreshNormalHeader *freshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            [weakSelf fetchFileData];
+            [weakSelf.tableView.mj_header endRefreshing];
+        }];
+        _tableView.mj_header = freshHeader;
     }
     return _tableView;
 }

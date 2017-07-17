@@ -16,4 +16,9 @@
 
 #define QRCodeImageIdentifier @"CIQRCodeGenerator"
 
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+
+
 #endif /* Common_Macro_h */

@@ -7,12 +7,6 @@
 //
 
 #import "HDFileListViewController.h"
-#import "HDFileViewCell.h"
-#import "HDFileManager.h"
-#import "HDDatabaseManager.h"
-#import "MJRefresh.h"
-#import "HDPlayerViewController.h"
-#import "HDJSONRequest.h"
 #import "HDJSONModel.h"
 #import "HDVideoViewModel.h"
 
@@ -31,11 +25,6 @@
     
     self.videoViewModel = [[HDVideoViewModel alloc] init];
     self.videoViewModel.vieController = self;
-    MJRefreshNormalHeader *freshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self.videoViewModel fetchFileData];
-        [self.videoViewModel.tableView.mj_header endRefreshing];
-    }];
-    self.videoViewModel.tableView.mj_header = freshHeader;
     [self.view addSubview:self.videoViewModel.tableView];
 }
 

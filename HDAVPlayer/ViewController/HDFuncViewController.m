@@ -28,6 +28,7 @@
 
 #pragma mark -- UITableViewDelegate, UITableViewDataSource --
 
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [self.funcViewModel numberOfSectionsInTableView:tableView];
 }
@@ -48,10 +49,8 @@
     [self.funcViewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

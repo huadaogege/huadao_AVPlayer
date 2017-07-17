@@ -11,9 +11,7 @@
 @interface HDFuncViewModel : HDViewModel <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-
 @property (nonatomic, strong) NSMutableArray *dataArray;
-
 @property (nonatomic, strong) UIViewController *vieController;
 
 @end
