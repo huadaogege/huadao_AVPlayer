@@ -10,4 +10,15 @@
 
 @implementation HDModel
 
+-(id)initWithDictionary:(NSDictionary*)dict error:(NSError**)err {
+    if (self = [super initWithDictionary:dict error:err]) {
+        [self postActionOfInit:dict error:err];
+    }
+    return self;
+}
+
+- (void)postActionOfInit:(NSDictionary*)dict error:(NSError**)err {
+    
+}
+
 @end

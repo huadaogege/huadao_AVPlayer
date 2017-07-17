@@ -16,6 +16,10 @@
 		E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B6C71F0CC21D0002292C /* HDFileManager.m */; };
 		E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72B1F0CC9130002292C /* GTMBase64.m */; };
 		E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */; };
+		E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188E41F1C5C5A00640D53 /* HDRequest.m */; };
+		E9A188E81F1C5EA900640D53 /* HDJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188E71F1C5EA900640D53 /* HDJSONRequest.m */; };
+		E9A188EA1F1C600F00640D53 /* RequestList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9A188E91F1C600F00640D53 /* RequestList.plist */; };
+		E9A188ED1F1C861800640D53 /* HDJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188EC1F1C861800640D53 /* HDJSONModel.m */; };
 		E9B6EC691F0C75450072938A /* HDFileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC661F0C75450072938A /* HDFileListViewController.m */; };
 		E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC681F0C75450072938A /* HDViewController.m */; };
 		E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC6F1F0C75A80072938A /* HDFileModel.m */; };
@@ -175,6 +179,13 @@
 		E992B72C1F0CC9130002292C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E992B72E1F0CC9B10002292C /* HDFileBasicInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileBasicInfoModel.h; sourceTree = "<group>"; };
 		E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileBasicInfoModel.m; sourceTree = "<group>"; };
+		E9A188E31F1C5C5A00640D53 /* HDRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDRequest.h; sourceTree = "<group>"; };
+		E9A188E41F1C5C5A00640D53 /* HDRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDRequest.m; sourceTree = "<group>"; };
+		E9A188E61F1C5EA900640D53 /* HDJSONRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDJSONRequest.h; sourceTree = "<group>"; };
+		E9A188E71F1C5EA900640D53 /* HDJSONRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDJSONRequest.m; sourceTree = "<group>"; };
+		E9A188E91F1C600F00640D53 /* RequestList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RequestList.plist; sourceTree = "<group>"; };
+		E9A188EB1F1C861800640D53 /* HDJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDJSONModel.h; sourceTree = "<group>"; };
+		E9A188EC1F1C861800640D53 /* HDJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDJSONModel.m; sourceTree = "<group>"; };
 		E9B6EC651F0C75450072938A /* HDFileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileListViewController.h; sourceTree = "<group>"; };
 		E9B6EC661F0C75450072938A /* HDFileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileListViewController.m; sourceTree = "<group>"; };
 		E9B6EC671F0C75450072938A /* HDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewController.h; sourceTree = "<group>"; };
@@ -500,6 +511,18 @@
 			path = GTMBase64;
 			sourceTree = "<group>";
 		};
+		E9A188E21F1C5C0E00640D53 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E9A188E31F1C5C5A00640D53 /* HDRequest.h */,
+				E9A188E41F1C5C5A00640D53 /* HDRequest.m */,
+				E9A188E61F1C5EA900640D53 /* HDJSONRequest.h */,
+				E9A188E71F1C5EA900640D53 /* HDJSONRequest.m */,
+				E9A188E91F1C600F00640D53 /* RequestList.plist */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		E9B6EC601F0C73FE0072938A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +543,8 @@
 				E9B6EC711F0C75A80072938A /* HDModel.m */,
 				E992B72E1F0CC9B10002292C /* HDFileBasicInfoModel.h */,
 				E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */,
+				E9A188EB1F1C861800640D53 /* HDJSONModel.h */,
+				E9A188EC1F1C861800640D53 /* HDJSONModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -548,6 +573,7 @@
 		E9B6EC631F0C740B0072938A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E9A188E21F1C5C0E00640D53 /* Request */,
 				E992B6C21F0CC1D50002292C /* CoreData */,
 				E992B6C11F0CC1D20002292C /* FileManager */,
 			);
@@ -1168,6 +1194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E556EE1F0BD3F900567110 /* LaunchScreen.storyboard in Resources */,
+				E9A188EA1F1C600F00640D53 /* RequestList.plist in Resources */,
 				E9E556EB1F0BD3F900567110 /* Assets.xcassets in Resources */,
 				E9B6ED121F0C7ADB0072938A /* MJRefresh.bundle in Resources */,
 				E9E556E61F0BD3F900567110 /* Main.storyboard in Resources */,
@@ -1218,6 +1245,7 @@
 				E9B6ED821F0C7C5F0072938A /* UIImageView+WebCache.m in Sources */,
 				E9E556E31F0BD3F900567110 /* ViewController.m in Sources */,
 				E9B6ED3B1F0C7C390072938A /* MJRefreshAutoGifFooter.m in Sources */,
+				E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */,
 				E9B6EDD91F0C7CE40072938A /* SSApplicationInfo.m in Sources */,
 				E9B6ED3D1F0C7C390072938A /* MJRefreshAutoStateFooter.m in Sources */,
 				E9B6ECC81F0C7A290072938A /* LMAppController.m in Sources */,
@@ -1241,6 +1269,7 @@
 				E9B6EDA51F0C7C9F0072938A /* hmac.c in Sources */,
 				E9B6ED261F0C7B9B0072938A /* MJRefreshFooter.m in Sources */,
 				E9B6ED511F0C7C510072938A /* RDVTabBarController.m in Sources */,
+				E9A188ED1F1C861800640D53 /* HDJSONModel.m in Sources */,
 				E9B6ECCD1F0C7A300072938A /* DBGuestureButton.m in Sources */,
 				E9B6EDA61F0C7C9F0072938A /* prng.c in Sources */,
 				E9B6ECE91F0C7AB00072938A /* NSArray+JSONModel.m in Sources */,
@@ -1308,6 +1337,7 @@
 				E9B6ED781F0C7C5F0072938A /* SDWebImageDecoder.m in Sources */,
 				E9B6ECBE1F0C7A210072938A /* AFNetworkReachabilityManager.m in Sources */,
 				E9B6EDFD1F0C7CEE0072938A /* UIButton+AFNetworking.m in Sources */,
+				E9A188E81F1C5EA900640D53 /* HDJSONRequest.m in Sources */,
 				E9B6ED031F0C7AC80072938A /* LogUtil.m in Sources */,
 				E9B6ED7E1F0C7C5F0072938A /* UIImage+GIF.m in Sources */,
 				E9E556E91F0BD3F900567110 /* HDAVPlayer.xcdatamodeld in Sources */,

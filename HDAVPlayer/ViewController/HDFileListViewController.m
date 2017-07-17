@@ -12,6 +12,8 @@
 #import "HDDatabaseManager.h"
 #import "MJRefresh.h"
 #import "HDPlayerViewController.h"
+#import "HDJSONRequest.h"
+#import "HDJSONModel.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
@@ -32,9 +34,30 @@
     MJRefreshNormalHeader *freshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self fetchFileData];
         [self.tableView.mj_header endRefreshing];
+//        [self test];
     }];
     self.tableView.mj_header = freshHeader;
 }
+
+//- (void)test {
+//    HDRequest *quest = [HDJSONRequest requestWithName:@"jsonRequest"];
+//    quest.delegate = self;
+//    quest.didFinishSelector = @selector(jsonRequestDidFinished:);
+//    quest.didFailSelector = @selector(jsonRequestDidFailed:);
+//    [quest start];
+//}
+//
+//- (void)jsonRequestDidFinished:(HDRequest *)request {
+//    NSArray *array = [request.result objectForKey:@"member_list"];
+//    for (NSDictionary *dic in array) {
+//        HDJSONModel *model = [[HDJSONModel alloc] initWithDictionary:dic error:nil];
+//        NSLog(@"%@",model);
+//    }
+//}
+//
+//- (void)jsonRequestDidFailed:(HDRequest *)request {
+//
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

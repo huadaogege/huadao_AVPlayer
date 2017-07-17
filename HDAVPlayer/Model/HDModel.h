@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
 
-@interface HDModel : NSObject
+@interface HDModel : JSONModel
+
+- (void)postActionOfInit:(NSDictionary*)dict error:(NSError**)err;
 
 @end
