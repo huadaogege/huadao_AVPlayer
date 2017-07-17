@@ -14,6 +14,7 @@
 #import "HDPlayerViewController.h"
 #import "HDJSONRequest.h"
 #import "HDJSONModel.h"
+#import "HDVideoViewModel.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
@@ -21,7 +22,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) HDVideoViewModel *videoViewModel;
 
 @end
 
@@ -30,43 +31,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-    self.dataArray = [NSMutableArray arrayWithCapacity:1];
+    self.videoViewModel = [[HDVideoViewModel alloc] init];
+    self.videoViewModel.vieController = self;
     MJRefreshNormalHeader *freshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self fetchFileData];
+        [self.videoViewModel fetchFileData];
         [self.tableView.mj_header endRefreshing];
-//        [self test];
     }];
     self.tableView.mj_header = freshHeader;
 }
 
-//- (void)test {
-//    HDRequest *quest = [HDJSONRequest requestWithName:@"jsonRequest"];
-//    quest.delegate = self;
-//    quest.didFinishSelector = @selector(jsonRequestDidFinished:);
-//    quest.didFailSelector = @selector(jsonRequestDidFailed:);
-//    [quest start];
-//}
-//
-//- (void)jsonRequestDidFinished:(HDRequest *)request {
-//    NSArray *array = [request.result objectForKey:@"member_list"];
-//    for (NSDictionary *dic in array) {
-//        HDJSONModel *model = [[HDJSONModel alloc] initWithDictionary:dic error:nil];
-//        NSLog(@"%@",model);
-//    }
-//}
-//
-//- (void)jsonRequestDidFailed:(HDRequest *)request {
-//
-//}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self fetchFileData];
-}
-
-- (void)fetchFileData {
-    self.dataArray = [[HDFileManager shareInstance] fetchLocalFilesWithDesPath:Document_Path];
-    [self.tableView reloadData];
+    [self.videoViewModel fetchFileData];
 }
 
 - (UITableView *)tableView {
@@ -86,48 +62,23 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return [self.videoViewModel tableView:tableView numberOfRowsInSection:section];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return [self.videoViewModel tableView:tableView heightForRowAtIndexPath:indexPath];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    HDFileViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Cell_Identifier forIndexPath:indexPath];
-    if (!cell) {
-        cell = [[HDFileViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:Cell_Identifier];
-    }
-    HDFileModel *model = self.dataArray[indexPath.row];
-    [cell setCellModel:model];
-    return cell;
+    return [self.videoViewModel tableView:tableView cellForRowAtIndexPath:indexPath];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    HDFileModel *model = self.dataArray[indexPath.row];
-    NSString *filePath = model.filePath;
-    HDPlayerViewController *playerViewController = [[HDPlayerViewController alloc] init];
-    [self.navigationController presentViewController:playerViewController animated:YES completion:^{
-        [playerViewController playWithFilePath:filePath];
-    }];
+    [self.videoViewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"呕血提醒" message:@"确定不要了？" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *actionDone = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            HDFileModel *model = self.dataArray[indexPath.row];
-            NSString *filePath = model.filePath;
-            [[HDFileManager shareInstance].fileManager removeItemAtPath:filePath error:nil];
-            [self.dataArray removeObject:model];
-            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-        }];
-        UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        }];
-        [alertController addAction:actionDone];
-        [alertController addAction:actionCancel];
-        [self.navigationController presentViewController:alertController animated:YES completion:nil];
-    }
+    [self.videoViewModel tableView:tableView commitEditingStyle:editingStyle forRowAtIndexPath:indexPath];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -135,11 +86,11 @@
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
+    return [self.videoViewModel tableView:tableView canEditRowAtIndexPath:indexPath];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return @"不要了";
+    return [self.videoViewModel tableView:tableView titleForDeleteConfirmationButtonForRowAtIndexPath:indexPath];
 }
 
 - (void)didReceiveMemoryWarning {

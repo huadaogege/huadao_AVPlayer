@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "HDFileManager.h"
 #import "HDFileModel.h"
+#import "HDConfig.h"
 
 #define Except_Sql_FileName @"hd.sqlite" //数据库文件过滤掉不显示
 
@@ -33,7 +34,7 @@
 }
 
 - (NSMutableArray *)fetchLocalFilesWithDesPath:(NSString *)desFilePath {
-    if (!self.openSecrect) {
+    if (![HDConfig shareInsatnce].openSecrect) {
         return nil;
     }
     NSMutableArray *filesArray = [NSMutableArray arrayWithCapacity:1.0];

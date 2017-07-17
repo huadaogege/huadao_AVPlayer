@@ -184,6 +184,7 @@ void soundCompleteCallback(SystemSoundID soundID, void *clientData){
 }
 
 #pragma mark - - - UIImagePickerControllerDelegate
+
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self.currentVC dismissViewControllerAnimated:YES completion:nil];
     HDQRCodeManager *qrSelf = [HDQRCodeManager shareInstance];

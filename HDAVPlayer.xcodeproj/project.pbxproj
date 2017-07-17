@@ -32,7 +32,10 @@
 		E9A189161F1CA79E00640D53 /* HDVoiceSpeak.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189151F1CA79E00640D53 /* HDVoiceSpeak.m */; };
 		E9A1891B1F1CA83000640D53 /* HDVoiceSpeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189191F1CA83000640D53 /* HDVoiceSpeakViewController.m */; };
 		E9A1891C1F1CA83000640D53 /* HDVoiceSpeakViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A1891A1F1CA83000640D53 /* HDVoiceSpeakViewController.xib */; };
-		E9A1891F1F1CB81300640D53 /* UIImage+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1891E1F1CB81300640D53 /* UIImage+Editer.m */; };
+		E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189211F1CCFA100640D53 /* HDConfig.m */; };
+		E9A189261F1CD2DA00640D53 /* UIImage+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189251F1CD2DA00640D53 /* UIImage+Editer.m */; };
+		E9A1892A1F1CD87000640D53 /* HDViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189291F1CD87000640D53 /* HDViewModel.m */; };
+		E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */; };
 		E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC681F0C75450072938A /* HDViewController.m */; };
 		E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC6F1F0C75A80072938A /* HDFileModel.m */; };
 		E9B6EC731F0C75A80072938A /* HDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC711F0C75A80072938A /* HDModel.m */; };
@@ -217,8 +220,14 @@
 		E9A189181F1CA83000640D53 /* HDVoiceSpeakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDVoiceSpeakViewController.h; sourceTree = "<group>"; };
 		E9A189191F1CA83000640D53 /* HDVoiceSpeakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDVoiceSpeakViewController.m; sourceTree = "<group>"; };
 		E9A1891A1F1CA83000640D53 /* HDVoiceSpeakViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDVoiceSpeakViewController.xib; sourceTree = "<group>"; };
-		E9A1891D1F1CB81300640D53 /* UIImage+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Editer.h"; sourceTree = "<group>"; };
-		E9A1891E1F1CB81300640D53 /* UIImage+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Editer.m"; sourceTree = "<group>"; };
+		E9A189201F1CCFA100640D53 /* HDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDConfig.h; sourceTree = "<group>"; };
+		E9A189211F1CCFA100640D53 /* HDConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDConfig.m; sourceTree = "<group>"; };
+		E9A189241F1CD2DA00640D53 /* UIImage+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Editer.h"; sourceTree = "<group>"; };
+		E9A189251F1CD2DA00640D53 /* UIImage+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Editer.m"; sourceTree = "<group>"; };
+		E9A189281F1CD87000640D53 /* HDViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewModel.h; sourceTree = "<group>"; };
+		E9A189291F1CD87000640D53 /* HDViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDViewModel.m; sourceTree = "<group>"; };
+		E9A1892B1F1CD89300640D53 /* HDVideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDVideoViewModel.h; sourceTree = "<group>"; };
+		E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDVideoViewModel.m; sourceTree = "<group>"; };
 		E9B6EC671F0C75450072938A /* HDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewController.h; sourceTree = "<group>"; };
 		E9B6EC681F0C75450072938A /* HDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDViewController.m; sourceTree = "<group>"; };
 		E9B6EC6E1F0C75A80072938A /* HDFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileModel.h; sourceTree = "<group>"; };
@@ -557,8 +566,6 @@
 			children = (
 				E9A188FC1F1CA34400640D53 /* HDQRCodeManager.h */,
 				E9A188FD1F1CA34400640D53 /* HDQRCodeManager.m */,
-				E9A1891D1F1CB81300640D53 /* UIImage+Editer.h */,
-				E9A1891E1F1CB81300640D53 /* UIImage+Editer.m */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -604,6 +611,26 @@
 				E9A1891A1F1CA83000640D53 /* HDVoiceSpeakViewController.xib */,
 			);
 			path = VoiceSpeak;
+			sourceTree = "<group>";
+		};
+		E9A189231F1CD28600640D53 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E9A189241F1CD2DA00640D53 /* UIImage+Editer.h */,
+				E9A189251F1CD2DA00640D53 /* UIImage+Editer.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E9A189271F1CD83A00640D53 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9A189281F1CD87000640D53 /* HDViewModel.h */,
+				E9A189291F1CD87000640D53 /* HDViewModel.m */,
+				E9A1892B1F1CD89300640D53 /* HDVideoViewModel.h */,
+				E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E9B6EC601F0C73FE0072938A /* View */ = {
@@ -656,6 +683,8 @@
 		E9B6EC631F0C740B0072938A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E9A189201F1CCFA100640D53 /* HDConfig.h */,
+				E9A189211F1CCFA100640D53 /* HDConfig.m */,
 				E9A188FF1F1CA34D00640D53 /* VoiceSpeak */,
 				E9A188FB1F1CA30300640D53 /* QRCode */,
 				E9A188E21F1C5C0E00640D53 /* Request */,
@@ -1122,6 +1151,8 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9A189271F1CD83A00640D53 /* ViewModel */,
+				E9A189231F1CD28600640D53 /* Category */,
 				E9B6EC641F0C74380072938A /* ViewController */,
 				E9B6EC631F0C740B0072938A /* Utility */,
 				E9B6EC621F0C74080072938A /* Library */,
@@ -1320,6 +1351,7 @@
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,
 				E9B6EDDC1F0C7CE40072938A /* SSDiskInfo.m in Sources */,
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
+				E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */,
 				E9B6ED881F0C7C690072938A /* SSZipArchive.m in Sources */,
 				E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */,
 				E9B6EDE41F0C7CE40072938A /* SSUUID.m in Sources */,
@@ -1364,6 +1396,7 @@
 				E9A188ED1F1C861800640D53 /* HDJSONModel.m in Sources */,
 				E9B6ECCD1F0C7A300072938A /* DBGuestureButton.m in Sources */,
 				E9B6EDA61F0C7C9F0072938A /* prng.c in Sources */,
+				E9A189261F1CD2DA00640D53 /* UIImage+Editer.m in Sources */,
 				E9B6ECE91F0C7AB00072938A /* NSArray+JSONModel.m in Sources */,
 				E9B6ECE61F0C7AA80072938A /* JSONModelError.m in Sources */,
 				E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */,
@@ -1397,7 +1430,6 @@
 				E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */,
 				E9B6EDFA1F0C7CEE0072938A /* AFImageDownloader.m in Sources */,
 				E9A189061F1CA44800640D53 /* HDFileListViewController.m in Sources */,
-				E9A1891F1F1CB81300640D53 /* UIImage+Editer.m in Sources */,
 				E9B6ED811F0C7C5F0072938A /* UIImageView+HighlightedWebCache.m in Sources */,
 				E9B6EDE21F0C7CE40072938A /* SSProcessInfo.m in Sources */,
 				E9B6ED141F0C7ADB0072938A /* UIScrollView+MJExtension.m in Sources */,
@@ -1410,6 +1442,7 @@
 				E9A189071F1CA44800640D53 /* HDPlayerViewController.m in Sources */,
 				E992B6C51F0CC2150002292C /* HDDatabaseManager.m in Sources */,
 				E9B6ECBF1F0C7A210072938A /* AFSecurityPolicy.m in Sources */,
+				E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */,
 				E9B6ECE31F0C7AA80072938A /* JSONModel.m in Sources */,
 				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
 				E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */,
@@ -1431,6 +1464,7 @@
 				E9B6ED7F1F0C7C5F0072938A /* UIImage+MultiFormat.m in Sources */,
 				E9B6ECE41F0C7AA80072938A /* JSONModelArray.m in Sources */,
 				E9B6EDB51F0C7CA70072938A /* zip.c in Sources */,
+				E9A1892A1F1CD87000640D53 /* HDViewModel.m in Sources */,
 				E9B6EDD81F0C7CE40072938A /* SSAccessoryInfo.m in Sources */,
 				E9B6ED781F0C7C5F0072938A /* SDWebImageDecoder.m in Sources */,
 				E9B6ECBE1F0C7A210072938A /* AFNetworkReachabilityManager.m in Sources */,
