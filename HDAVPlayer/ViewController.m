@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "HDFileListViewController.h"
+//#import "HDFileListViewController.h"
+#import "HDFuncViewController.h"
 #import "HDFileManager.h"
 @interface ViewController ()
 
-@property (nonatomic, strong) HDFileListViewController *fileListViewController;
+//@property (nonatomic, strong) HDFileListViewController *fileListViewController;
 
 @end
 
@@ -19,10 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"视频列表";
-    self.fileListViewController = [[HDFileListViewController alloc] init];
-    [self initRootViewController:self.fileListViewController];
-    [self initControlBarItem];
+    self.title = @"功能列表";
+//    self.fileListViewController = [[HDFileListViewController alloc] init];
+//    [self initRootViewController:self.fileListViewController];
+//    [self initControlBarItem];
+    HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
+    [self initRootViewController:funcViewController];
 }
 
 - (void)initControlBarItem {

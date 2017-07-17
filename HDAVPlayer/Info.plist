@@ -25,6 +25,10 @@
 		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>花道要使用你的相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>花道要使用你的相机</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

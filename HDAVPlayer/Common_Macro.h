@@ -14,4 +14,6 @@
 
 #define Document_Path NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject
 
+#define QRCodeImageIdentifier @"CIQRCodeGenerator"
+
 #endif /* Common_Macro_h */
