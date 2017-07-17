@@ -9,7 +9,7 @@
 #import "HDViewModel.h"
 #import <UIKit/UIKit.h>
 
-@interface HDVideoViewModel : HDViewModel
+@interface HDVideoViewModel : HDViewModel <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSString *fileName;
 @property (nonatomic, strong) NSString *filePath;

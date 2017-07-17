@@ -15,6 +15,16 @@
 
 @implementation HDVideoViewModel
 
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, Screen_width, Screen_height) style:UITableViewStylePlain];
+        [_tableView registerClass:[HDFileViewCell class] forCellReuseIdentifier:Cell_Identifier];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+}
+
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
         _dataArray = [NSMutableArray arrayWithCapacity:1];
@@ -32,7 +42,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    self.tableView = tableView;
     return self.dataArray.count;
 }
 

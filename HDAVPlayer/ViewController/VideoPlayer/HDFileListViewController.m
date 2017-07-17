@@ -18,9 +18,7 @@
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
-@interface HDFileListViewController () <UITableViewDelegate, UITableViewDataSource>
-
-@property (nonatomic, strong) UITableView *tableView;
+@interface HDFileListViewController () 
 
 @property (nonatomic, strong) HDVideoViewModel *videoViewModel;
 
@@ -30,29 +28,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.tableView];
+    
     self.videoViewModel = [[HDVideoViewModel alloc] init];
     self.videoViewModel.vieController = self;
     MJRefreshNormalHeader *freshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self.videoViewModel fetchFileData];
-        [self.tableView.mj_header endRefreshing];
+        [self.videoViewModel.tableView.mj_header endRefreshing];
     }];
-    self.tableView.mj_header = freshHeader;
+    self.videoViewModel.tableView.mj_header = freshHeader;
+    [self.view addSubview:self.videoViewModel.tableView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.videoViewModel fetchFileData];
-}
-
-- (UITableView *)tableView {
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, Screen_width, Screen_height) style:UITableViewStylePlain];
-        [_tableView registerClass:[HDFileViewCell class] forCellReuseIdentifier:Cell_Identifier];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-    }
-    return _tableView;
 }
 
 #pragma mark -- UITableViewDelegate, UITableViewDataSource --

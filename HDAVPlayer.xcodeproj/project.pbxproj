@@ -36,6 +36,7 @@
 		E9A189261F1CD2DA00640D53 /* UIImage+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189251F1CD2DA00640D53 /* UIImage+Editer.m */; };
 		E9A1892A1F1CD87000640D53 /* HDViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189291F1CD87000640D53 /* HDViewModel.m */; };
 		E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */; };
+		E9A189301F1CE24500640D53 /* HDFuncViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */; };
 		E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC681F0C75450072938A /* HDViewController.m */; };
 		E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC6F1F0C75A80072938A /* HDFileModel.m */; };
 		E9B6EC731F0C75A80072938A /* HDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC711F0C75A80072938A /* HDModel.m */; };
@@ -228,6 +229,8 @@
 		E9A189291F1CD87000640D53 /* HDViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDViewModel.m; sourceTree = "<group>"; };
 		E9A1892B1F1CD89300640D53 /* HDVideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDVideoViewModel.h; sourceTree = "<group>"; };
 		E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDVideoViewModel.m; sourceTree = "<group>"; };
+		E9A1892E1F1CE24500640D53 /* HDFuncViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFuncViewModel.h; sourceTree = "<group>"; };
+		E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFuncViewModel.m; sourceTree = "<group>"; };
 		E9B6EC671F0C75450072938A /* HDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewController.h; sourceTree = "<group>"; };
 		E9B6EC681F0C75450072938A /* HDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDViewController.m; sourceTree = "<group>"; };
 		E9B6EC6E1F0C75A80072938A /* HDFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileModel.h; sourceTree = "<group>"; };
@@ -629,6 +632,8 @@
 				E9A189291F1CD87000640D53 /* HDViewModel.m */,
 				E9A1892B1F1CD89300640D53 /* HDVideoViewModel.h */,
 				E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */,
+				E9A1892E1F1CE24500640D53 /* HDFuncViewModel.h */,
+				E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1421,6 +1426,7 @@
 				E9B6ED131F0C7ADB0072938A /* MJRefreshConst.m in Sources */,
 				E9B6ED7D1F0C7C5F0072938A /* UIButton+WebCache.m in Sources */,
 				E9A188FE1F1CA34400640D53 /* HDQRCodeManager.m in Sources */,
+				E9A189301F1CE24500640D53 /* HDFuncViewModel.m in Sources */,
 				E9B6EDFF1F0C7CEE0072938A /* UIProgressView+AFNetworking.m in Sources */,
 				E9B6ED771F0C7C5F0072938A /* SDWebImageCompat.m in Sources */,
 				E9B6ED071F0C7ACF0072938A /* MBProgressHUD.m in Sources */,

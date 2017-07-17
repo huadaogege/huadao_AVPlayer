@@ -12,4 +12,12 @@
 
 + (UIImage *)imageSizeWithScreenImage:(UIImage *)image;
 
+/**
+ 获取视频文件缩略图
+ 
+ @param videoPath 视频文件路径
+ @return 缩略图文件
+ */
++ (UIImage *)getThumbnailImage:(NSString *)videoPath;
+
 @end

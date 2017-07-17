@@ -15,6 +15,6 @@ typedef NS_ENUM(NSInteger, HD_FUNC_TYPE) {
     HD_FUNC_TYPE_Voice_Speak
 };
 
-@interface HDFuncViewController : HDViewController <UITableViewDelegate, UITableViewDataSource>
+@interface HDFuncViewController : HDViewController 
 
 @end
