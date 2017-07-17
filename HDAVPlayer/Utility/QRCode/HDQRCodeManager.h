@@ -14,15 +14,29 @@
 
 @end
 
+@protocol HDQRCodeAlbumManagerDelegate <NSObject>
+
+- (void)QRCodeAlbumManagerDidCancel;
+
+- (void)QRCodeAlbumManagerDidFinishPickingMediaWithResult:(NSString *)result;
+
+@end
+
 @interface HDQRCodeManager : NSObject
 
 @property (nonatomic, weak)id <HDQRCodeManagerDelegate>QRCodeDelegate;
+
+@property (nonatomic, weak)id <HDQRCodeAlbumManagerDelegate>QRAlbumCodeDelegate;
+
+@property (nonatomic, assign) BOOL isPHAuthorization;
 
 + (HDQRCodeManager *)shareInstance;
 
 - (UIImage *)produceQRCodeImageWith:(NSString *)infoString imageViewSizeWith:(CGFloat)width;
 
 - (void)HD_setupSessionPreset:(NSString *)sessionPreset metadataObjectTypes:(NSArray *)metadataObjectTypes currentController:(UIViewController *)currentController;
+
+- (void)HD_readQRCodeFromAlbumWithCurrentController:(UIViewController *)currentController;
 
 /// 开启会话对象扫描
 - (void)HD_startRunning;

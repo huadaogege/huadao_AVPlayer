@@ -9,7 +9,7 @@
 #import "HDQRCodeScanViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "HDQRCodeManager.h"
-@interface HDQRCodeScanViewController ()<HDQRCodeManagerDelegate>
+@interface HDQRCodeScanViewController ()<HDQRCodeManagerDelegate, HDQRCodeAlbumManagerDelegate>
 
 @end
 
@@ -18,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self startScanQRCode];
+    [self setupNavigationBar];
+}
+
+- (void)setupNavigationBar {
+    self.navigationItem.title = @"扫一扫";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:(UIBarButtonItemStyleDone) target:self action:@selector(rightBarButtonItenAction)];
+}
+
+- (void)rightBarButtonItenAction {
+    [[HDQRCodeManager shareInstance] HD_readQRCodeFromAlbumWithCurrentController:self];
+    [HDQRCodeManager shareInstance].QRAlbumCodeDelegate = self;
 }
 
 - (void)startScanQRCode {
@@ -41,6 +52,19 @@
     } else {
         NSLog(@"暂未识别出扫描的二维码");
     }
+}
+
+- (void)QRCodeAlbumManagerDidCancel {
+
+}
+
+- (void)QRCodeAlbumManagerDidFinishPickingMediaWithResult:(NSString *)result {
+    self.outputTextView.text = result;
+    self.outputTextView.hidden = NO;
+    HDQRCodeManager *scanManager = [HDQRCodeManager shareInstance];
+    [scanManager HD_palySoundName:@"HDQRCode.bundle/sound.caf"];
+    [scanManager HD_stopRunning];
+    [scanManager HD_videoPreviewLayerRemoveFromSuperlayer];
 }
 
 - (void)didReceiveMemoryWarning {

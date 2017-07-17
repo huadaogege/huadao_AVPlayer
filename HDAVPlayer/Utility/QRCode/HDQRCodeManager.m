@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <Photos/Photos.h>
 #import "HDQRCodeManager.h"
+#import "UIImage+Editer.h"
 
-@interface HDQRCodeManager() <AVCaptureMetadataOutputObjectsDelegate>
+@interface HDQRCodeManager() <AVCaptureMetadataOutputObjectsDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+@property (nonatomic, strong) UIViewController *currentVC;
 @end
 
 @implementation HDQRCodeManager
@@ -54,6 +57,8 @@
     CGImageRelease(bitmapImage);
     return [UIImage imageWithCGImage:scaledImage];
 }
+
+#pragma mark -- 从摄像头获取二维码 --
 
 - (void)HD_setupSessionPreset:(NSString *)sessionPreset metadataObjectTypes:(NSArray *)metadataObjectTypes currentController:(UIViewController *)currentController {
     // 1、获取摄像设备
@@ -132,5 +137,82 @@
 void soundCompleteCallback(SystemSoundID soundID, void *clientData){
     
 }
+#pragma mark -- 从相册读取二维码 --
+
+- (void)HD_readQRCodeFromAlbumWithCurrentController:(UIViewController *)currentController {
+    self.currentVC = currentController;
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if (device) {
+        PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+        if (status == PHAuthorizationStatusNotDetermined) {
+            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+                if (status == PHAuthorizationStatusAuthorized) {
+                    self.isPHAuthorization = YES;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+                        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                        imagePicker.delegate = self;
+                        [self.currentVC presentViewController:imagePicker animated:YES completion:nil];
+                    });
+                }
+            }];
+        } else if (status == PHAuthorizationStatusAuthorized) {
+            UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+            imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            imagePicker.delegate = self;
+            [self.currentVC presentViewController:imagePicker animated:YES completion:nil];
+        } else if (status == PHAuthorizationStatusDenied) { // 用户拒绝当前应用访问相册
+            NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+            NSString *appName = [infoDict objectForKey:@"CFBundleName"];
+            NSString *message = [NSString stringWithFormat:@"请前往 -> [设置 - 隐私 - 照片 - %@ 打开访问开关", appName];
+            UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:message preferredStyle:(UIAlertControllerStyleAlert)];
+            UIAlertAction *alertA = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            
+            [alertC addAction:alertA];
+            [self.currentVC presentViewController:alertC animated:YES completion:nil];
+        } else if (status == PHAuthorizationStatusRestricted) {
+            UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"由于系统原因, 无法访问相册" preferredStyle:(UIAlertControllerStyleAlert)];
+            UIAlertAction *alertA = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            [alertC addAction:alertA];
+            [self.currentVC presentViewController:alertC animated:YES completion:nil];
+        }
+    }
+}
+
+#pragma mark - - - UIImagePickerControllerDelegate
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self.currentVC dismissViewControllerAnimated:YES completion:nil];
+    HDQRCodeManager *qrSelf = [HDQRCodeManager shareInstance];
+    if (qrSelf.QRAlbumCodeDelegate && [qrSelf.QRAlbumCodeDelegate respondsToSelector:@selector(QRCodeAlbumManagerDidCancel)]) {
+        [qrSelf.QRAlbumCodeDelegate QRCodeAlbumManagerDidCancel];
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    UIImage *image = [UIImage imageSizeWithScreenImage:info[UIImagePickerControllerOriginalImage]];
+    CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{CIDetectorAccuracy:CIDetectorAccuracyHigh}];
+    NSArray *features = [detector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];
+    if (features.count == 0) {
+        [self.currentVC dismissViewControllerAnimated:YES completion:nil];
+        return;
+    } else {
+        NSString *resultStr = @"";
+        for (CIQRCodeFeature *feature in features) {
+            resultStr = feature.messageString;
+        }
+        [self.currentVC dismissViewControllerAnimated:YES completion:nil];
+        HDQRCodeManager *qrSelf = [HDQRCodeManager shareInstance];
+        if (qrSelf.QRAlbumCodeDelegate && [qrSelf.QRAlbumCodeDelegate respondsToSelector:@selector(QRCodeAlbumManagerDidFinishPickingMediaWithResult:)]) {
+            [qrSelf.QRAlbumCodeDelegate QRCodeAlbumManagerDidFinishPickingMediaWithResult:resultStr];
+        }
+    }
+}
+
+
+
 
 @end
