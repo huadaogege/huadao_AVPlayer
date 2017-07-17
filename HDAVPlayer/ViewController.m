@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"视频列表";
     self.fileListViewController = [[HDFileListViewController alloc] init];
     [self initRootViewController:self.fileListViewController];
     [self initControlBarItem];
@@ -36,7 +37,6 @@
     [rightlView addGestureRecognizer:closeGesture];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftlView];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightlView];
-    
 }
 
 - (void)openSecrect {
