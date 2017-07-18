@@ -11,6 +11,8 @@
 #import "HDQRCodeScanViewController.h"
 #import "HDQRCodeShowViewController.h"
 #import "HDVoiceSpeakViewController.h"
+#import "HDClientViewController.h"
+#import "HDServerViewController.h"
 
 #define Cell_Identifier @"__funclistcellidentifier"
 
@@ -28,7 +30,7 @@
 
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithObjects:@"视频", @"生成二维码",@"扫描二维码", @"语音播报", nil];
+        _dataArray = [NSMutableArray arrayWithObjects:@"视频", @"生成二维码",@"扫描二维码", @"语音播报",@"通讯Server", @"通讯Client", nil];
     }
     return _dataArray;
 }
@@ -64,6 +66,10 @@
         pushViewController = [[HDQRCodeScanViewController alloc] init];
     } else if (indexPath.row == 3) {
         pushViewController = [[HDVoiceSpeakViewController alloc] init];
+    } else if (indexPath.row == 4) {
+        pushViewController = [[HDServerViewController alloc] init];
+    } else if (indexPath.row == 5) {
+        pushViewController = [[HDClientViewController alloc] init];
     }
     if (pushViewController) {
         [self.vieController.navigationController pushViewController:pushViewController animated:YES];

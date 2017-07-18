@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		E910A15F1F0E7DD000C9D8C9 /* HDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E910A15E1F0E7DD000C9D8C9 /* HDProgressView.m */; };
 		E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F101F1DDF1700D95557 /* UIAlertController+Editer.m */; };
+		E91A3F1A1F1E07BE00D95557 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F171F1E07BE00D95557 /* GCDAsyncSocket.m */; };
+		E91A3F1B1F1E07BE00D95557 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F191F1E07BE00D95557 /* GCDAsyncUdpSocket.m */; };
+		E91A3F201F1E07C600D95557 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F1D1F1E07C600D95557 /* AsyncSocket.m */; };
+		E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F1F1F1E07C600D95557 /* AsyncUdpSocket.m */; };
+		E91A3F261F1E094000D95557 /* HDClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F241F1E094000D95557 /* HDClientViewController.m */; };
+		E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F251F1E094000D95557 /* HDClientViewController.xib */; };
+		E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F291F1E095600D95557 /* HDServerViewController.m */; };
+		E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */; };
 		E992B6BA1F0CC0EE0002292C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6B91F0CC0EE0002292C /* libz.tbd */; };
 		E992B6BC1F0CC0F30002292C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */; };
 		E992B6BE1F0CC0F80002292C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BD1F0CC0F80002292C /* SystemConfiguration.framework */; };
@@ -181,6 +189,21 @@
 		E910A15E1F0E7DD000C9D8C9 /* HDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProgressView.m; sourceTree = "<group>"; };
 		E91A3F0F1F1DDF1700D95557 /* UIAlertController+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Editer.h"; sourceTree = "<group>"; };
 		E91A3F101F1DDF1700D95557 /* UIAlertController+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Editer.m"; sourceTree = "<group>"; };
+		E91A3F151F1E07B800D95557 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		E91A3F161F1E07BE00D95557 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E91A3F171F1E07BE00D95557 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		E91A3F181F1E07BE00D95557 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		E91A3F191F1E07BE00D95557 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		E91A3F1C1F1E07C600D95557 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		E91A3F1D1F1E07C600D95557 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		E91A3F1E1F1E07C600D95557 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		E91A3F1F1F1E07C600D95557 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		E91A3F231F1E094000D95557 /* HDClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDClientViewController.h; sourceTree = "<group>"; };
+		E91A3F241F1E094000D95557 /* HDClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDClientViewController.m; sourceTree = "<group>"; };
+		E91A3F251F1E094000D95557 /* HDClientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDClientViewController.xib; sourceTree = "<group>"; };
+		E91A3F281F1E095600D95557 /* HDServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDServerViewController.h; sourceTree = "<group>"; };
+		E91A3F291F1E095600D95557 /* HDServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDServerViewController.m; sourceTree = "<group>"; };
+		E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDServerViewController.xib; sourceTree = "<group>"; };
 		E97E7EC51F0BD796002A0356 /* HDAVPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDAVPlayer.entitlements; sourceTree = "<group>"; };
 		E992B6B91F0CC0EE0002292C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -518,6 +541,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E91A3F121F1E06FF00D95557 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				E91A3F151F1E07B800D95557 /* CocoaAsyncSocket.h */,
+				E91A3F141F1E077A00D95557 /* GCD */,
+				E91A3F131F1E077600D95557 /* RunLoop */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		E91A3F131F1E077600D95557 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				E91A3F1C1F1E07C600D95557 /* AsyncSocket.h */,
+				E91A3F1D1F1E07C600D95557 /* AsyncSocket.m */,
+				E91A3F1E1F1E07C600D95557 /* AsyncUdpSocket.h */,
+				E91A3F1F1F1E07C600D95557 /* AsyncUdpSocket.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		E91A3F141F1E077A00D95557 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				E91A3F161F1E07BE00D95557 /* GCDAsyncSocket.h */,
+				E91A3F171F1E07BE00D95557 /* GCDAsyncSocket.m */,
+				E91A3F181F1E07BE00D95557 /* GCDAsyncUdpSocket.h */,
+				E91A3F191F1E07BE00D95557 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		E91A3F221F1E089100D95557 /* Communite */ = {
+			isa = PBXGroup;
+			children = (
+				E91A3F231F1E094000D95557 /* HDClientViewController.h */,
+				E91A3F241F1E094000D95557 /* HDClientViewController.m */,
+				E91A3F251F1E094000D95557 /* HDClientViewController.xib */,
+				E91A3F281F1E095600D95557 /* HDServerViewController.h */,
+				E91A3F291F1E095600D95557 /* HDServerViewController.m */,
+				E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */,
+			);
+			path = Communite;
+			sourceTree = "<group>";
+		};
 		E992B6B81F0CC0EE0002292C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -682,6 +750,7 @@
 		E9B6EC621F0C74080072938A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				E91A3F121F1E06FF00D95557 /* CocoaAsyncSocket */,
 				E992B7291F0CC9030002292C /* GTMBase64 */,
 				E9B6ECAF1F0C793A0072938A /* AFNetworking */,
 				E9B6ECAE1F0C79370072938A /* AppPrivateAPI */,
@@ -721,6 +790,7 @@
 				E9B6EC681F0C75450072938A /* HDViewController.m */,
 				E9A188EE1F1C9ECF00640D53 /* HDFuncViewController.h */,
 				E9A188EF1F1C9ECF00640D53 /* HDFuncViewController.m */,
+				E91A3F221F1E089100D95557 /* Communite */,
 				E9A189171F1CA7F000640D53 /* VoiceSpeak */,
 				E9A189011F1CA39F00640D53 /* VideoPlayer */,
 				E9A189001F1CA39D00640D53 /* QRCode */,
@@ -1332,10 +1402,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E556EE1F0BD3F900567110 /* LaunchScreen.storyboard in Resources */,
+				E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */,
 				E9A189131F1CA6EB00640D53 /* HDQRCode.bundle in Resources */,
 				E9A1890F1F1CA45100640D53 /* HDQRCodeScanViewController.xib in Resources */,
 				E9A189111F1CA45100640D53 /* HDQRCodeShowViewController.xib in Resources */,
 				E9A188EA1F1C600F00640D53 /* RequestList.plist in Resources */,
+				E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */,
 				E9A1891C1F1CA83000640D53 /* HDVoiceSpeakViewController.xib in Resources */,
 				E9E556EB1F0BD3F900567110 /* Assets.xcassets in Resources */,
 				E9B6ED121F0C7ADB0072938A /* MJRefresh.bundle in Resources */,
@@ -1364,12 +1436,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91A3F201F1E07C600D95557 /* AsyncSocket.m in Sources */,
 				E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */,
 				E9B6EDB21F0C7CA70072938A /* ioapi.c in Sources */,
 				E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */,
 				E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */,
 				E9B6ED7A1F0C7C5F0072938A /* SDWebImageDownloaderOperation.m in Sources */,
 				E9B6ECF01F0C7AB80072938A /* JSONAPI.m in Sources */,
+				E91A3F1A1F1E07BE00D95557 /* GCDAsyncSocket.m in Sources */,
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,
 				E9B6EDDC1F0C7CE40072938A /* SSDiskInfo.m in Sources */,
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
@@ -1437,6 +1511,7 @@
 				E9B6ED241F0C7B9B0072938A /* MJRefreshBackFooter.m in Sources */,
 				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E9B6EDD71F0C7CE40072938A /* SSAccelerometerInfo.m in Sources */,
+				E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */,
 				E9B6ED231F0C7B9B0072938A /* MJRefreshAutoFooter.m in Sources */,
 				E9B6EDA41F0C7C9F0072938A /* fileenc.c in Sources */,
 				E9B6ED7C1F0C7C5F0072938A /* SDWebImagePrefetcher.m in Sources */,
@@ -1458,12 +1533,14 @@
 				E9B6ED141F0C7ADB0072938A /* UIScrollView+MJExtension.m in Sources */,
 				E9B6ED4F1F0C7C510072938A /* JRSwizzle.m in Sources */,
 				E9B6EDF91F0C7CEE0072938A /* AFAutoPurgingImageCache.m in Sources */,
+				E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */,
 				E9B6EDFC1F0C7CEE0072938A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */,
 				E9B6EDE31F0C7CE40072938A /* SSProcessorInfo.m in Sources */,
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
 				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,
 				E9A189071F1CA44800640D53 /* HDPlayerViewController.m in Sources */,
+				E91A3F261F1E094000D95557 /* HDClientViewController.m in Sources */,
 				E992B6C51F0CC2150002292C /* HDDatabaseManager.m in Sources */,
 				E9B6ECBF1F0C7A210072938A /* AFSecurityPolicy.m in Sources */,
 				E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */,
@@ -1487,6 +1564,7 @@
 				E9B6ED791F0C7C5F0072938A /* SDWebImageDownloader.m in Sources */,
 				E9B6ED7F1F0C7C5F0072938A /* UIImage+MultiFormat.m in Sources */,
 				E9B6ECE41F0C7AA80072938A /* JSONModelArray.m in Sources */,
+				E91A3F1B1F1E07BE00D95557 /* GCDAsyncUdpSocket.m in Sources */,
 				E9B6EDB51F0C7CA70072938A /* zip.c in Sources */,
 				E9A1892A1F1CD87000640D53 /* HDViewModel.m in Sources */,
 				E9B6EDD81F0C7CE40072938A /* SSAccessoryInfo.m in Sources */,
