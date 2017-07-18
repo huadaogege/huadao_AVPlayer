@@ -9,6 +9,11 @@
 #ifndef Common_Macro_h
 #define Common_Macro_h
 
+#ifdef __OBJC__
+
+#import "LogUtil.h"
+#endif
+
 #define Screen_height [UIScreen mainScreen].bounds.size.height
 #define Screen_width [UIScreen mainScreen].bounds.size.width
 
@@ -19,6 +24,7 @@
 #define WeakSelf __weak typeof(self) weakSelf = self;
 
 #define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+
 
 
 #endif /* Common_Macro_h */

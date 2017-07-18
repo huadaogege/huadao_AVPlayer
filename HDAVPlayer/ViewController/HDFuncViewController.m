@@ -28,7 +28,6 @@
 
 #pragma mark -- UITableViewDelegate, UITableViewDataSource --
 
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [self.funcViewModel numberOfSectionsInTableView:tableView];
 }

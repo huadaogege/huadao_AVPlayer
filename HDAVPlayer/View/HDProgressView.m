@@ -82,10 +82,7 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-//    CGFloat progressView = self.controlDot.frame.origin.x / self.progressView.frame.size.width;
-//    if (self.progressDelegate && [self.progressDelegate respondsToSelector:@selector(progressMoveToPoint:)]) {
-//        [self.progressDelegate progressMoveToPoint:progressView];
-//    }
+
 }
 
 

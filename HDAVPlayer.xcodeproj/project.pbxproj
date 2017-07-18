@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E910A15F1F0E7DD000C9D8C9 /* HDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E910A15E1F0E7DD000C9D8C9 /* HDProgressView.m */; };
+		E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F101F1DDF1700D95557 /* UIAlertController+Editer.m */; };
 		E992B6BA1F0CC0EE0002292C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6B91F0CC0EE0002292C /* libz.tbd */; };
 		E992B6BC1F0CC0F30002292C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */; };
 		E992B6BE1F0CC0F80002292C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BD1F0CC0F80002292C /* SystemConfiguration.framework */; };
@@ -178,6 +179,8 @@
 /* Begin PBXFileReference section */
 		E910A15D1F0E7DD000C9D8C9 /* HDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProgressView.h; sourceTree = "<group>"; };
 		E910A15E1F0E7DD000C9D8C9 /* HDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProgressView.m; sourceTree = "<group>"; };
+		E91A3F0F1F1DDF1700D95557 /* UIAlertController+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Editer.h"; sourceTree = "<group>"; };
+		E91A3F101F1DDF1700D95557 /* UIAlertController+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Editer.m"; sourceTree = "<group>"; };
 		E97E7EC51F0BD796002A0356 /* HDAVPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDAVPlayer.entitlements; sourceTree = "<group>"; };
 		E992B6B91F0CC0EE0002292C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -629,6 +632,8 @@
 				E9A189251F1CD2DA00640D53 /* UIImage+Editer.m */,
 				E99FFC511F1D0B5000807899 /* NSString+Editer.h */,
 				E99FFC521F1D0B5000807899 /* NSString+Editer.m */,
+				E91A3F0F1F1DDF1700D95557 /* UIAlertController+Editer.h */,
+				E91A3F101F1DDF1700D95557 /* UIAlertController+Editer.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1454,6 +1459,7 @@
 				E9B6ED4F1F0C7C510072938A /* JRSwizzle.m in Sources */,
 				E9B6EDF91F0C7CEE0072938A /* AFAutoPurgingImageCache.m in Sources */,
 				E9B6EDFC1F0C7CEE0072938A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */,
 				E9B6EDE31F0C7CE40072938A /* SSProcessorInfo.m in Sources */,
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
 				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,

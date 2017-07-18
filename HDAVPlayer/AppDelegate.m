@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "UUMarsXogManager.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +20,7 @@
     ViewController *viewController = [[ViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = navigationController;
+    [UUMarsXogManager initXlogerFilePath];
     return YES;
 }
 
@@ -49,6 +51,7 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    [UUMarsXogManager appenderclose];
 }
 
 

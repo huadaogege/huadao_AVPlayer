@@ -12,11 +12,6 @@
 
 @interface HDPlayerViewModel : HDViewModel
 
-@property (strong, nonatomic) UIButton *pauseButton;
-@property (strong, nonatomic) UIButton *playButton;
-@property (strong, nonatomic) UIButton *stopButton;
-@property (strong, nonatomic) UIView *bottomView;
-@property (strong, nonatomic) NSString *filePath;
 @property (strong, nonatomic) AVPlayer *player;
 @property (assign, nonatomic) Float64 totalTime;
 @property (strong, nonatomic) HDProgressView *progressView;
@@ -28,9 +23,7 @@
 
 - (void)initWithControlller:(UIViewController *)controller;
 
-- (void)initProgressView;
-
-- (void)initPlayerWithController:(UIViewController *)viewController;
+- (void)initPlayerWithController:(UIViewController *)viewController filePath:(NSString *)filePath;
 
 - (void)statusBarOrientationChange:(NSNotification *)notification;
 

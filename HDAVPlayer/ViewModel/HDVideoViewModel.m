@@ -11,6 +11,7 @@
 #import "HDFileViewCell.h"
 #import "HDPlayerViewController.h"
 #import "MJRefresh.h"
+#import "UIAlertController+Editer.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
@@ -77,18 +78,21 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"呕血提醒" message:@"确定不要了？" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *actionDone = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            HDFileModel *model = self.dataArray[indexPath.row];
-            NSString *filePath = model.filePath;
-            [[HDFileManager shareInstance].fileManager removeItemAtPath:filePath error:nil];
-            [self.dataArray removeObject:model];
-            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        UIAlertController *alertController = [UIAlertController alertViewControllerWithTile:@"呕血提示"
+                                                                                    message:@"确定不要了？"
+                                                                                  leftTitle:@"不要"
+                                                                                 rightTitle:@"要"
+                                                                                     hander:^(clickIndex index) {
+            if (index == leftIndex) {
+                HDFileModel *model = self.dataArray[indexPath.row];
+                NSString *filePath = model.filePath;
+                [[HDFileManager shareInstance].fileManager removeItemAtPath:filePath error:nil];
+                [self.dataArray removeObject:model];
+                [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            } else {
+                [self.tableView reloadData];
+            }
         }];
-        UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        }];
-        [alertController addAction:actionDone];
-        [alertController addAction:actionCancel];
         [self.vieController.navigationController presentViewController:alertController animated:YES completion:nil];
     }
 }

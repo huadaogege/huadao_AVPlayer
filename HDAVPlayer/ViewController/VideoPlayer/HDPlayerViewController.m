@@ -31,8 +31,7 @@
  @param filePath 播放路径
  */
 - (void)playWithFilePath:(NSString *)filePath {
-    self.playerViewModel.filePath = filePath;
-    [self.playerViewModel initPlayerWithController:self];
+    [self.playerViewModel initPlayerWithController:self filePath:filePath];
     [self.playerViewModel.player play];
 }
 

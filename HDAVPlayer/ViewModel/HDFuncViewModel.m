@@ -55,19 +55,23 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *pushViewController = nil;
     if (indexPath.row == 0) {
-        HDFileListViewController *fileListViewController = [[HDFileListViewController alloc] init];
-        [self.vieController.navigationController pushViewController:fileListViewController animated:YES];
+        pushViewController = [[HDFileListViewController alloc] init];
     } else if (indexPath.row == 1) {
-        HDQRCodeShowViewController *QRCodeShowViewController = [[HDQRCodeShowViewController alloc] init];
-        [self.vieController.navigationController pushViewController:QRCodeShowViewController animated:YES];
+        pushViewController = [[HDQRCodeShowViewController alloc] init];
     } else if (indexPath.row == 2) {
-        HDQRCodeScanViewController *QRCodeScanViewController = [[HDQRCodeScanViewController alloc] init];
-        [self.vieController.navigationController pushViewController:QRCodeScanViewController animated:YES];
+        pushViewController = [[HDQRCodeScanViewController alloc] init];
     } else if (indexPath.row == 3) {
-        HDVoiceSpeakViewController *VoiceSpeakViewController = [[HDVoiceSpeakViewController alloc] init];
-        [self.vieController.navigationController pushViewController:VoiceSpeakViewController animated:YES];
+        pushViewController = [[HDVoiceSpeakViewController alloc] init];
     }
+    if (pushViewController) {
+        [self.vieController.navigationController pushViewController:pushViewController animated:YES];
+    }
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
 }
 
 
