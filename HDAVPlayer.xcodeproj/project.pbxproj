@@ -165,6 +165,13 @@
 		E9E556EE1F0BD3F900567110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E556EC1F0BD3F900567110 /* LaunchScreen.storyboard */; };
 		E9E556F91F0BD3F900567110 /* HDAVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556F81F0BD3F900567110 /* HDAVPlayerTests.m */; };
 		E9E557041F0BD3F900567110 /* HDAVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E557031F0BD3F900567110 /* HDAVPlayerUITests.m */; };
+		E9E6CB641F31D73C009B3934 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB5A1F31D73C009B3934 /* FMDatabase.m */; };
+		E9E6CB651F31D73C009B3934 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB5C1F31D73C009B3934 /* FMDatabaseAdditions.m */; };
+		E9E6CB661F31D73C009B3934 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB5E1F31D73C009B3934 /* FMDatabasePool.m */; };
+		E9E6CB671F31D73C009B3934 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB601F31D73C009B3934 /* FMDatabaseQueue.m */; };
+		E9E6CB681F31D73C009B3934 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB631F31D73C009B3934 /* FMResultSet.m */; };
+		E9E6CB6C1F31D99B009B3934 /* HDFmdbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB6B1F31D99B009B3934 /* HDFmdbManager.m */; };
+		E9E6CB6E1F31E0A5009B3934 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E6CB6D1F31E0A5009B3934 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -509,6 +516,20 @@
 		E9E556FF1F0BD3F900567110 /* HDAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E557031F0BD3F900567110 /* HDAVPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAVPlayerUITests.m; sourceTree = "<group>"; };
 		E9E557051F0BD3F900567110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E6CB591F31D73C009B3934 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E9E6CB5A1F31D73C009B3934 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E9E6CB5B1F31D73C009B3934 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E9E6CB5C1F31D73C009B3934 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E9E6CB5D1F31D73C009B3934 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E9E6CB5E1F31D73C009B3934 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E9E6CB5F1F31D73C009B3934 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E9E6CB601F31D73C009B3934 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E9E6CB611F31D73C009B3934 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E9E6CB621F31D73C009B3934 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E9E6CB631F31D73C009B3934 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E9E6CB6A1F31D99B009B3934 /* HDFmdbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFmdbManager.h; sourceTree = "<group>"; };
+		E9E6CB6B1F31D99B009B3934 /* HDFmdbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFmdbManager.m; sourceTree = "<group>"; };
+		E9E6CB6D1F31E0A5009B3934 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +537,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E6CB6E1F31E0A5009B3934 /* libsqlite3.0.tbd in Frameworks */,
 				E992B6C01F0CC0FE0002292C /* UIKit.framework in Frameworks */,
 				E992B6BE1F0CC0F80002292C /* SystemConfiguration.framework in Frameworks */,
 				E992B6BC1F0CC0F30002292C /* CoreTelephony.framework in Frameworks */,
@@ -589,6 +611,7 @@
 		E992B6B81F0CC0EE0002292C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9E6CB6D1F31E0A5009B3934 /* libsqlite3.0.tbd */,
 				E992B6BF1F0CC0FE0002292C /* UIKit.framework */,
 				E992B6BD1F0CC0F80002292C /* SystemConfiguration.framework */,
 				E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */,
@@ -750,6 +773,7 @@
 		E9B6EC621F0C74080072938A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				E9E6CB581F31D6E7009B3934 /* Fmdb */,
 				E91A3F121F1E06FF00D95557 /* CocoaAsyncSocket */,
 				E992B7291F0CC9030002292C /* GTMBase64 */,
 				E9B6ECAF1F0C793A0072938A /* AFNetworking */,
@@ -774,6 +798,7 @@
 			children = (
 				E9A189201F1CCFA100640D53 /* HDConfig.h */,
 				E9A189211F1CCFA100640D53 /* HDConfig.m */,
+				E9E6CB691F31D957009B3934 /* FmdbManager */,
 				E9A188FF1F1CA34D00640D53 /* VoiceSpeak */,
 				E9A188FB1F1CA30300640D53 /* QRCode */,
 				E9A188E21F1C5C0E00640D53 /* Request */,
@@ -1287,6 +1312,33 @@
 			path = HDAVPlayerUITests;
 			sourceTree = "<group>";
 		};
+		E9E6CB581F31D6E7009B3934 /* Fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				E9E6CB591F31D73C009B3934 /* FMDatabase.h */,
+				E9E6CB5A1F31D73C009B3934 /* FMDatabase.m */,
+				E9E6CB5B1F31D73C009B3934 /* FMDatabaseAdditions.h */,
+				E9E6CB5C1F31D73C009B3934 /* FMDatabaseAdditions.m */,
+				E9E6CB5D1F31D73C009B3934 /* FMDatabasePool.h */,
+				E9E6CB5E1F31D73C009B3934 /* FMDatabasePool.m */,
+				E9E6CB5F1F31D73C009B3934 /* FMDatabaseQueue.h */,
+				E9E6CB601F31D73C009B3934 /* FMDatabaseQueue.m */,
+				E9E6CB611F31D73C009B3934 /* FMDB.h */,
+				E9E6CB621F31D73C009B3934 /* FMResultSet.h */,
+				E9E6CB631F31D73C009B3934 /* FMResultSet.m */,
+			);
+			path = Fmdb;
+			sourceTree = "<group>";
+		};
+		E9E6CB691F31D957009B3934 /* FmdbManager */ = {
+			isa = PBXGroup;
+			children = (
+				E9E6CB6A1F31D99B009B3934 /* HDFmdbManager.h */,
+				E9E6CB6B1F31D99B009B3934 /* HDFmdbManager.m */,
+			);
+			path = FmdbManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1463,6 +1515,7 @@
 				E9B6EE011F0C7CEE0072938A /* UIWebView+AFNetworking.m in Sources */,
 				E9B6ED501F0C7C510072938A /* RDVTabBar.m in Sources */,
 				E9B6ED821F0C7C5F0072938A /* UIImageView+WebCache.m in Sources */,
+				E9E6CB641F31D73C009B3934 /* FMDatabase.m in Sources */,
 				E9E556E31F0BD3F900567110 /* ViewController.m in Sources */,
 				E9B6ED3B1F0C7C390072938A /* MJRefreshAutoGifFooter.m in Sources */,
 				E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */,
@@ -1524,10 +1577,12 @@
 				E9B6ED071F0C7ACF0072938A /* MBProgressHUD.m in Sources */,
 				E9B6ECC21F0C7A210072938A /* AFURLSessionManager.m in Sources */,
 				E9B6ED251F0C7B9B0072938A /* MJRefreshComponent.m in Sources */,
+				E9E6CB671F31D73C009B3934 /* FMDatabaseQueue.m in Sources */,
 				E9B6ED021F0C7AC80072938A /* LogHelper.mm in Sources */,
 				E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */,
 				E9B6EDFA1F0C7CEE0072938A /* AFImageDownloader.m in Sources */,
 				E9A189061F1CA44800640D53 /* HDFileListViewController.m in Sources */,
+				E9E6CB661F31D73C009B3934 /* FMDatabasePool.m in Sources */,
 				E9B6ED811F0C7C5F0072938A /* UIImageView+HighlightedWebCache.m in Sources */,
 				E9B6EDE21F0C7CE40072938A /* SSProcessInfo.m in Sources */,
 				E9B6ED141F0C7ADB0072938A /* UIScrollView+MJExtension.m in Sources */,
@@ -1550,6 +1605,7 @@
 				E9A188F01F1C9ECF00640D53 /* HDFuncViewController.m in Sources */,
 				E9B6EDA11F0C7C9F0072938A /* aeskey.c in Sources */,
 				E9B6ECF81F0C7ABF0072938A /* JSONValueTransformer.m in Sources */,
+				E9E6CB651F31D73C009B3934 /* FMDatabaseAdditions.m in Sources */,
 				E9B6ECD51F0C7A400072938A /* JSBadgeView.m in Sources */,
 				E9B6EDDB1F0C7CE40072938A /* SSCarrierInfo.m in Sources */,
 				E9B6EDB81F0C7CB10072938A /* SystemServices.m in Sources */,
@@ -1558,6 +1614,7 @@
 				E9B6ED741F0C7C5F0072938A /* MKAnnotationView+WebCache.m in Sources */,
 				E9B6ED311F0C7BFD0072938A /* MJRefreshNormalHeader.m in Sources */,
 				E9B6EDE11F0C7CE40072938A /* SSNetworkInfo.m in Sources */,
+				E9E6CB6C1F31D99B009B3934 /* HDFmdbManager.m in Sources */,
 				E9B6EDB41F0C7CA70072938A /* unzip.c in Sources */,
 				E9B6EDDE1F0C7CE40072938A /* SSJailbreakCheck.m in Sources */,
 				E9B6ED011F0C7AC80072938A /* log_crypt.cc in Sources */,
@@ -1566,6 +1623,7 @@
 				E9B6ECE41F0C7AA80072938A /* JSONModelArray.m in Sources */,
 				E91A3F1B1F1E07BE00D95557 /* GCDAsyncUdpSocket.m in Sources */,
 				E9B6EDB51F0C7CA70072938A /* zip.c in Sources */,
+				E9E6CB681F31D73C009B3934 /* FMResultSet.m in Sources */,
 				E9A1892A1F1CD87000640D53 /* HDViewModel.m in Sources */,
 				E9B6EDD81F0C7CE40072938A /* SSAccessoryInfo.m in Sources */,
 				E9B6ED781F0C7C5F0072938A /* SDWebImageDecoder.m in Sources */,
@@ -1736,6 +1794,7 @@
 				INFOPLIST_FILE = HDAVPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1757,6 +1816,7 @@
 				INFOPLIST_FILE = HDAVPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HDFuncViewController.h"
 #import "HDConfig.h"
+#import "HDFmdbManager.h"
 @interface ViewController ()
 
 @property (nonatomic, strong)NSString *target;
@@ -22,6 +23,9 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
+    [[HDFmdbManager shareInstance] initDatabase];
+    [[HDFmdbManager shareInstance] insert];
+    [[HDFmdbManager shareInstance] query];
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {
