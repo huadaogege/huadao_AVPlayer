@@ -8,6 +8,8 @@
 
 #import "HDFuncViewController.h"
 #import "HDFuncViewModel.h"
+#import "HDJSONRequest.h"
+#import "HDRequest.h"
 
 #define Cell_Identifier @"__funclistcellidentifier"
 
@@ -24,6 +26,12 @@
     self.funcViewModel = [[HDFuncViewModel alloc] init];
     self.funcViewModel.vieController = self;
     [self.view addSubview:self.funcViewModel.tableView];
+    HDJSONRequest*request = (HDJSONRequest *)[HDRequest requestWithName:@"jsonRequest"];
+    request.delegate = self;
+//    request.httpBody = @{@"name":@"cuiyuguan"};
+    request.didFinishSelector = @selector(jsonDidFinishSelector:);
+    request.didFailSelector = @selector(jsonDidFailSelector:);
+    [request start];
 }
 
 #pragma mark -- UITableViewDelegate, UITableViewDataSource --
@@ -46,6 +54,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.funcViewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
+}
+
+- (void)jsonDidFinishSelector:(HDRequest *)request {
+    NSLog(@"%@", request.result);
+}
+
+- (void)jsonDidFailSelector:(HDRequest *)request {
+    NSLog(@"%@", request.result);
 }
 
 - (void)didReceiveMemoryWarning {

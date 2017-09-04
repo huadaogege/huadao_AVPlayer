@@ -155,7 +155,7 @@ static NSString *__base_url;
     AFHTTPRequestSerializer *request = [self requestSerializer];
     manager.requestSerializer = request;
     manager.responseSerializer = [self serializer];
-    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes  setByAddingObjectsFromArray:@[@"text/html"]];
+    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes  setByAddingObjectsFromArray:@[@"text/html", @"text/plain"]];
     
     AFSecurityPolicy *securityPolicy = nil;
     

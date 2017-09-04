@@ -15,14 +15,14 @@
 }
 
 - (HDRequestMethod)requestMethod{
-    return HDRequestMethodPost;
+    return HDRequestMethodGet;
 }
 
 - (NSString *)serviceURLSuffix{
-    return @"/ios/test/test.json";
+    return @"/huadao/hua/login?name=cui";
 }
 
 - (NSString *)baseURLString{
-    return @"http://192.168.3.195";
+    return @"http://192.168.0.100:8080";
 }
 @end

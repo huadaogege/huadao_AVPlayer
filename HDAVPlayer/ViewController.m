@@ -11,6 +11,8 @@
 #import "HDConfig.h"
 @interface ViewController ()
 
+@property (nonatomic, strong)NSString *target;
+
 @end
 
 @implementation ViewController

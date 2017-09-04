@@ -13,6 +13,7 @@
 #import "HDVoiceSpeakViewController.h"
 #import "HDClientViewController.h"
 #import "HDServerViewController.h"
+#import "HDTableViewLinkController.h"
 
 #define Cell_Identifier @"__funclistcellidentifier"
 
@@ -30,7 +31,7 @@
 
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithObjects:@"视频", @"生成二维码",@"扫描二维码", @"语音播报",@"通讯Server", @"通讯Client", nil];
+        _dataArray = [NSMutableArray arrayWithObjects:@"视频", @"生成二维码",@"扫描二维码", @"语音播报",@"通讯Server", @"通讯Client", @"列表联动", nil];
     }
     return _dataArray;
 }
@@ -70,6 +71,8 @@
         pushViewController = [[HDServerViewController alloc] init];
     } else if (indexPath.row == 5) {
         pushViewController = [[HDClientViewController alloc] init];
+    } else if (indexPath.row == 6) {
+        pushViewController = [[HDTableViewLinkController alloc] init];
     }
     if (pushViewController) {
         [self.vieController.navigationController pushViewController:pushViewController animated:YES];
