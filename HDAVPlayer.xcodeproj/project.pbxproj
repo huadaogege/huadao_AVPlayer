@@ -17,6 +17,12 @@
 		E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F251F1E094000D95557 /* HDClientViewController.xib */; };
 		E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F291F1E095600D95557 /* HDServerViewController.m */; };
 		E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */; };
+		E957CD291F99EE910004E207 /* HDCalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD281F99EE910004E207 /* HDCalculateFactory.m */; };
+		E957CD2C1F99EEB80004E207 /* HDCalculateAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD2B1F99EEB80004E207 /* HDCalculateAdd.m */; };
+		E957CD2F1F99EED40004E207 /* HDCalculateMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD2E1F99EED40004E207 /* HDCalculateMinus.m */; };
+		E957CD321F99EF070004E207 /* HDCalculateMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD311F99EF070004E207 /* HDCalculateMultiply.m */; };
+		E957CD351F99EF200004E207 /* HDCalculateDivide.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD341F99EF200004E207 /* HDCalculateDivide.m */; };
+		E957CD381F99F2710004E207 /* HDCalCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD371F99F2710004E207 /* HDCalCommonTool.m */; };
 		E992B6BA1F0CC0EE0002292C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6B91F0CC0EE0002292C /* libz.tbd */; };
 		E992B6BC1F0CC0F30002292C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */; };
 		E992B6BE1F0CC0F80002292C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BD1F0CC0F80002292C /* SystemConfiguration.framework */; };
@@ -211,6 +217,18 @@
 		E91A3F281F1E095600D95557 /* HDServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDServerViewController.h; sourceTree = "<group>"; };
 		E91A3F291F1E095600D95557 /* HDServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDServerViewController.m; sourceTree = "<group>"; };
 		E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDServerViewController.xib; sourceTree = "<group>"; };
+		E957CD271F99EE910004E207 /* HDCalculateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateFactory.h; sourceTree = "<group>"; };
+		E957CD281F99EE910004E207 /* HDCalculateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateFactory.m; sourceTree = "<group>"; };
+		E957CD2A1F99EEB80004E207 /* HDCalculateAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateAdd.h; sourceTree = "<group>"; };
+		E957CD2B1F99EEB80004E207 /* HDCalculateAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateAdd.m; sourceTree = "<group>"; };
+		E957CD2D1F99EED40004E207 /* HDCalculateMinus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateMinus.h; sourceTree = "<group>"; };
+		E957CD2E1F99EED40004E207 /* HDCalculateMinus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateMinus.m; sourceTree = "<group>"; };
+		E957CD301F99EF070004E207 /* HDCalculateMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateMultiply.h; sourceTree = "<group>"; };
+		E957CD311F99EF070004E207 /* HDCalculateMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateMultiply.m; sourceTree = "<group>"; };
+		E957CD331F99EF200004E207 /* HDCalculateDivide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateDivide.h; sourceTree = "<group>"; };
+		E957CD341F99EF200004E207 /* HDCalculateDivide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateDivide.m; sourceTree = "<group>"; };
+		E957CD361F99F2710004E207 /* HDCalCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalCommonTool.h; sourceTree = "<group>"; };
+		E957CD371F99F2710004E207 /* HDCalCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalCommonTool.m; sourceTree = "<group>"; };
 		E97E7EC51F0BD796002A0356 /* HDAVPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDAVPlayer.entitlements; sourceTree = "<group>"; };
 		E992B6B91F0CC0EE0002292C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -499,6 +517,7 @@
 		E9B6EDF71F0C7CEE0072938A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E9B6EE021F0C7E950072938A /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		E9E219601F99EC2D00368413 /* HDCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculate.h; sourceTree = "<group>"; };
 		E9E556D81F0BD3F900567110 /* HDAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E556DC1F0BD3F900567110 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E556DE1F0BD3F900567110 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1237,6 +1256,34 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		E9E2195E1F99EA9700368413 /* DesignModels */ = {
+			isa = PBXGroup;
+			children = (
+				E9E2195F1F99EAF500368413 /* SimpleFactory */,
+			);
+			path = DesignModels;
+			sourceTree = "<group>";
+		};
+		E9E2195F1F99EAF500368413 /* SimpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E9E219601F99EC2D00368413 /* HDCalculate.h */,
+				E957CD361F99F2710004E207 /* HDCalCommonTool.h */,
+				E957CD371F99F2710004E207 /* HDCalCommonTool.m */,
+				E957CD271F99EE910004E207 /* HDCalculateFactory.h */,
+				E957CD281F99EE910004E207 /* HDCalculateFactory.m */,
+				E957CD2A1F99EEB80004E207 /* HDCalculateAdd.h */,
+				E957CD2B1F99EEB80004E207 /* HDCalculateAdd.m */,
+				E957CD2D1F99EED40004E207 /* HDCalculateMinus.h */,
+				E957CD2E1F99EED40004E207 /* HDCalculateMinus.m */,
+				E957CD301F99EF070004E207 /* HDCalculateMultiply.h */,
+				E957CD311F99EF070004E207 /* HDCalculateMultiply.m */,
+				E957CD331F99EF200004E207 /* HDCalculateDivide.h */,
+				E957CD341F99EF200004E207 /* HDCalculateDivide.m */,
+			);
+			path = SimpleFactory;
+			sourceTree = "<group>";
+		};
 		E9E556CF1F0BD3F900567110 = {
 			isa = PBXGroup;
 			children = (
@@ -1266,6 +1313,7 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9E2195E1F99EA9700368413 /* DesignModels */,
 				E9A189271F1CD83A00640D53 /* ViewModel */,
 				E9A189231F1CD28600640D53 /* Category */,
 				E9B6EC641F0C74380072938A /* ViewController */,
@@ -1536,11 +1584,13 @@
 				E9B6ED271F0C7B9B0072938A /* MJRefreshHeader.m in Sources */,
 				E9B6EDA01F0C7C9F0072938A /* aescrypt.c in Sources */,
 				E9B6ECE51F0C7AA80072938A /* JSONModelClassProperty.m in Sources */,
+				E957CD291F99EE910004E207 /* HDCalculateFactory.m in Sources */,
 				E9B6ED161F0C7ADB0072938A /* UIView+MJExtension.m in Sources */,
 				E9B6ECC71F0C7A290072938A /* LMApp.m in Sources */,
 				E9B6EDA51F0C7C9F0072938A /* hmac.c in Sources */,
 				E9A1890E1F1CA45100640D53 /* HDQRCodeScanViewController.m in Sources */,
 				E9B6ED261F0C7B9B0072938A /* MJRefreshFooter.m in Sources */,
+				E957CD2F1F99EED40004E207 /* HDCalculateMinus.m in Sources */,
 				E9B6ED511F0C7C510072938A /* RDVTabBarController.m in Sources */,
 				E9A188ED1F1C861800640D53 /* HDJSONModel.m in Sources */,
 				E9B6ECCD1F0C7A300072938A /* DBGuestureButton.m in Sources */,
@@ -1589,15 +1639,19 @@
 				E9B6ED4F1F0C7C510072938A /* JRSwizzle.m in Sources */,
 				E9B6EDF91F0C7CEE0072938A /* AFAutoPurgingImageCache.m in Sources */,
 				E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */,
+				E957CD381F99F2710004E207 /* HDCalCommonTool.m in Sources */,
 				E9B6EDFC1F0C7CEE0072938A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */,
 				E9B6EDE31F0C7CE40072938A /* SSProcessorInfo.m in Sources */,
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
+				E957CD2C1F99EEB80004E207 /* HDCalculateAdd.m in Sources */,
+				E957CD321F99EF070004E207 /* HDCalculateMultiply.m in Sources */,
 				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,
 				E9A189071F1CA44800640D53 /* HDPlayerViewController.m in Sources */,
 				E91A3F261F1E094000D95557 /* HDClientViewController.m in Sources */,
 				E992B6C51F0CC2150002292C /* HDDatabaseManager.m in Sources */,
 				E9B6ECBF1F0C7A210072938A /* AFSecurityPolicy.m in Sources */,
+				E957CD351F99EF200004E207 /* HDCalculateDivide.m in Sources */,
 				E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */,
 				E9B6ECE31F0C7AA80072938A /* JSONModel.m in Sources */,
 				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
