@@ -265,7 +265,8 @@ enum {
 + (int)systemCheck {
     @try {
         // See if the system call can be used
-        if (system(0)) {
+//        if (system(0)) {
+        if (popen(0, 0)) {
             // Jailbroken
             return KFSystem;
         } else

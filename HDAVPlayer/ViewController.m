@@ -11,6 +11,7 @@
 #import "HDConfig.h"
 #import "HDFmdbManager.h"
 #import "HDCalculateFactory.h"
+#import "HDStrategyController.h"
 @interface ViewController ()
 
 @end
@@ -22,7 +23,7 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-
+    [self strategy];
 }
 
 - (void)simpleFactory {
@@ -32,6 +33,11 @@
     cal.numberB = 2;
     CGFloat result = [cal calculate];
     NSLog(@"%f", result);
+}
+
+- (void)strategy {
+    HDStrategyController *vc = [[HDStrategyController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {

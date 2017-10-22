@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E901AB7C1F9CCC84000E7B1F /* HDUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E901AB7B1F9CCC84000E7B1F /* HDUITextField.m */; };
+		E901AB801F9CCD9C000E7B1F /* HDStrategyController.m in Sources */ = {isa = PBXBuildFile; fileRef = E901AB7E1F9CCD9C000E7B1F /* HDStrategyController.m */; };
+		E901AB811F9CCD9C000E7B1F /* HDStrategyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E901AB7F1F9CCD9C000E7B1F /* HDStrategyController.xib */; };
 		E910A15F1F0E7DD000C9D8C9 /* HDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E910A15E1F0E7DD000C9D8C9 /* HDProgressView.m */; };
+		E917ACE51F9C740A00CD9B0D /* HDInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E917ACE41F9C740A00CD9B0D /* HDInputValidator.m */; };
+		E917ACEB1F9CC5D900CD9B0D /* NumberInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E917ACEA1F9CC5D900CD9B0D /* NumberInputValidator.m */; };
+		E917ACEE1F9CC68700CD9B0D /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E917ACED1F9CC68700CD9B0D /* AlphaInputValidator.m */; };
 		E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F101F1DDF1700D95557 /* UIAlertController+Editer.m */; };
 		E91A3F1A1F1E07BE00D95557 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F171F1E07BE00D95557 /* GCDAsyncSocket.m */; };
 		E91A3F1B1F1E07BE00D95557 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F191F1E07BE00D95557 /* GCDAsyncUdpSocket.m */; };
@@ -198,8 +204,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E901AB7A1F9CCC84000E7B1F /* HDUITextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDUITextField.h; sourceTree = "<group>"; };
+		E901AB7B1F9CCC84000E7B1F /* HDUITextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDUITextField.m; sourceTree = "<group>"; };
+		E901AB7D1F9CCD9C000E7B1F /* HDStrategyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDStrategyController.h; sourceTree = "<group>"; };
+		E901AB7E1F9CCD9C000E7B1F /* HDStrategyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDStrategyController.m; sourceTree = "<group>"; };
+		E901AB7F1F9CCD9C000E7B1F /* HDStrategyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDStrategyController.xib; sourceTree = "<group>"; };
 		E910A15D1F0E7DD000C9D8C9 /* HDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProgressView.h; sourceTree = "<group>"; };
 		E910A15E1F0E7DD000C9D8C9 /* HDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProgressView.m; sourceTree = "<group>"; };
+		E917ACE31F9C740A00CD9B0D /* HDInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDInputValidator.h; sourceTree = "<group>"; };
+		E917ACE41F9C740A00CD9B0D /* HDInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDInputValidator.m; sourceTree = "<group>"; };
+		E917ACE91F9CC5D900CD9B0D /* NumberInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberInputValidator.h; sourceTree = "<group>"; };
+		E917ACEA1F9CC5D900CD9B0D /* NumberInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberInputValidator.m; sourceTree = "<group>"; };
+		E917ACEC1F9CC68700CD9B0D /* AlphaInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
+		E917ACED1F9CC68700CD9B0D /* AlphaInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
 		E91A3F0F1F1DDF1700D95557 /* UIAlertController+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Editer.h"; sourceTree = "<group>"; };
 		E91A3F101F1DDF1700D95557 /* UIAlertController+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Editer.m"; sourceTree = "<group>"; };
 		E91A3F151F1E07B800D95557 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
@@ -582,6 +599,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E917ACE21F9B9B3900CD9B0D /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				E917ACE31F9C740A00CD9B0D /* HDInputValidator.h */,
+				E917ACE41F9C740A00CD9B0D /* HDInputValidator.m */,
+				E917ACE91F9CC5D900CD9B0D /* NumberInputValidator.h */,
+				E917ACEA1F9CC5D900CD9B0D /* NumberInputValidator.m */,
+				E917ACEC1F9CC68700CD9B0D /* AlphaInputValidator.h */,
+				E917ACED1F9CC68700CD9B0D /* AlphaInputValidator.m */,
+				E901AB7A1F9CCC84000E7B1F /* HDUITextField.h */,
+				E901AB7B1F9CCC84000E7B1F /* HDUITextField.m */,
+				E901AB7D1F9CCD9C000E7B1F /* HDStrategyController.h */,
+				E901AB7E1F9CCD9C000E7B1F /* HDStrategyController.m */,
+				E901AB7F1F9CCD9C000E7B1F /* HDStrategyController.xib */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 		E91A3F121F1E06FF00D95557 /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
@@ -1259,6 +1294,7 @@
 		E9E2195E1F99EA9700368413 /* DesignModels */ = {
 			isa = PBXGroup;
 			children = (
+				E917ACE21F9B9B3900CD9B0D /* Strategy */,
 				E9E2195F1F99EAF500368413 /* SimpleFactory */,
 			);
 			path = DesignModels;
@@ -1509,6 +1545,7 @@
 				E9A188EA1F1C600F00640D53 /* RequestList.plist in Resources */,
 				E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */,
 				E9A1891C1F1CA83000640D53 /* HDVoiceSpeakViewController.xib in Resources */,
+				E901AB811F9CCD9C000E7B1F /* HDStrategyController.xib in Resources */,
 				E9E556EB1F0BD3F900567110 /* Assets.xcassets in Resources */,
 				E9B6ED121F0C7ADB0072938A /* MJRefresh.bundle in Resources */,
 				E9E556E61F0BD3F900567110 /* Main.storyboard in Resources */,
@@ -1554,6 +1591,7 @@
 				E9A1891B1F1CA83000640D53 /* HDVoiceSpeakViewController.m in Sources */,
 				E9B6EDE01F0C7CE40072938A /* SSMemoryInfo.m in Sources */,
 				E9B6ED751F0C7C5F0072938A /* NSData+ImageContentType.m in Sources */,
+				E917ACE51F9C740A00CD9B0D /* HDInputValidator.m in Sources */,
 				E9B6EDFB1F0C7CEE0072938A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E9B6ECF71F0C7ABF0072938A /* JSONKeyMapper.m in Sources */,
 				E9B6ED761F0C7C5F0072938A /* SDImageCache.m in Sources */,
@@ -1573,6 +1611,7 @@
 				E9B6ECC11F0C7A210072938A /* AFURLResponseSerialization.m in Sources */,
 				E9B6EDDF1F0C7CE40072938A /* SSLocalizationInfo.m in Sources */,
 				E9B6ED321F0C7BFD0072938A /* MJRefreshStateHeader.m in Sources */,
+				E917ACEB1F9CC5D900CD9B0D /* NumberInputValidator.m in Sources */,
 				E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */,
 				E9B6EDA81F0C7C9F0072938A /* sha1.c in Sources */,
 				E9B6ECF21F0C7AB80072938A /* JSONModel+networking.m in Sources */,
@@ -1631,11 +1670,14 @@
 				E9B6ED021F0C7AC80072938A /* LogHelper.mm in Sources */,
 				E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */,
 				E9B6EDFA1F0C7CEE0072938A /* AFImageDownloader.m in Sources */,
+				E901AB7C1F9CCC84000E7B1F /* HDUITextField.m in Sources */,
 				E9A189061F1CA44800640D53 /* HDFileListViewController.m in Sources */,
 				E9E6CB661F31D73C009B3934 /* FMDatabasePool.m in Sources */,
 				E9B6ED811F0C7C5F0072938A /* UIImageView+HighlightedWebCache.m in Sources */,
 				E9B6EDE21F0C7CE40072938A /* SSProcessInfo.m in Sources */,
 				E9B6ED141F0C7ADB0072938A /* UIScrollView+MJExtension.m in Sources */,
+				E901AB801F9CCD9C000E7B1F /* HDStrategyController.m in Sources */,
+				E917ACEE1F9CC68700CD9B0D /* AlphaInputValidator.m in Sources */,
 				E9B6ED4F1F0C7C510072938A /* JRSwizzle.m in Sources */,
 				E9B6EDF91F0C7CEE0072938A /* AFAutoPurgingImageCache.m in Sources */,
 				E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */,
