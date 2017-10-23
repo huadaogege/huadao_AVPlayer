@@ -15,6 +15,9 @@
 #import "Espresso.h"
 #import "Milk.h"
 #import "Mocha.h"
+#import "HDFactory.h"
+#import "HDFactoryMultiply.h"
+#import "HDCalculatesMultiply.h"
 
 @interface ViewController ()
 
@@ -27,7 +30,7 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-//    [self decorator];
+    [self methodFactory];
 }
 
 //简单工厂模式
@@ -54,6 +57,15 @@
     NSLog(@"%@:%f",[component getName], [component cost]);
     component = [[Mocha alloc] initWithComponent:component];
     NSLog(@"%@:%f",[component getName], [component cost]);
+}
+
+//工厂方法模式
+- (void)methodFactory {
+    HDFactory *factory = [[HDFactoryMultiply alloc] init];
+    id<HDCalculates> calculate = [factory createFactory];
+    calculate.number_A = 10;
+    calculate.number_B = 2;
+    NSLog(@"%f", [calculate calculate]);
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {
