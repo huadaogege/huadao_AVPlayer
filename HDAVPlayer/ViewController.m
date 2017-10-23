@@ -18,6 +18,10 @@
 #import "HDFactory.h"
 #import "HDFactoryMultiply.h"
 #import "HDCalculatesMultiply.h"
+#import "AudiCar.h"
+#import "AudiA8Car.h"
+#import "AudiCarBuilder.h"
+#import "AudiDirector.h"
 
 @interface ViewController ()
 
@@ -30,7 +34,7 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    [self methodFactory];
+    [self builder];
 }
 
 //简单工厂模式
@@ -66,6 +70,14 @@
     calculate.number_A = 10;
     calculate.number_B = 2;
     NSLog(@"%f", [calculate calculate]);
+}
+
+- (void)builder {
+    //carBuilder:建造者, AudiDirector:汽车销售员
+    AudiCarBuilder *carBuilder = [[AudiA8Car alloc] init];
+    AudiCar *car = [AudiDirector creatBuickCar:carBuilder];
+    NSLog(@"%@", [car description]);
+    
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {

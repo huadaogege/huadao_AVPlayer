@@ -46,6 +46,12 @@
 		E957CD321F99EF070004E207 /* HDCalculateMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD311F99EF070004E207 /* HDCalculateMultiply.m */; };
 		E957CD351F99EF200004E207 /* HDCalculateDivide.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD341F99EF200004E207 /* HDCalculateDivide.m */; };
 		E957CD381F99F2710004E207 /* HDCalCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD371F99F2710004E207 /* HDCalCommonTool.m */; };
+		E97B98481F9DFF6E009481F5 /* AudiCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98471F9DFF6E009481F5 /* AudiCar.m */; };
+		E97B984B1F9E002D009481F5 /* AudiCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B984A1F9E002D009481F5 /* AudiCarBuilder.m */; };
+		E97B984E1F9E00CC009481F5 /* AudiDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B984D1F9E00CC009481F5 /* AudiDirector.m */; };
+		E97B98511F9E01DE009481F5 /* AudiA6Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98501F9E01DE009481F5 /* AudiA6Car.m */; };
+		E97B98541F9E01F2009481F5 /* AudiA8Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98531F9E01F2009481F5 /* AudiA8Car.m */; };
+		E97B98571F9E0205009481F5 /* AudiQ7Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98561F9E0205009481F5 /* AudiQ7Car.m */; };
 		E992B6BA1F0CC0EE0002292C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6B91F0CC0EE0002292C /* libz.tbd */; };
 		E992B6BC1F0CC0F30002292C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */; };
 		E992B6BE1F0CC0F80002292C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B6BD1F0CC0F80002292C /* SystemConfiguration.framework */; };
@@ -300,6 +306,18 @@
 		E957CD341F99EF200004E207 /* HDCalculateDivide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateDivide.m; sourceTree = "<group>"; };
 		E957CD361F99F2710004E207 /* HDCalCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalCommonTool.h; sourceTree = "<group>"; };
 		E957CD371F99F2710004E207 /* HDCalCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalCommonTool.m; sourceTree = "<group>"; };
+		E97B98461F9DFF6E009481F5 /* AudiCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiCar.h; sourceTree = "<group>"; };
+		E97B98471F9DFF6E009481F5 /* AudiCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiCar.m; sourceTree = "<group>"; };
+		E97B98491F9E002D009481F5 /* AudiCarBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiCarBuilder.h; sourceTree = "<group>"; };
+		E97B984A1F9E002D009481F5 /* AudiCarBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiCarBuilder.m; sourceTree = "<group>"; };
+		E97B984C1F9E00CC009481F5 /* AudiDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiDirector.h; sourceTree = "<group>"; };
+		E97B984D1F9E00CC009481F5 /* AudiDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiDirector.m; sourceTree = "<group>"; };
+		E97B984F1F9E01DE009481F5 /* AudiA6Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiA6Car.h; sourceTree = "<group>"; };
+		E97B98501F9E01DE009481F5 /* AudiA6Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiA6Car.m; sourceTree = "<group>"; };
+		E97B98521F9E01F2009481F5 /* AudiA8Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiA8Car.h; sourceTree = "<group>"; };
+		E97B98531F9E01F2009481F5 /* AudiA8Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiA8Car.m; sourceTree = "<group>"; };
+		E97B98551F9E0205009481F5 /* AudiQ7Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiQ7Car.h; sourceTree = "<group>"; };
+		E97B98561F9E0205009481F5 /* AudiQ7Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiQ7Car.m; sourceTree = "<group>"; };
 		E97E7EC51F0BD796002A0356 /* HDAVPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDAVPlayer.entitlements; sourceTree = "<group>"; };
 		E992B6B91F0CC0EE0002292C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -797,6 +815,25 @@
 				E957741D1F9DEA7D000AE338 /* HDFactoryDivide.m */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		E97B98451F9DFE93009481F5 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E97B98461F9DFF6E009481F5 /* AudiCar.h */,
+				E97B98471F9DFF6E009481F5 /* AudiCar.m */,
+				E97B984F1F9E01DE009481F5 /* AudiA6Car.h */,
+				E97B98501F9E01DE009481F5 /* AudiA6Car.m */,
+				E97B98521F9E01F2009481F5 /* AudiA8Car.h */,
+				E97B98531F9E01F2009481F5 /* AudiA8Car.m */,
+				E97B98551F9E0205009481F5 /* AudiQ7Car.h */,
+				E97B98561F9E0205009481F5 /* AudiQ7Car.m */,
+				E97B98491F9E002D009481F5 /* AudiCarBuilder.h */,
+				E97B984A1F9E002D009481F5 /* AudiCarBuilder.m */,
+				E97B984C1F9E00CC009481F5 /* AudiDirector.h */,
+				E97B984D1F9E00CC009481F5 /* AudiDirector.m */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		E992B6B81F0CC0EE0002292C /* Frameworks */ = {
@@ -1431,6 +1468,7 @@
 		E9E2195E1F99EA9700368413 /* DesignModels */ = {
 			isa = PBXGroup;
 			children = (
+				E97B98451F9DFE93009481F5 /* Builder */,
 				E95774081F9DE750000AE338 /* MethodFactory */,
 				E95773E91F9DD0A9000AE338 /* Decorator */,
 				E917ACE21F9B9B3900CD9B0D /* Strategy */,
@@ -1726,9 +1764,12 @@
 				E9B6EDDC1F0C7CE40072938A /* SSDiskInfo.m in Sources */,
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
 				E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */,
+				E97B98541F9E01F2009481F5 /* AudiA8Car.m in Sources */,
 				E9B6ED881F0C7C690072938A /* SSZipArchive.m in Sources */,
 				E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */,
+				E97B98481F9DFF6E009481F5 /* AudiCar.m in Sources */,
 				E9B6EDE41F0C7CE40072938A /* SSUUID.m in Sources */,
+				E97B98571F9E0205009481F5 /* AudiQ7Car.m in Sources */,
 				E9A1891B1F1CA83000640D53 /* HDVoiceSpeakViewController.m in Sources */,
 				E9B6EDE01F0C7CE40072938A /* SSMemoryInfo.m in Sources */,
 				E9B6ED751F0C7C5F0072938A /* NSData+ImageContentType.m in Sources */,
@@ -1787,6 +1828,7 @@
 				E9B6ECE91F0C7AB00072938A /* NSArray+JSONModel.m in Sources */,
 				E9B6ECE61F0C7AA80072938A /* JSONModelError.m in Sources */,
 				E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */,
+				E97B984E1F9E00CC009481F5 /* AudiDirector.m in Sources */,
 				E9B6EDDD1F0C7CE40072938A /* SSHardwareInfo.m in Sources */,
 				E9B6ED7B1F0C7C5F0072938A /* SDWebImageManager.m in Sources */,
 				E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1850,11 +1892,13 @@
 				E9B6ECE31F0C7AA80072938A /* JSONModel.m in Sources */,
 				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
 				E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */,
+				E97B984B1F9E002D009481F5 /* AudiCarBuilder.m in Sources */,
 				E9A188F01F1C9ECF00640D53 /* HDFuncViewController.m in Sources */,
 				E9B6EDA11F0C7C9F0072938A /* aeskey.c in Sources */,
 				E9B6ECF81F0C7ABF0072938A /* JSONValueTransformer.m in Sources */,
 				E9E6CB651F31D73C009B3934 /* FMDatabaseAdditions.m in Sources */,
 				E9B6ECD51F0C7A400072938A /* JSBadgeView.m in Sources */,
+				E97B98511F9E01DE009481F5 /* AudiA6Car.m in Sources */,
 				E9B6EDDB1F0C7CE40072938A /* SSCarrierInfo.m in Sources */,
 				E9B6EDB81F0C7CB10072938A /* SystemServices.m in Sources */,
 				E9B6EDB31F0C7CA70072938A /* mztools.c in Sources */,
