@@ -23,6 +23,14 @@
 		E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F251F1E094000D95557 /* HDClientViewController.xib */; };
 		E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F291F1E095600D95557 /* HDServerViewController.m */; };
 		E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */; };
+		E95773F21F9DD684000AE338 /* HouseBlend.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773F11F9DD684000AE338 /* HouseBlend.m */; };
+		E95773F51F9DD69C000AE338 /* DarkRoast.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773F41F9DD69C000AE338 /* DarkRoast.m */; };
+		E95773F81F9DD6B8000AE338 /* Espresso.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773F71F9DD6B8000AE338 /* Espresso.m */; };
+		E95773FB1F9DD6C9000AE338 /* Decaf.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773FA1F9DD6C9000AE338 /* Decaf.m */; };
+		E95773FE1F9DD6E0000AE338 /* Milk.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773FD1F9DD6DF000AE338 /* Milk.m */; };
+		E95774011F9DD6F0000AE338 /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774001F9DD6F0000AE338 /* Mocha.m */; };
+		E95774041F9DD6FD000AE338 /* Soy.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774031F9DD6FD000AE338 /* Soy.m */; };
+		E95774071F9DD70C000AE338 /* Whip.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774061F9DD70C000AE338 /* Whip.m */; };
 		E957CD291F99EE910004E207 /* HDCalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD281F99EE910004E207 /* HDCalculateFactory.m */; };
 		E957CD2C1F99EEB80004E207 /* HDCalculateAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD2B1F99EEB80004E207 /* HDCalculateAdd.m */; };
 		E957CD2F1F99EED40004E207 /* HDCalculateMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD2E1F99EED40004E207 /* HDCalculateMinus.m */; };
@@ -234,6 +242,24 @@
 		E91A3F281F1E095600D95557 /* HDServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDServerViewController.h; sourceTree = "<group>"; };
 		E91A3F291F1E095600D95557 /* HDServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDServerViewController.m; sourceTree = "<group>"; };
 		E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDServerViewController.xib; sourceTree = "<group>"; };
+		E95773EE1F9DD41F000AE338 /* ComponentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentProtocol.h; sourceTree = "<group>"; };
+		E95773EF1F9DD623000AE338 /* DecortorProcotol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecortorProcotol.h; sourceTree = "<group>"; };
+		E95773F01F9DD684000AE338 /* HouseBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseBlend.h; sourceTree = "<group>"; };
+		E95773F11F9DD684000AE338 /* HouseBlend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseBlend.m; sourceTree = "<group>"; };
+		E95773F31F9DD69C000AE338 /* DarkRoast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkRoast.h; sourceTree = "<group>"; };
+		E95773F41F9DD69C000AE338 /* DarkRoast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkRoast.m; sourceTree = "<group>"; };
+		E95773F61F9DD6B8000AE338 /* Espresso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espresso.h; sourceTree = "<group>"; };
+		E95773F71F9DD6B8000AE338 /* Espresso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espresso.m; sourceTree = "<group>"; };
+		E95773F91F9DD6C9000AE338 /* Decaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decaf.h; sourceTree = "<group>"; };
+		E95773FA1F9DD6C9000AE338 /* Decaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decaf.m; sourceTree = "<group>"; };
+		E95773FC1F9DD6DF000AE338 /* Milk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milk.h; sourceTree = "<group>"; };
+		E95773FD1F9DD6DF000AE338 /* Milk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milk.m; sourceTree = "<group>"; };
+		E95773FF1F9DD6F0000AE338 /* Mocha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mocha.h; sourceTree = "<group>"; };
+		E95774001F9DD6F0000AE338 /* Mocha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mocha.m; sourceTree = "<group>"; };
+		E95774021F9DD6FD000AE338 /* Soy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soy.h; sourceTree = "<group>"; };
+		E95774031F9DD6FD000AE338 /* Soy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soy.m; sourceTree = "<group>"; };
+		E95774051F9DD70C000AE338 /* Whip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whip.h; sourceTree = "<group>"; };
+		E95774061F9DD70C000AE338 /* Whip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Whip.m; sourceTree = "<group>"; };
 		E957CD271F99EE910004E207 /* HDCalculateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateFactory.h; sourceTree = "<group>"; };
 		E957CD281F99EE910004E207 /* HDCalculateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateFactory.m; sourceTree = "<group>"; };
 		E957CD2A1F99EEB80004E207 /* HDCalculateAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateAdd.h; sourceTree = "<group>"; };
@@ -660,6 +686,47 @@
 				E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */,
 			);
 			path = Communite;
+			sourceTree = "<group>";
+		};
+		E95773E91F9DD0A9000AE338 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				E95773EB1F9DD2FB000AE338 /* ConcerteDecortor */,
+				E95773EA1F9DD2F6000AE338 /* ConcreteComponent */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		E95773EA1F9DD2F6000AE338 /* ConcreteComponent */ = {
+			isa = PBXGroup;
+			children = (
+				E95773EE1F9DD41F000AE338 /* ComponentProtocol.h */,
+				E95773F01F9DD684000AE338 /* HouseBlend.h */,
+				E95773F11F9DD684000AE338 /* HouseBlend.m */,
+				E95773F31F9DD69C000AE338 /* DarkRoast.h */,
+				E95773F41F9DD69C000AE338 /* DarkRoast.m */,
+				E95773F61F9DD6B8000AE338 /* Espresso.h */,
+				E95773F71F9DD6B8000AE338 /* Espresso.m */,
+				E95773F91F9DD6C9000AE338 /* Decaf.h */,
+				E95773FA1F9DD6C9000AE338 /* Decaf.m */,
+			);
+			name = ConcreteComponent;
+			sourceTree = "<group>";
+		};
+		E95773EB1F9DD2FB000AE338 /* ConcerteDecortor */ = {
+			isa = PBXGroup;
+			children = (
+				E95773EF1F9DD623000AE338 /* DecortorProcotol.h */,
+				E95773FC1F9DD6DF000AE338 /* Milk.h */,
+				E95773FD1F9DD6DF000AE338 /* Milk.m */,
+				E95773FF1F9DD6F0000AE338 /* Mocha.h */,
+				E95774001F9DD6F0000AE338 /* Mocha.m */,
+				E95774021F9DD6FD000AE338 /* Soy.h */,
+				E95774031F9DD6FD000AE338 /* Soy.m */,
+				E95774051F9DD70C000AE338 /* Whip.h */,
+				E95774061F9DD70C000AE338 /* Whip.m */,
+			);
+			name = ConcerteDecortor;
 			sourceTree = "<group>";
 		};
 		E992B6B81F0CC0EE0002292C /* Frameworks */ = {
@@ -1294,6 +1361,7 @@
 		E9E2195E1F99EA9700368413 /* DesignModels */ = {
 			isa = PBXGroup;
 			children = (
+				E95773E91F9DD0A9000AE338 /* Decorator */,
 				E917ACE21F9B9B3900CD9B0D /* Strategy */,
 				E9E2195F1F99EAF500368413 /* SimpleFactory */,
 			);
@@ -1573,9 +1641,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95774071F9DD70C000AE338 /* Whip.m in Sources */,
 				E91A3F201F1E07C600D95557 /* AsyncSocket.m in Sources */,
 				E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */,
 				E9B6EDB21F0C7CA70072938A /* ioapi.c in Sources */,
+				E95774041F9DD6FD000AE338 /* Soy.m in Sources */,
 				E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */,
 				E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */,
 				E9B6ED7A1F0C7C5F0072938A /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1615,6 +1685,7 @@
 				E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */,
 				E9B6EDA81F0C7C9F0072938A /* sha1.c in Sources */,
 				E9B6ECF21F0C7AB80072938A /* JSONModel+networking.m in Sources */,
+				E95773F21F9DD684000AE338 /* HouseBlend.m in Sources */,
 				E9B6ED801F0C7C5F0072938A /* UIImage+WebP.m in Sources */,
 				E9B6EDFE1F0C7CEE0072938A /* UIImageView+AFNetworking.m in Sources */,
 				E9B6ECCE1F0C7A300072938A /* DBGuestureLock.m in Sources */,
@@ -1629,12 +1700,15 @@
 				E9B6EDA51F0C7C9F0072938A /* hmac.c in Sources */,
 				E9A1890E1F1CA45100640D53 /* HDQRCodeScanViewController.m in Sources */,
 				E9B6ED261F0C7B9B0072938A /* MJRefreshFooter.m in Sources */,
+				E95773F81F9DD6B8000AE338 /* Espresso.m in Sources */,
 				E957CD2F1F99EED40004E207 /* HDCalculateMinus.m in Sources */,
+				E95773FB1F9DD6C9000AE338 /* Decaf.m in Sources */,
 				E9B6ED511F0C7C510072938A /* RDVTabBarController.m in Sources */,
 				E9A188ED1F1C861800640D53 /* HDJSONModel.m in Sources */,
 				E9B6ECCD1F0C7A300072938A /* DBGuestureButton.m in Sources */,
 				E9B6EDA61F0C7C9F0072938A /* prng.c in Sources */,
 				E9A189261F1CD2DA00640D53 /* UIImage+Editer.m in Sources */,
+				E95774011F9DD6F0000AE338 /* Mocha.m in Sources */,
 				E9B6ECE91F0C7AB00072938A /* NSArray+JSONModel.m in Sources */,
 				E9B6ECE61F0C7AA80072938A /* JSONModelError.m in Sources */,
 				E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */,
@@ -1654,6 +1728,7 @@
 				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E9B6EDD71F0C7CE40072938A /* SSAccelerometerInfo.m in Sources */,
 				E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */,
+				E95773FE1F9DD6E0000AE338 /* Milk.m in Sources */,
 				E9B6ED231F0C7B9B0072938A /* MJRefreshAutoFooter.m in Sources */,
 				E9B6EDA41F0C7C9F0072938A /* fileenc.c in Sources */,
 				E9B6ED7C1F0C7C5F0072938A /* SDWebImagePrefetcher.m in Sources */,
@@ -1710,6 +1785,7 @@
 				E9B6ED741F0C7C5F0072938A /* MKAnnotationView+WebCache.m in Sources */,
 				E9B6ED311F0C7BFD0072938A /* MJRefreshNormalHeader.m in Sources */,
 				E9B6EDE11F0C7CE40072938A /* SSNetworkInfo.m in Sources */,
+				E95773F51F9DD69C000AE338 /* DarkRoast.m in Sources */,
 				E9E6CB6C1F31D99B009B3934 /* HDFmdbManager.m in Sources */,
 				E9B6EDB41F0C7CA70072938A /* unzip.c in Sources */,
 				E9B6EDDE1F0C7CE40072938A /* SSJailbreakCheck.m in Sources */,

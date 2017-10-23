@@ -12,6 +12,10 @@
 #import "HDFmdbManager.h"
 #import "HDCalculateFactory.h"
 #import "HDStrategyController.h"
+#import "Espresso.h"
+#import "Milk.h"
+#import "Mocha.h"
+
 @interface ViewController ()
 
 @end
@@ -23,9 +27,10 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    [self strategy];
+//    [self decorator];
 }
 
+//简单工厂模式
 - (void)simpleFactory {
     id<HDCalculate> cal;
     cal = [HDCalculateFactory createCalculate:@"*"];
@@ -35,9 +40,20 @@
     NSLog(@"%f", result);
 }
 
+//策略模式
 - (void)strategy {
     HDStrategyController *vc = [[HDStrategyController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+//装饰者模式
+- (void)decorator {
+    id<ComponentProtocol> component = [[Espresso alloc] init];
+    NSLog(@"%@:%f",[component getName], [component cost]);
+    component = [[Milk alloc] initWithComponent:component];
+    NSLog(@"%@:%f",[component getName], [component cost]);
+    component = [[Mocha alloc] initWithComponent:component];
+    NSLog(@"%@:%f",[component getName], [component cost]);
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {
