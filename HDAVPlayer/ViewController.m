@@ -22,6 +22,8 @@
 #import "AudiA8Car.h"
 #import "AudiCarBuilder.h"
 #import "AudiDirector.h"
+#import "HDRequest.h"
+#import "HDAppInfoRequest.h"
 
 @interface ViewController ()
 
@@ -34,8 +36,29 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    [self builder];
+    [self requestAppInfo];
 }
+
+- (void)requestAppInfo {
+    HDAppInfoRequest *request = (HDAppInfoRequest *)[HDRequest requestWithName:@"appInfoRequest"];
+    request.delegate = self;
+    request.trackId = @"427457043";
+    request.didFinishSelector = @selector(didFinishSelector:);
+    request.didFailSelector = @selector(didFailSelector:);
+    [request start];
+}
+
+- (void)didFinishSelector:(HDRequest *)request {
+    NSArray *array = request.result[@"results"];
+    NSDictionary *dic = [array firstObject];
+    NSLog(@"%@", dic);
+    NSLog(@"version:%@", dic[@"version"]);
+}
+
+- (void)didFailSelector:(HDRequest *)request {
+    NSLog(@"%@", request);
+}
+
 
 //简单工厂模式
 - (void)simpleFactory {

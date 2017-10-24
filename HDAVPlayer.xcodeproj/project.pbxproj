@@ -191,6 +191,7 @@
 		E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF61F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m */; };
 		E9B6EE011F0C7CEE0072938A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */; };
 		E9B6EE031F0C7E950072938A /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B6EE021F0C7E950072938A /* mars.framework */; };
+		E9E2B2B51F9F1FC000F044BC /* HDAppInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E2B2B41F9F1FC000F044BC /* HDAppInfoRequest.m */; };
 		E9E556DD1F0BD3F900567110 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556DC1F0BD3F900567110 /* main.m */; };
 		E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556DF1F0BD3F900567110 /* AppDelegate.m */; };
 		E9E556E31F0BD3F900567110 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E556E21F0BD3F900567110 /* ViewController.m */; };
@@ -607,6 +608,8 @@
 		E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E9B6EE021F0C7E950072938A /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
 		E9E219601F99EC2D00368413 /* HDCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculate.h; sourceTree = "<group>"; };
+		E9E2B2B31F9F1FC000F044BC /* HDAppInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAppInfoRequest.h; sourceTree = "<group>"; };
+		E9E2B2B41F9F1FC000F044BC /* HDAppInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAppInfoRequest.m; sourceTree = "<group>"; };
 		E9E556D81F0BD3F900567110 /* HDAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E556DC1F0BD3F900567110 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E556DE1F0BD3F900567110 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -887,6 +890,8 @@
 				E9A188E41F1C5C5A00640D53 /* HDRequest.m */,
 				E9A188E61F1C5EA900640D53 /* HDJSONRequest.h */,
 				E9A188E71F1C5EA900640D53 /* HDJSONRequest.m */,
+				E9E2B2B31F9F1FC000F044BC /* HDAppInfoRequest.h */,
+				E9E2B2B41F9F1FC000F044BC /* HDAppInfoRequest.m */,
 				E9A188E91F1C600F00640D53 /* RequestList.plist */,
 			);
 			path = Request;
@@ -1807,6 +1812,7 @@
 				E9B6ED301F0C7BFD0072938A /* MJRefreshGifHeader.m in Sources */,
 				E9B6ED271F0C7B9B0072938A /* MJRefreshHeader.m in Sources */,
 				E9B6EDA01F0C7C9F0072938A /* aescrypt.c in Sources */,
+				E9E2B2B51F9F1FC000F044BC /* HDAppInfoRequest.m in Sources */,
 				E9B6ECE51F0C7AA80072938A /* JSONModelClassProperty.m in Sources */,
 				E957CD291F99EE910004E207 /* HDCalculateFactory.m in Sources */,
 				E9B6ED161F0C7ADB0072938A /* UIView+MJExtension.m in Sources */,

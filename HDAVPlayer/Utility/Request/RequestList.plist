@@ -4,5 +4,7 @@
 <dict>
 	<key>jsonRequest</key>
 	<string>HDJSONRequest</string>
+	<key>appInfoRequest</key>
+	<string>HDAppInfoRequest</string>
 </dict>
 </plist>
