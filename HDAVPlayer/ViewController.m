@@ -24,6 +24,12 @@
 #import "AudiDirector.h"
 #import "HDRequest.h"
 #import "HDAppInfoRequest.h"
+#import "HDDown.h"
+#import "HDDownState.h"
+#import "HDDowningState.h"
+#import "HDPauseState.h"
+#import "HDFinishedState.h"
+#import "HDFailedState.h"
 
 @interface ViewController ()
 
@@ -36,7 +42,6 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    [self requestAppInfo];
 }
 
 - (void)requestAppInfo {
@@ -101,6 +106,22 @@
     AudiCar *car = [AudiDirector creatBuickCar:carBuilder];
     NSLog(@"%@", [car description]);
     
+}
+
+/**
+ 状态模式
+ */
+- (void)states {
+    HDDown *down = [[HDDown alloc] init];
+    [down updateDownOperation];
+    down.state = [[HDDowningState alloc] init];
+    [down updateDownOperation];
+    down.state = [[HDPauseState alloc] init];
+    [down updateDownOperation];
+    down.state = [[HDFailedState alloc] init];
+    [down updateDownOperation];
+    down.state = [[HDFinishedState alloc] init];
+    [down updateDownOperation];
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {

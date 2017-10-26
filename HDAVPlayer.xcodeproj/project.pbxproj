@@ -83,6 +83,12 @@
 		E9A1892A1F1CD87000640D53 /* HDViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189291F1CD87000640D53 /* HDViewModel.m */; };
 		E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */; };
 		E9A189301F1CE24500640D53 /* HDFuncViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */; };
+		E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5481FA1BEFA00B1992D /* HDDownState.m */; };
+		E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */; };
+		E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */; };
+		E9AEC5521FA1BF4300B1992D /* HDFinishedState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5511FA1BF4300B1992D /* HDFinishedState.m */; };
+		E9AEC5551FA1BF5800B1992D /* HDFailedState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5541FA1BF5800B1992D /* HDFailedState.m */; };
+		E9AEC5591FA1C0B500B1992D /* HDDown.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5581FA1C0B500B1992D /* HDDown.m */; };
 		E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC681F0C75450072938A /* HDViewController.m */; };
 		E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC6F1F0C75A80072938A /* HDFileModel.m */; };
 		E9B6EC731F0C75A80072938A /* HDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EC711F0C75A80072938A /* HDModel.m */; };
@@ -378,6 +384,19 @@
 		E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDVideoViewModel.m; sourceTree = "<group>"; };
 		E9A1892E1F1CE24500640D53 /* HDFuncViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFuncViewModel.h; sourceTree = "<group>"; };
 		E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFuncViewModel.m; sourceTree = "<group>"; };
+		E9AEC5471FA1BEFA00B1992D /* HDDownState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDownState.h; sourceTree = "<group>"; };
+		E9AEC5481FA1BEFA00B1992D /* HDDownState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDownState.m; sourceTree = "<group>"; };
+		E9AEC54A1FA1BF1400B1992D /* HDDowningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDowningState.h; sourceTree = "<group>"; };
+		E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDowningState.m; sourceTree = "<group>"; };
+		E9AEC54D1FA1BF2A00B1992D /* HDPauseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPauseState.h; sourceTree = "<group>"; };
+		E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDPauseState.m; sourceTree = "<group>"; };
+		E9AEC5501FA1BF4300B1992D /* HDFinishedState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDFinishedState.h; sourceTree = "<group>"; };
+		E9AEC5511FA1BF4300B1992D /* HDFinishedState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDFinishedState.m; sourceTree = "<group>"; };
+		E9AEC5531FA1BF5800B1992D /* HDFailedState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDFailedState.h; sourceTree = "<group>"; };
+		E9AEC5541FA1BF5800B1992D /* HDFailedState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDFailedState.m; sourceTree = "<group>"; };
+		E9AEC5561FA1BF8800B1992D /* HDDownLoadState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDownLoadState.h; sourceTree = "<group>"; };
+		E9AEC5571FA1C0B500B1992D /* HDDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDown.h; sourceTree = "<group>"; };
+		E9AEC5581FA1C0B500B1992D /* HDDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDown.m; sourceTree = "<group>"; };
 		E9B6EC671F0C75450072938A /* HDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDViewController.h; sourceTree = "<group>"; };
 		E9B6EC681F0C75450072938A /* HDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDViewController.m; sourceTree = "<group>"; };
 		E9B6EC6E1F0C75A80072938A /* HDFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileModel.h; sourceTree = "<group>"; };
@@ -977,6 +996,26 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E9AEC5461FA1BE7D00B1992D /* States */ = {
+			isa = PBXGroup;
+			children = (
+				E9AEC5561FA1BF8800B1992D /* HDDownLoadState.h */,
+				E9AEC5571FA1C0B500B1992D /* HDDown.h */,
+				E9AEC5581FA1C0B500B1992D /* HDDown.m */,
+				E9AEC5471FA1BEFA00B1992D /* HDDownState.h */,
+				E9AEC5481FA1BEFA00B1992D /* HDDownState.m */,
+				E9AEC54A1FA1BF1400B1992D /* HDDowningState.h */,
+				E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */,
+				E9AEC54D1FA1BF2A00B1992D /* HDPauseState.h */,
+				E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */,
+				E9AEC5501FA1BF4300B1992D /* HDFinishedState.h */,
+				E9AEC5511FA1BF4300B1992D /* HDFinishedState.m */,
+				E9AEC5531FA1BF5800B1992D /* HDFailedState.h */,
+				E9AEC5541FA1BF5800B1992D /* HDFailedState.m */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
 		E9B6EC601F0C73FE0072938A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1473,6 +1512,7 @@
 		E9E2195E1F99EA9700368413 /* DesignModels */ = {
 			isa = PBXGroup;
 			children = (
+				E9AEC5461FA1BE7D00B1992D /* States */,
 				E97B98451F9DFE93009481F5 /* Builder */,
 				E95774081F9DE750000AE338 /* MethodFactory */,
 				E95773E91F9DD0A9000AE338 /* Decorator */,
@@ -1805,6 +1845,7 @@
 				E95774141F9DE978000AE338 /* HDFactoryMinus.m in Sources */,
 				E9B6ECF21F0C7AB80072938A /* JSONModel+networking.m in Sources */,
 				E95773F21F9DD684000AE338 /* HouseBlend.m in Sources */,
+				E9AEC5551FA1BF5800B1992D /* HDFailedState.m in Sources */,
 				E9B6ED801F0C7C5F0072938A /* UIImage+WebP.m in Sources */,
 				E9B6EDFE1F0C7CEE0072938A /* UIImageView+AFNetworking.m in Sources */,
 				E9B6ECCE1F0C7A300072938A /* DBGuestureLock.m in Sources */,
@@ -1830,6 +1871,7 @@
 				E9B6EDA61F0C7C9F0072938A /* prng.c in Sources */,
 				E9A189261F1CD2DA00640D53 /* UIImage+Editer.m in Sources */,
 				E95774011F9DD6F0000AE338 /* Mocha.m in Sources */,
+				E9AEC5591FA1C0B500B1992D /* HDDown.m in Sources */,
 				E95774111F9DE95F000AE338 /* HDFactoryAdd.m in Sources */,
 				E9B6ECE91F0C7AB00072938A /* NSArray+JSONModel.m in Sources */,
 				E9B6ECE61F0C7AA80072938A /* JSONModelError.m in Sources */,
@@ -1866,6 +1908,7 @@
 				E9B6ED071F0C7ACF0072938A /* MBProgressHUD.m in Sources */,
 				E9B6ECC21F0C7A210072938A /* AFURLSessionManager.m in Sources */,
 				E9B6ED251F0C7B9B0072938A /* MJRefreshComponent.m in Sources */,
+				E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */,
 				E9E6CB671F31D73C009B3934 /* FMDatabaseQueue.m in Sources */,
 				E9B6ED021F0C7AC80072938A /* LogHelper.mm in Sources */,
 				E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */,
@@ -1886,6 +1929,7 @@
 				E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */,
 				E9B6EDE31F0C7CE40072938A /* SSProcessorInfo.m in Sources */,
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
+				E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */,
 				E957CD2C1F99EEB80004E207 /* HDCalculateAdd.m in Sources */,
 				E957CD321F99EF070004E207 /* HDCalculateMultiply.m in Sources */,
 				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,
@@ -1901,7 +1945,9 @@
 				E97B984B1F9E002D009481F5 /* AudiCarBuilder.m in Sources */,
 				E9A188F01F1C9ECF00640D53 /* HDFuncViewController.m in Sources */,
 				E9B6EDA11F0C7C9F0072938A /* aeskey.c in Sources */,
+				E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */,
 				E9B6ECF81F0C7ABF0072938A /* JSONValueTransformer.m in Sources */,
+				E9AEC5521FA1BF4300B1992D /* HDFinishedState.m in Sources */,
 				E9E6CB651F31D73C009B3934 /* FMDatabaseAdditions.m in Sources */,
 				E9B6ECD51F0C7A400072938A /* JSBadgeView.m in Sources */,
 				E97B98511F9E01DE009481F5 /* AudiA6Car.m in Sources */,
