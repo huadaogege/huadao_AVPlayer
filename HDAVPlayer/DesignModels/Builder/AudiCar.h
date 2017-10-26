@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_OPTIONS(NSUInteger, FamousCarBrandOptions) {
+    FamousCarBrandBenz = 0,
+    FamousCarBrandBMW = 1 << 0,
+    FamousCarBrandAudi = 1 << 1,
+    FamousCarBrandPorsche = 1 << 2,
+    FamousCarBrandFerrari = 1 << 3,
+    FamousCarBrandJaguar = 1 << 4,
+    FamousCarBrandLandrover = 1 << 5
+};
+
 @interface AudiCar : NSObject
 
 @property (nonatomic, copy)NSString *name;// 名字
