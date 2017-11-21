@@ -8,7 +8,7 @@
 
 #import "HDViewModel.h"
 
-@interface HDFuncViewModel : HDViewModel <UITableViewDelegate, UITableViewDataSource>
+@interface HDFuncViewModel : HDViewModel
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
