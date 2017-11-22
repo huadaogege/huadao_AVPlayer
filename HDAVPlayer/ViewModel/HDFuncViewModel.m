@@ -13,7 +13,6 @@
 #import "HDVoiceSpeakViewController.h"
 #import "HDClientViewController.h"
 #import "HDServerViewController.h"
-#import "HDTableViewLinkController.h"
 
 #define Cell_Identifier @"__funclistcellidentifier"
 
@@ -71,8 +70,6 @@
         pushViewController = [[HDServerViewController alloc] init];
     } else if (indexPath.row == 5) {
         pushViewController = [[HDClientViewController alloc] init];
-    } else if (indexPath.row == 6) {
-        pushViewController = [[HDTableViewLinkController alloc] init];
     }
     if (pushViewController) {
         [self.vieController.navigationController pushViewController:pushViewController animated:YES];

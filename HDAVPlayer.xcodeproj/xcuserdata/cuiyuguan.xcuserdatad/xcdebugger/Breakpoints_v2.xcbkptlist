@@ -25,13 +25,13 @@
                   symbolName = "-[HDFuncViewController jsonDidFinishSelector:]"
                   moduleName = "HDAVPlayer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuiyuguan/cyg_git/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
-                  timestampString = "525420185.328926"
+                  urlString = "file:///Users/cuiyuguan/git_hub/huadaoPlayer/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
+                  timestampString = "533052433.438867"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
                   endingLineNumber = "60"
-                  offsetFromSymbolStart = "60">
+                  offsetFromSymbolStart = "44">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -40,13 +40,13 @@
                   symbolName = "-[HDFuncViewController jsonDidFinishSelector:]"
                   moduleName = "HDAVPlayer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuiyuguan/cyg_git/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
-                  timestampString = "525420185.332013"
+                  urlString = "file:///Users/cuiyuguan/git_hub/huadaoPlayer/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
+                  timestampString = "533052433.443361"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
                   endingLineNumber = "60"
-                  offsetFromSymbolStart = "100">
+                  offsetFromSymbolStart = "79">
                </Location>
             </Locations>
          </BreakpointContent>
