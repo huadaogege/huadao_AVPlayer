@@ -7,6 +7,7 @@
 //
 
 #import "HDModel.h"
+#import <Photos/Photos.h>
 
 @interface HDImageModel : HDModel
 
@@ -15,5 +16,7 @@
 @property (nonatomic, strong) NSString *filePath;
 
 @property (nonatomic, strong) UIImage *miniImage;
+
+@property (nonatomic, strong) PHAsset *asset;
 
 @end

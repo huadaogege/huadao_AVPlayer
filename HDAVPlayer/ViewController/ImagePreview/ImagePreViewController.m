@@ -8,9 +8,10 @@
 
 #import "ImagePreViewController.h"
 #import "ImageCollectionViewCell.h"
+#import "HorizontalPageFlowlayout.h"
 #import "HDImageModel.h"
 
-@interface ImagePreViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface ImagePreViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @end
 
@@ -18,13 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UICollectionViewLayout *layout = [[UICollectionViewLayout alloc] init];
-    [self.collectionView setCollectionViewLayout:layout];
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+//    HorizontalPageFlowlayout *flowLayout = [[HorizontalPageFlowlayout alloc] init];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    [self.collectionView setCollectionViewLayout:flowLayout];
     self.collectionView.backgroundColor = [UIColor redColor];
     [self.collectionView registerNib:[UINib nibWithNibName:@"ImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"ImageCollectionViewCell"];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    [self.view addSubview:self.collectionView];
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -32,7 +35,7 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2/0);
+    return CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -40,7 +43,7 @@
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(5, 5, 5, 5);
+    return UIEdgeInsetsMake(5.0, 5.0, 5.0, 5.0);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
@@ -50,8 +53,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageCollectionViewCell" forIndexPath:indexPath];
     HDImageModel *model = self.dataArray[indexPath.row];
-    UIImage *image = [UIImage imageWithContentsOfFile:model.filePath];
-    cell.imageView.image = image;
+    cell.imageView.image = model.miniImage;
     return cell;
 }
 

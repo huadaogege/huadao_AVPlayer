@@ -182,6 +182,7 @@
 		E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF61F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m */; };
 		E9B6EE011F0C7CEE0072938A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */; };
 		E9B6EE031F0C7E950072938A /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B6EE021F0C7E950072938A /* mars.framework */; };
+		E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */; };
 		E9DFE1A81FC3C41D00D37BA6 /* ImagePreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DFE1A61FC3C41D00D37BA6 /* ImagePreViewController.m */; };
 		E9DFE1A91FC3C41D00D37BA6 /* ImagePreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DFE1A71FC3C41D00D37BA6 /* ImagePreViewController.xib */; };
 		E9DFE1B21FC3C47100D37BA6 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DFE1B01FC3C47100D37BA6 /* ImageCollectionViewCell.m */; };
@@ -591,6 +592,8 @@
 		E9B6EDF71F0C7CEE0072938A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E9B6EE021F0C7E950072938A /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		E9C603CC1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalPageFlowlayout.h; sourceTree = "<group>"; };
+		E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalPageFlowlayout.m; sourceTree = "<group>"; };
 		E9DFE1A51FC3C41D00D37BA6 /* ImagePreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePreViewController.h; sourceTree = "<group>"; };
 		E9DFE1A61FC3C41D00D37BA6 /* ImagePreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePreViewController.m; sourceTree = "<group>"; };
 		E9DFE1A71FC3C41D00D37BA6 /* ImagePreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePreViewController.xib; sourceTree = "<group>"; };
@@ -1457,45 +1460,11 @@
 			path = aes;
 			sourceTree = "<group>";
 		};
-		E9B6EDB91F0C7CB90072938A /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				E9B6EDBA1F0C7CE40072938A /* route.h */,
-				E9B6EDBB1F0C7CE40072938A /* SSAccelerometerInfo.h */,
-				E9B6EDBC1F0C7CE40072938A /* SSAccelerometerInfo.m */,
-				E9B6EDBD1F0C7CE40072938A /* SSAccessoryInfo.h */,
-				E9B6EDBE1F0C7CE40072938A /* SSAccessoryInfo.m */,
-				E9B6EDBF1F0C7CE40072938A /* SSApplicationInfo.h */,
-				E9B6EDC01F0C7CE40072938A /* SSApplicationInfo.m */,
-				E9B6EDC11F0C7CE40072938A /* SSBatteryInfo.h */,
-				E9B6EDC21F0C7CE40072938A /* SSBatteryInfo.m */,
-				E9B6EDC31F0C7CE40072938A /* SSCarrierInfo.h */,
-				E9B6EDC41F0C7CE40072938A /* SSCarrierInfo.m */,
-				E9B6EDC51F0C7CE40072938A /* SSDiskInfo.h */,
-				E9B6EDC61F0C7CE40072938A /* SSDiskInfo.m */,
-				E9B6EDC71F0C7CE40072938A /* SSHardwareInfo.h */,
-				E9B6EDC81F0C7CE40072938A /* SSHardwareInfo.m */,
-				E9B6EDC91F0C7CE40072938A /* SSJailbreakCheck.h */,
-				E9B6EDCA1F0C7CE40072938A /* SSJailbreakCheck.m */,
-				E9B6EDCB1F0C7CE40072938A /* SSLocalizationInfo.h */,
-				E9B6EDCC1F0C7CE40072938A /* SSLocalizationInfo.m */,
-				E9B6EDCD1F0C7CE40072938A /* SSMemoryInfo.h */,
-				E9B6EDCE1F0C7CE40072938A /* SSMemoryInfo.m */,
-				E9B6EDCF1F0C7CE40072938A /* SSNetworkInfo.h */,
-				E9B6EDD01F0C7CE40072938A /* SSNetworkInfo.m */,
-				E9B6EDD11F0C7CE40072938A /* SSProcessInfo.h */,
-				E9B6EDD21F0C7CE40072938A /* SSProcessInfo.m */,
-				E9B6EDD31F0C7CE40072938A /* SSProcessorInfo.h */,
-				E9B6EDD41F0C7CE40072938A /* SSProcessorInfo.m */,
-				E9B6EDD51F0C7CE40072938A /* SSUUID.h */,
-				E9B6EDD61F0C7CE40072938A /* SSUUID.m */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		E9DFE1A41FC3C3C200D37BA6 /* ImagePreview */ = {
 			isa = PBXGroup;
 			children = (
+				E9C603CC1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.h */,
+				E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */,
 				E9DFE1A51FC3C41D00D37BA6 /* ImagePreViewController.h */,
 				E9DFE1A61FC3C41D00D37BA6 /* ImagePreViewController.m */,
 				E9DFE1A71FC3C41D00D37BA6 /* ImagePreViewController.xib */,
@@ -1515,7 +1484,6 @@
 			path = ImageManager;
 			sourceTree = "<group>";
 		};
-
 		E9E2195E1F99EA9700368413 /* DesignModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -1820,12 +1788,12 @@
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
 				E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */,
 				E97B98541F9E01F2009481F5 /* AudiA8Car.m in Sources */,
+				E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */,
 				E9B6ED881F0C7C690072938A /* SSZipArchive.m in Sources */,
 				E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */,
 				E97B98481F9DFF6E009481F5 /* AudiCar.m in Sources */,
 				E97B98571F9E0205009481F5 /* AudiQ7Car.m in Sources */,
 				E9A1891B1F1CA83000640D53 /* HDVoiceSpeakViewController.m in Sources */,
-				E9B6EDE01F0C7CE40072938A /* SSMemoryInfo.m in Sources */,
 				E9DFE1B21FC3C47100D37BA6 /* ImageCollectionViewCell.m in Sources */,
 				E9B6ED751F0C7C5F0072938A /* NSData+ImageContentType.m in Sources */,
 				E917ACE51F9C740A00CD9B0D /* HDInputValidator.m in Sources */,
@@ -1959,8 +1927,6 @@
 				E9B6ECD51F0C7A400072938A /* JSBadgeView.m in Sources */,
 				E97B98511F9E01DE009481F5 /* AudiA6Car.m in Sources */,
 				E9DFE1A81FC3C41D00D37BA6 /* ImagePreViewController.m in Sources */,
-				E9B6EDDB1F0C7CE40072938A /* SSCarrierInfo.m in Sources */,
-				E9B6EDB81F0C7CB10072938A /* SystemServices.m in Sources */,
 				E9B6EDB31F0C7CA70072938A /* mztools.c in Sources */,
 				E9B6ED521F0C7C510072938A /* RDVTabBarItem.m in Sources */,
 				E9B6ED741F0C7C5F0072938A /* MKAnnotationView+WebCache.m in Sources */,
