@@ -6,5 +6,7 @@
 	<string>HDJSONRequest</string>
 	<key>appInfoRequest</key>
 	<string>HDAppInfoRequest</string>
+	<key>HDUploadFileRequest</key>
+	<string>HDUploadFileRequest</string>
 </dict>
 </plist>

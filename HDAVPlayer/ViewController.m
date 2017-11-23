@@ -30,6 +30,7 @@
 #import "HDPauseState.h"
 #import "HDFinishedState.h"
 #import "HDFailedState.h"
+#import "HDUploadFileRequest.h"
 
 @interface ViewController ()
 
@@ -42,27 +43,49 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-}
-
-- (void)requestAppInfo {
-    HDAppInfoRequest *request = (HDAppInfoRequest *)[HDRequest requestWithName:@"appInfoRequest"];
+    
+    HDRequest *request = (HDUploadFileRequest *)[HDRequest requestWithName:@"HDUploadFileRequest"];
+    NSData *data = [NSData dataWithContentsOfFile:[Document_Path stringByAppendingPathComponent:@"17.mov"]];
     request.delegate = self;
-    request.trackId = @"427457043";
+    request.httpBody = @{
+                        @"file":@{
+                                @"data":data,
+                                @"fileName":@"17.mov",
+                                @"mimeType":@"multipart/form-data"
+                                }
+                        };
     request.didFinishSelector = @selector(didFinishSelector:);
     request.didFailSelector = @selector(didFailSelector:);
     [request start];
 }
 
 - (void)didFinishSelector:(HDRequest *)request {
-    NSArray *array = request.result[@"results"];
-    NSDictionary *dic = [array firstObject];
-    NSLog(@"%@", dic);
-    NSLog(@"version:%@", dic[@"version"]);
+    NSLog(@"%@", request.result);
 }
 
 - (void)didFailSelector:(HDRequest *)request {
-    NSLog(@"%@", request);
+    NSLog(@"%@", request.result);
 }
+
+//- (void)requestAppInfo {
+//    HDAppInfoRequest *request = (HDAppInfoRequest *)[HDRequest requestWithName:@"appInfoRequest"];
+//    request.delegate = self;
+//    request.trackId = @"427457043";
+//    request.didFinishSelector = @selector(didFinishSelector:);
+//    request.didFailSelector = @selector(didFailSelector:);
+//    [request start];
+//}
+//
+//- (void)didFinishSelector:(HDRequest *)request {
+//    NSArray *array = request.result[@"results"];
+//    NSDictionary *dic = [array firstObject];
+//    NSLog(@"%@", dic);
+//    NSLog(@"version:%@", dic[@"version"]);
+//}
+//
+//- (void)didFailSelector:(HDRequest *)request {
+//    NSLog(@"%@", request);
+//}
 
 
 //简单工厂模式

@@ -64,6 +64,7 @@
 		E99793F51FC69C8C00A79647 /* CustomUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F41FC69C8C00A79647 /* CustomUISlider.m */; };
 		E99793F81FC69CB000A79647 /* CustomVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F61FC69CB000A79647 /* CustomVolumeView.m */; };
 		E99793FC1FC69D1500A79647 /* CustomGesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793FA1FC69D1500A79647 /* CustomGesView.m */; };
+		E99793FF1FC6F08400A79647 /* HDUploadFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793FE1FC6F08400A79647 /* HDUploadFileRequest.m */; };
 		E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC521F1D0B5000807899 /* NSString+Editer.m */; };
 		E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC551F1D0E2500807899 /* HDPlayerViewModel.m */; };
 		E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188E41F1C5C5A00640D53 /* HDRequest.m */; };
@@ -353,6 +354,8 @@
 		E99793F91FC69CEB00A79647 /* VideoProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoProtocal.h; sourceTree = "<group>"; };
 		E99793FA1FC69D1500A79647 /* CustomGesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGesView.m; sourceTree = "<group>"; };
 		E99793FB1FC69D1500A79647 /* CustomGesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGesView.h; sourceTree = "<group>"; };
+		E99793FD1FC6F08400A79647 /* HDUploadFileRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDUploadFileRequest.h; sourceTree = "<group>"; };
+		E99793FE1FC6F08400A79647 /* HDUploadFileRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDUploadFileRequest.m; sourceTree = "<group>"; };
 		E99FFC511F1D0B5000807899 /* NSString+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Editer.h"; sourceTree = "<group>"; };
 		E99FFC521F1D0B5000807899 /* NSString+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Editer.m"; sourceTree = "<group>"; };
 		E99FFC541F1D0E2500807899 /* HDPlayerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPlayerViewModel.h; sourceTree = "<group>"; };
@@ -911,6 +914,8 @@
 				E9E2B2B31F9F1FC000F044BC /* HDAppInfoRequest.h */,
 				E9E2B2B41F9F1FC000F044BC /* HDAppInfoRequest.m */,
 				E9A188E91F1C600F00640D53 /* RequestList.plist */,
+				E99793FD1FC6F08400A79647 /* HDUploadFileRequest.h */,
+				E99793FE1FC6F08400A79647 /* HDUploadFileRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1796,6 +1801,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99793FF1FC6F08400A79647 /* HDUploadFileRequest.m in Sources */,
 				E95774071F9DD70C000AE338 /* Whip.m in Sources */,
 				E91A3F201F1E07C600D95557 /* AsyncSocket.m in Sources */,
 				E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */,
