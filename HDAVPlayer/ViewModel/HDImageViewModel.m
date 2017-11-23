@@ -10,6 +10,8 @@
 #import "HDImageManager.h"
 #import "imageListCell.h"
 #import "ImagePreViewController.h"
+#import <Photos/Photos.h>
+
 
 @implementation HDImageViewModel
 

@@ -32,20 +32,19 @@
 }
 
 - (NSArray *)prepareImagedata {
-//    NSArray *fileNameArray = [self.fileManager contentsOfDirectoryAtPath:DocumentImagePath error:nil];
-//    NSMutableArray *imageModels = [NSMutableArray array];
-//    for (NSString *fileName in fileNameArray) {
-//        NSString *imagePath = [DocumentImagePath stringByAppendingPathComponent:fileName];
-//        UIImage *originImage = [UIImage imageWithContentsOfFile:imagePath];
-//        UIImage *miniImage = [self thumbnailWithImage:originImage size:CGSizeMake(50, 50)];
-//        HDImageModel *model = [[HDImageModel alloc] init];
-//        [model setFileName:fileName];
-//        [model setFilePath:imagePath];
-//        [model setMiniImage:miniImage];
-//        [imageModels addObject:model];
-//    }
-//    return imageModels;
-    return [self fetchSystemPhotoLibrary];
+    NSArray *fileNameArray = [self.fileManager contentsOfDirectoryAtPath:DocumentImagePath error:nil];
+    NSMutableArray *imageModels = [NSMutableArray array];
+    for (NSString *fileName in fileNameArray) {
+        NSString *imagePath = [DocumentImagePath stringByAppendingPathComponent:fileName];
+        UIImage *originImage = [UIImage imageWithContentsOfFile:imagePath];
+        UIImage *miniImage = [self thumbnailWithImage:originImage size:CGSizeMake(50, 50)];
+        HDImageModel *model = [[HDImageModel alloc] init];
+        [model setFileName:fileName];
+        [model setFilePath:imagePath];
+        [model setMiniImage:miniImage];
+        [imageModels addObject:model];
+    }
+    return imageModels;
 }
 
 /**
@@ -78,7 +77,9 @@
     }
     //获取相机胶卷
     PHAssetCollection *cameraCollection = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
-    [photoCollections addObject:cameraCollection];
+    if (cameraCollection) {
+        [photoCollections addObject:cameraCollection];
+    }
     for (PHAssetCollection *collection in photoCollections) {
         NSArray *array = [self enumerateAssetsInAssetCollection:collection original:NO];
         [photos addObjectsFromArray:array];
@@ -102,6 +103,35 @@
         }];
     }
     return array;
+}
+
+/**
+ 拷贝系统相册数据到本地沙箱
+
+ @param dataArray dataArray description
+ */
+- (void)copySystemCameraSourceToSandBox:(NSArray *)dataArray {
+    for (int i = 0; i < dataArray.count; i ++) {
+        HDImageModel *model = dataArray[i];
+        PHAsset *asset = model.asset;
+        if (asset.mediaType == PHAssetMediaTypeImage) {
+            [[PHImageManager defaultManager] requestImageDataForAsset:asset options:PHImageContentModeDefault resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+                [imageData writeToFile:[Document_Path stringByAppendingString:[NSString stringWithFormat:@"/image/%d.png", i]] atomically:YES];
+            }];
+        } else if (asset.mediaType == PHAssetMediaTypeVideo) {
+            PHVideoRequestOptions *options = [PHVideoRequestOptions new];
+            options.version = PHVideoRequestOptionsVersionOriginal;
+            [[PHImageManager defaultManager] requestAVAssetForVideo:asset options:options resultHandler:^(AVAsset * _Nullable avasset, AVAudioMix * _Nullable audioMix,NSDictionary * _Nullable info) {
+                NSError *error;
+                AVURLAsset *avurlasset = (AVURLAsset*) avasset;
+                NSString *path = [Document_Path stringByAppendingString:[NSString stringWithFormat:@"/image/%d.mov", i]];
+                NSURL *fileURL = [NSURL fileURLWithPath:path];
+                if ([[NSFileManager defaultManager] copyItemAtURL:avurlasset.URL toURL:fileURL error:&error]) {
+                    NSLog(@"video copy finished");
+                }
+            }];
+        }
+    }
 }
 
 @end
