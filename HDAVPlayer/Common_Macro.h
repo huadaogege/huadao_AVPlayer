@@ -21,6 +21,10 @@
 
 #define QRCodeImageIdentifier @"CIQRCodeGenerator"
 
+#define WINDOW_SCALE Screen_width / 320.0
+
+#define WINDOW_SCALE_SIX Screen_width / 375.0
+
 #define WeakSelf __weak typeof(self) weakSelf = self;
 
 #define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;

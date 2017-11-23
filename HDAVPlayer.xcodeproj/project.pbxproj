@@ -60,6 +60,10 @@
 		E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B6C71F0CC21D0002292C /* HDFileManager.m */; };
 		E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72B1F0CC9130002292C /* GTMBase64.m */; };
 		E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */; };
+		E99793F21FC69C2A00A79647 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F11FC69C2A00A79647 /* VideoViewController.m */; };
+		E99793F51FC69C8C00A79647 /* CustomUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F41FC69C8C00A79647 /* CustomUISlider.m */; };
+		E99793F81FC69CB000A79647 /* CustomVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F61FC69CB000A79647 /* CustomVolumeView.m */; };
+		E99793FC1FC69D1500A79647 /* CustomGesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793FA1FC69D1500A79647 /* CustomGesView.m */; };
 		E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC521F1D0B5000807899 /* NSString+Editer.m */; };
 		E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC551F1D0E2500807899 /* HDPlayerViewModel.m */; };
 		E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188E41F1C5C5A00640D53 /* HDRequest.m */; };
@@ -340,6 +344,15 @@
 		E992B72C1F0CC9130002292C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E992B72E1F0CC9B10002292C /* HDFileBasicInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileBasicInfoModel.h; sourceTree = "<group>"; };
 		E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileBasicInfoModel.m; sourceTree = "<group>"; };
+		E99793F01FC69C2A00A79647 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		E99793F11FC69C2A00A79647 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		E99793F31FC69C8C00A79647 /* CustomUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUISlider.h; sourceTree = "<group>"; };
+		E99793F41FC69C8C00A79647 /* CustomUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUISlider.m; sourceTree = "<group>"; };
+		E99793F61FC69CB000A79647 /* CustomVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVolumeView.m; sourceTree = "<group>"; };
+		E99793F71FC69CB000A79647 /* CustomVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomVolumeView.h; sourceTree = "<group>"; };
+		E99793F91FC69CEB00A79647 /* VideoProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoProtocal.h; sourceTree = "<group>"; };
+		E99793FA1FC69D1500A79647 /* CustomGesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGesView.m; sourceTree = "<group>"; };
+		E99793FB1FC69D1500A79647 /* CustomGesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGesView.h; sourceTree = "<group>"; };
 		E99FFC511F1D0B5000807899 /* NSString+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Editer.h"; sourceTree = "<group>"; };
 		E99FFC521F1D0B5000807899 /* NSString+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Editer.m"; sourceTree = "<group>"; };
 		E99FFC541F1D0E2500807899 /* HDPlayerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPlayerViewModel.h; sourceTree = "<group>"; };
@@ -1480,6 +1493,15 @@
 			children = (
 				E9DFE1BF1FC3C7EB00D37BA6 /* HDImageManager.h */,
 				E9DFE1C01FC3C7EB00D37BA6 /* HDImageManager.m */,
+				E99793F01FC69C2A00A79647 /* VideoViewController.h */,
+				E99793F11FC69C2A00A79647 /* VideoViewController.m */,
+				E99793F31FC69C8C00A79647 /* CustomUISlider.h */,
+				E99793F41FC69C8C00A79647 /* CustomUISlider.m */,
+				E99793F71FC69CB000A79647 /* CustomVolumeView.h */,
+				E99793F61FC69CB000A79647 /* CustomVolumeView.m */,
+				E99793F91FC69CEB00A79647 /* VideoProtocal.h */,
+				E99793FB1FC69D1500A79647 /* CustomGesView.h */,
+				E99793FA1FC69D1500A79647 /* CustomGesView.m */,
 			);
 			path = ImageManager;
 			sourceTree = "<group>";
@@ -1781,6 +1803,7 @@
 				E95774041F9DD6FD000AE338 /* Soy.m in Sources */,
 				E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */,
 				E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */,
+				E99793FC1FC69D1500A79647 /* CustomGesView.m in Sources */,
 				E9B6ED7A1F0C7C5F0072938A /* SDWebImageDownloaderOperation.m in Sources */,
 				E9B6ECF01F0C7AB80072938A /* JSONAPI.m in Sources */,
 				E91A3F1A1F1E07BE00D95557 /* GCDAsyncSocket.m in Sources */,
@@ -1829,6 +1852,7 @@
 				E9B6ED301F0C7BFD0072938A /* MJRefreshGifHeader.m in Sources */,
 				E9B6ED271F0C7B9B0072938A /* MJRefreshHeader.m in Sources */,
 				E9B6EDA01F0C7C9F0072938A /* aescrypt.c in Sources */,
+				E99793F81FC69CB000A79647 /* CustomVolumeView.m in Sources */,
 				E9E2B2B51F9F1FC000F044BC /* HDAppInfoRequest.m in Sources */,
 				E9B6ECE51F0C7AA80072938A /* JSONModelClassProperty.m in Sources */,
 				E957CD291F99EE910004E207 /* HDCalculateFactory.m in Sources */,
@@ -1867,6 +1891,7 @@
 				E9B6ECF11F0C7AB80072938A /* JSONHTTPClient.m in Sources */,
 				E95774271F9DEB21000AE338 /* HDCalculatesMultiply.m in Sources */,
 				E9B6EDA31F0C7C9F0072938A /* entropy.c in Sources */,
+				E99793F21FC69C2A00A79647 /* VideoViewController.m in Sources */,
 				E9B6ED241F0C7B9B0072938A /* MJRefreshBackFooter.m in Sources */,
 				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */,
@@ -1914,6 +1939,7 @@
 				E957CD351F99EF200004E207 /* HDCalculateDivide.m in Sources */,
 				E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */,
 				E9B6ECE31F0C7AA80072938A /* JSONModel.m in Sources */,
+				E99793F51FC69C8C00A79647 /* CustomUISlider.m in Sources */,
 				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
 				E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */,
 				E9DFE1C11FC3C7EB00D37BA6 /* HDImageManager.m in Sources */,

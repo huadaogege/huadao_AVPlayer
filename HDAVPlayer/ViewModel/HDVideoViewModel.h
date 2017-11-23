@@ -16,7 +16,7 @@
 @property (nonatomic, strong) UIImage *iconImg;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIViewController *vieController;
+@property (nonatomic, strong) UIViewController *viewController;
 
 - (void)fetchFileData;
 

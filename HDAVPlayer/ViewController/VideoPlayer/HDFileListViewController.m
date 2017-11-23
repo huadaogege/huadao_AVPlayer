@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
     self.videoViewModel = [[HDVideoViewModel alloc] init];
-    self.videoViewModel.vieController = self;
+    self.videoViewModel.viewController = self;
     [self.view addSubview:self.videoViewModel.tableView];
 }
 
