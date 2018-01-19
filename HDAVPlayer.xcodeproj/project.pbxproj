@@ -187,6 +187,7 @@
 		E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF61F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m */; };
 		E9B6EE011F0C7CEE0072938A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */; };
 		E9B6EE031F0C7E950072938A /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B6EE021F0C7E950072938A /* mars.framework */; };
+		E9B97AE82011923B0050ECFF /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B97AE72011923B0050ECFF /* Request.m */; };
 		E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */; };
 		E9DFE1A81FC3C41D00D37BA6 /* ImagePreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DFE1A61FC3C41D00D37BA6 /* ImagePreViewController.m */; };
 		E9DFE1A91FC3C41D00D37BA6 /* ImagePreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DFE1A71FC3C41D00D37BA6 /* ImagePreViewController.xib */; };
@@ -608,6 +609,8 @@
 		E9B6EDF71F0C7CEE0072938A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E9B6EE021F0C7E950072938A /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		E9B97AE62011923B0050ECFF /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		E9B97AE72011923B0050ECFF /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		E9C603CC1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalPageFlowlayout.h; sourceTree = "<group>"; };
 		E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalPageFlowlayout.m; sourceTree = "<group>"; };
 		E9DFE1A51FC3C41D00D37BA6 /* ImagePreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePreViewController.h; sourceTree = "<group>"; };
@@ -1478,6 +1481,15 @@
 			path = aes;
 			sourceTree = "<group>";
 		};
+		E9B97AE5201192070050ECFF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E9B97AE62011923B0050ECFF /* Request.h */,
+				E9B97AE72011923B0050ECFF /* Request.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		E9DFE1A41FC3C3C200D37BA6 /* ImagePreview */ = {
 			isa = PBXGroup;
 			children = (
@@ -1514,6 +1526,7 @@
 		E9E2195E1F99EA9700368413 /* DesignModels */ = {
 			isa = PBXGroup;
 			children = (
+				E9B97AE5201192070050ECFF /* Delegate */,
 				E9AEC5461FA1BE7D00B1992D /* States */,
 				E97B98451F9DFE93009481F5 /* Builder */,
 				E95774081F9DE750000AE338 /* MethodFactory */,
@@ -1884,6 +1897,7 @@
 				E9B6ECE61F0C7AA80072938A /* JSONModelError.m in Sources */,
 				E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */,
 				E97B984E1F9E00CC009481F5 /* AudiDirector.m in Sources */,
+				E9B97AE82011923B0050ECFF /* Request.m in Sources */,
 				E9B6ED7B1F0C7C5F0072938A /* SDWebImageManager.m in Sources */,
 				E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */,
 				E9B6ED3C1F0C7C390072938A /* MJRefreshAutoNormalFooter.m in Sources */,

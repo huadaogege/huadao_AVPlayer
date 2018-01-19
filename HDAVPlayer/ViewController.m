@@ -31,6 +31,7 @@
 #import "HDFinishedState.h"
 #import "HDFailedState.h"
 #import "HDUploadFileRequest.h"
+#import "Request.h"
 
 @interface ViewController ()
 
@@ -43,28 +44,25 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    
-    HDRequest *request = (HDUploadFileRequest *)[HDRequest requestWithName:@"HDUploadFileRequest"];
-    NSData *data = [NSData dataWithContentsOfFile:[Document_Path stringByAppendingPathComponent:@"17.mov"]];
+}
+
+/**
+ 代理模式
+ */
+- (void)delegateDesignMode {
+    Request *request = [[Request alloc] requestWithUrlId:@"007"];
     request.delegate = self;
-    request.httpBody = @{
-                        @"file":@{
-                                @"data":data,
-                                @"fileName":@"17.mov",
-                                @"mimeType":@"multipart/form-data"
-                                }
-                        };
-    request.didFinishSelector = @selector(didFinishSelector:);
-    request.didFailSelector = @selector(didFailSelector:);
+    request.didFisishSelector = @selector(didFisishSelector:);
+    request.didFailedSelector = @selector(didFailedSelector:);
     [request start];
 }
 
-- (void)didFinishSelector:(HDRequest *)request {
-    NSLog(@"%@", request.result);
+- (void)didFisishSelector:(Request *)request {
+    NSLog(@"请求成功:%@", request.requestId);
 }
 
-- (void)didFailSelector:(HDRequest *)request {
-    NSLog(@"%@", request.result);
+- (void)didFailedSelector:(Request *)request {
+    NSLog(@"请求失败:%@", request.requestId);
 }
 
 //- (void)requestAppInfo {
