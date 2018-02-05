@@ -40,12 +40,6 @@
 		E95774241F9DEB0E000AE338 /* HDCalculatesMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774231F9DEB0E000AE338 /* HDCalculatesMinus.m */; };
 		E95774271F9DEB21000AE338 /* HDCalculatesMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774261F9DEB21000AE338 /* HDCalculatesMultiply.m */; };
 		E957742A1F9DEB34000AE338 /* HDCalculatesDivide.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774291F9DEB34000AE338 /* HDCalculatesDivide.m */; };
-		E957CD291F99EE910004E207 /* HDCalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD281F99EE910004E207 /* HDCalculateFactory.m */; };
-		E957CD2C1F99EEB80004E207 /* HDCalculateAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD2B1F99EEB80004E207 /* HDCalculateAdd.m */; };
-		E957CD2F1F99EED40004E207 /* HDCalculateMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD2E1F99EED40004E207 /* HDCalculateMinus.m */; };
-		E957CD321F99EF070004E207 /* HDCalculateMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD311F99EF070004E207 /* HDCalculateMultiply.m */; };
-		E957CD351F99EF200004E207 /* HDCalculateDivide.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD341F99EF200004E207 /* HDCalculateDivide.m */; };
-		E957CD381F99F2710004E207 /* HDCalCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E957CD371F99F2710004E207 /* HDCalCommonTool.m */; };
 		E97B98481F9DFF6E009481F5 /* AudiCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98471F9DFF6E009481F5 /* AudiCar.m */; };
 		E97B984B1F9E002D009481F5 /* AudiCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B984A1F9E002D009481F5 /* AudiCarBuilder.m */; };
 		E97B984E1F9E00CC009481F5 /* AudiDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B984D1F9E00CC009481F5 /* AudiDirector.m */; };
@@ -304,18 +298,6 @@
 		E95774261F9DEB21000AE338 /* HDCalculatesMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculatesMultiply.m; sourceTree = "<group>"; };
 		E95774281F9DEB34000AE338 /* HDCalculatesDivide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculatesDivide.h; sourceTree = "<group>"; };
 		E95774291F9DEB34000AE338 /* HDCalculatesDivide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculatesDivide.m; sourceTree = "<group>"; };
-		E957CD271F99EE910004E207 /* HDCalculateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateFactory.h; sourceTree = "<group>"; };
-		E957CD281F99EE910004E207 /* HDCalculateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateFactory.m; sourceTree = "<group>"; };
-		E957CD2A1F99EEB80004E207 /* HDCalculateAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateAdd.h; sourceTree = "<group>"; };
-		E957CD2B1F99EEB80004E207 /* HDCalculateAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateAdd.m; sourceTree = "<group>"; };
-		E957CD2D1F99EED40004E207 /* HDCalculateMinus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateMinus.h; sourceTree = "<group>"; };
-		E957CD2E1F99EED40004E207 /* HDCalculateMinus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateMinus.m; sourceTree = "<group>"; };
-		E957CD301F99EF070004E207 /* HDCalculateMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateMultiply.h; sourceTree = "<group>"; };
-		E957CD311F99EF070004E207 /* HDCalculateMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateMultiply.m; sourceTree = "<group>"; };
-		E957CD331F99EF200004E207 /* HDCalculateDivide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculateDivide.h; sourceTree = "<group>"; };
-		E957CD341F99EF200004E207 /* HDCalculateDivide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculateDivide.m; sourceTree = "<group>"; };
-		E957CD361F99F2710004E207 /* HDCalCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalCommonTool.h; sourceTree = "<group>"; };
-		E957CD371F99F2710004E207 /* HDCalCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalCommonTool.m; sourceTree = "<group>"; };
 		E97B98461F9DFF6E009481F5 /* AudiCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiCar.h; sourceTree = "<group>"; };
 		E97B98471F9DFF6E009481F5 /* AudiCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiCar.m; sourceTree = "<group>"; };
 		E97B98491F9E002D009481F5 /* AudiCarBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiCarBuilder.h; sourceTree = "<group>"; };
@@ -631,7 +613,6 @@
 		E9DFE1C31FC3CD0400D37BA6 /* HDImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDImageModel.m; sourceTree = "<group>"; };
 		E9DFE1C51FC3CF2A00D37BA6 /* HDImageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDImageViewModel.h; sourceTree = "<group>"; };
 		E9DFE1C61FC3CF2A00D37BA6 /* HDImageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDImageViewModel.m; sourceTree = "<group>"; };
-		E9E219601F99EC2D00368413 /* HDCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculate.h; sourceTree = "<group>"; };
 		E9E2B2B31F9F1FC000F044BC /* HDAppInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAppInfoRequest.h; sourceTree = "<group>"; };
 		E9E2B2B41F9F1FC000F044BC /* HDAppInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAppInfoRequest.m; sourceTree = "<group>"; };
 		E9E556D81F0BD3F900567110 /* HDAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1540,19 +1521,6 @@
 		E9E2195F1F99EAF500368413 /* SimpleFactory */ = {
 			isa = PBXGroup;
 			children = (
-				E9E219601F99EC2D00368413 /* HDCalculate.h */,
-				E957CD361F99F2710004E207 /* HDCalCommonTool.h */,
-				E957CD371F99F2710004E207 /* HDCalCommonTool.m */,
-				E957CD271F99EE910004E207 /* HDCalculateFactory.h */,
-				E957CD281F99EE910004E207 /* HDCalculateFactory.m */,
-				E957CD2A1F99EEB80004E207 /* HDCalculateAdd.h */,
-				E957CD2B1F99EEB80004E207 /* HDCalculateAdd.m */,
-				E957CD2D1F99EED40004E207 /* HDCalculateMinus.h */,
-				E957CD2E1F99EED40004E207 /* HDCalculateMinus.m */,
-				E957CD301F99EF070004E207 /* HDCalculateMultiply.h */,
-				E957CD311F99EF070004E207 /* HDCalculateMultiply.m */,
-				E957CD331F99EF200004E207 /* HDCalculateDivide.h */,
-				E957CD341F99EF200004E207 /* HDCalculateDivide.m */,
 			);
 			path = SimpleFactory;
 			sourceTree = "<group>";
@@ -1874,7 +1842,6 @@
 				E99793F81FC69CB000A79647 /* CustomVolumeView.m in Sources */,
 				E9E2B2B51F9F1FC000F044BC /* HDAppInfoRequest.m in Sources */,
 				E9B6ECE51F0C7AA80072938A /* JSONModelClassProperty.m in Sources */,
-				E957CD291F99EE910004E207 /* HDCalculateFactory.m in Sources */,
 				E9B6ED161F0C7ADB0072938A /* UIView+MJExtension.m in Sources */,
 				E9B6ECC71F0C7A290072938A /* LMApp.m in Sources */,
 				E9B6EDA51F0C7C9F0072938A /* hmac.c in Sources */,
@@ -1882,7 +1849,6 @@
 				E9A1890E1F1CA45100640D53 /* HDQRCodeScanViewController.m in Sources */,
 				E9B6ED261F0C7B9B0072938A /* MJRefreshFooter.m in Sources */,
 				E95773F81F9DD6B8000AE338 /* Espresso.m in Sources */,
-				E957CD2F1F99EED40004E207 /* HDCalculateMinus.m in Sources */,
 				E95773FB1F9DD6C9000AE338 /* Decaf.m in Sources */,
 				E9B6ED511F0C7C510072938A /* RDVTabBarController.m in Sources */,
 				E9DFE1BC1FC3C61200D37BA6 /* imageListCell.m in Sources */,
@@ -1944,19 +1910,15 @@
 				E9B6ED4F1F0C7C510072938A /* JRSwizzle.m in Sources */,
 				E9B6EDF91F0C7CEE0072938A /* AFAutoPurgingImageCache.m in Sources */,
 				E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */,
-				E957CD381F99F2710004E207 /* HDCalCommonTool.m in Sources */,
 				E9B6EDFC1F0C7CEE0072938A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */,
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
 				E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */,
-				E957CD2C1F99EEB80004E207 /* HDCalculateAdd.m in Sources */,
-				E957CD321F99EF070004E207 /* HDCalculateMultiply.m in Sources */,
 				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,
 				E9A189071F1CA44800640D53 /* HDPlayerViewController.m in Sources */,
 				E91A3F261F1E094000D95557 /* HDClientViewController.m in Sources */,
 				E992B6C51F0CC2150002292C /* HDDatabaseManager.m in Sources */,
 				E9B6ECBF1F0C7A210072938A /* AFSecurityPolicy.m in Sources */,
-				E957CD351F99EF200004E207 /* HDCalculateDivide.m in Sources */,
 				E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */,
 				E9B6ECE31F0C7AA80072938A /* JSONModel.m in Sources */,
 				E99793F51FC69C8C00A79647 /* CustomUISlider.m in Sources */,

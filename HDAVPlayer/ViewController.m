@@ -10,7 +10,6 @@
 #import "HDFuncViewController.h"
 #import "HDConfig.h"
 #import "HDFmdbManager.h"
-#import "HDCalculateFactory.h"
 #import "HDStrategyController.h"
 #import "Espresso.h"
 #import "Milk.h"
@@ -85,16 +84,6 @@
 //    NSLog(@"%@", request);
 //}
 
-
-//简单工厂模式
-- (void)simpleFactory {
-    id<HDCalculate> cal;
-    cal = [HDCalculateFactory createCalculate:@"*"];
-    cal.numberA = 10;
-    cal.numberB = 2;
-    CGFloat result = [cal calculate];
-    NSLog(@"%f", result);
-}
 
 //策略模式
 - (void)strategy {
