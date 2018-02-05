@@ -182,6 +182,10 @@
 		E9B6EE011F0C7CEE0072938A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */; };
 		E9B6EE031F0C7E950072938A /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B6EE021F0C7E950072938A /* mars.framework */; };
 		E9B97AE82011923B0050ECFF /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B97AE72011923B0050ECFF /* Request.m */; };
+		E9B97AF02011CA8B0050ECFF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B97AEF2011CA8B0050ECFF /* NotificationCenter.framework */; };
+		E9B97AF42011CA8B0050ECFF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B97AF32011CA8B0050ECFF /* TodayViewController.m */; };
+		E9B97AF72011CA8B0050ECFF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B97AF52011CA8B0050ECFF /* MainInterface.storyboard */; };
+		E9B97AFB2011CA8B0050ECFF /* TodayWiget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9B97AEE2011CA8B0050ECFF /* TodayWiget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */; };
 		E9DFE1A81FC3C41D00D37BA6 /* ImagePreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DFE1A61FC3C41D00D37BA6 /* ImagePreViewController.m */; };
 		E9DFE1A91FC3C41D00D37BA6 /* ImagePreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DFE1A71FC3C41D00D37BA6 /* ImagePreViewController.xib */; };
@@ -211,9 +215,17 @@
 		E9E6CB681F31D73C009B3934 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB631F31D73C009B3934 /* FMResultSet.m */; };
 		E9E6CB6C1F31D99B009B3934 /* HDFmdbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6CB6B1F31D99B009B3934 /* HDFmdbManager.m */; };
 		E9E6CB6E1F31E0A5009B3934 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E6CB6D1F31E0A5009B3934 /* libsqlite3.0.tbd */; };
+		E9F767B82011EBA40050B5CC /* ExtensionNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F767B72011EBA40050B5CC /* ExtensionNoteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E9B97AF92011CA8B0050ECFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E556D01F0BD3F900567110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B97AED2011CA8B0050ECFF;
+			remoteInfo = TodayWiget;
+		};
 		E9E556F51F0BD3F900567110 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E9E556D01F0BD3F900567110 /* Project object */;
@@ -229,6 +241,20 @@
 			remoteInfo = HDAVPlayer;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9B97AFF2011CA8B0050ECFF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E9B97AFB2011CA8B0050ECFF /* TodayWiget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E901AB7A1F9CCC84000E7B1F /* HDUITextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDUITextField.h; sourceTree = "<group>"; };
@@ -593,6 +619,12 @@
 		E9B6EE021F0C7E950072938A /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
 		E9B97AE62011923B0050ECFF /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		E9B97AE72011923B0050ECFF /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		E9B97AEE2011CA8B0050ECFF /* TodayWiget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWiget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B97AEF2011CA8B0050ECFF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		E9B97AF22011CA8B0050ECFF /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		E9B97AF32011CA8B0050ECFF /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		E9B97AF62011CA8B0050ECFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E9B97AF82011CA8B0050ECFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9C603CC1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalPageFlowlayout.h; sourceTree = "<group>"; };
 		E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalPageFlowlayout.m; sourceTree = "<group>"; };
 		E9DFE1A51FC3C41D00D37BA6 /* ImagePreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePreViewController.h; sourceTree = "<group>"; };
@@ -646,9 +678,19 @@
 		E9E6CB6A1F31D99B009B3934 /* HDFmdbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFmdbManager.h; sourceTree = "<group>"; };
 		E9E6CB6B1F31D99B009B3934 /* HDFmdbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFmdbManager.m; sourceTree = "<group>"; };
 		E9E6CB6D1F31E0A5009B3934 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		E9F767B62011EBA40050B5CC /* ExtensionNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionNoteViewController.h; sourceTree = "<group>"; };
+		E9F767B72011EBA40050B5CC /* ExtensionNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionNoteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E9B97AEB2011CA8B0050ECFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B97AF02011CA8B0050ECFF /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9E556D51F0BD3F900567110 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -852,6 +894,7 @@
 				E992B6BD1F0CC0F80002292C /* SystemConfiguration.framework */,
 				E992B6BB1F0CC0F30002292C /* CoreTelephony.framework */,
 				E992B6B91F0CC0EE0002292C /* libz.tbd */,
+				E9B97AEF2011CA8B0050ECFF /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1471,6 +1514,26 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		E9B97AE92011C9DD0050ECFF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E9F767B62011EBA40050B5CC /* ExtensionNoteViewController.h */,
+				E9F767B72011EBA40050B5CC /* ExtensionNoteViewController.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E9B97AF12011CA8B0050ECFF /* TodayWiget */ = {
+			isa = PBXGroup;
+			children = (
+				E9B97AF22011CA8B0050ECFF /* TodayViewController.h */,
+				E9B97AF32011CA8B0050ECFF /* TodayViewController.m */,
+				E9B97AF52011CA8B0050ECFF /* MainInterface.storyboard */,
+				E9B97AF82011CA8B0050ECFF /* Info.plist */,
+			);
+			path = TodayWiget;
+			sourceTree = "<group>";
+		};
 		E9DFE1A41FC3C3C200D37BA6 /* ImagePreview */ = {
 			isa = PBXGroup;
 			children = (
@@ -1531,6 +1594,7 @@
 				E9E556DA1F0BD3F900567110 /* HDAVPlayer */,
 				E9E556F71F0BD3F900567110 /* HDAVPlayerTests */,
 				E9E557021F0BD3F900567110 /* HDAVPlayerUITests */,
+				E9B97AF12011CA8B0050ECFF /* TodayWiget */,
 				E9E556D91F0BD3F900567110 /* Products */,
 				E992B6B81F0CC0EE0002292C /* Frameworks */,
 			);
@@ -1542,6 +1606,7 @@
 				E9E556D81F0BD3F900567110 /* HDAVPlayer.app */,
 				E9E556F41F0BD3F900567110 /* HDAVPlayerTests.xctest */,
 				E9E556FF1F0BD3F900567110 /* HDAVPlayerUITests.xctest */,
+				E9B97AEE2011CA8B0050ECFF /* TodayWiget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1554,6 +1619,7 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9B97AE92011C9DD0050ECFF /* Extension */,
 				E9E2195E1F99EA9700368413 /* DesignModels */,
 				E9A189271F1CD83A00640D53 /* ViewModel */,
 				E9A189231F1CD28600640D53 /* Category */,
@@ -1631,6 +1697,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E9B97AED2011CA8B0050ECFF /* TodayWiget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B97AFC2011CA8B0050ECFF /* Build configuration list for PBXNativeTarget "TodayWiget" */;
+			buildPhases = (
+				E9B97AEA2011CA8B0050ECFF /* Sources */,
+				E9B97AEB2011CA8B0050ECFF /* Frameworks */,
+				E9B97AEC2011CA8B0050ECFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWiget;
+			productName = TodayWiget;
+			productReference = E9B97AEE2011CA8B0050ECFF /* TodayWiget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E9E556D71F0BD3F900567110 /* HDAVPlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9E557081F0BD3F900567110 /* Build configuration list for PBXNativeTarget "HDAVPlayer" */;
@@ -1638,10 +1721,12 @@
 				E9E556D41F0BD3F900567110 /* Sources */,
 				E9E556D51F0BD3F900567110 /* Frameworks */,
 				E9E556D61F0BD3F900567110 /* Resources */,
+				E9B97AFF2011CA8B0050ECFF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9B97AFA2011CA8B0050ECFF /* PBXTargetDependency */,
 			);
 			name = HDAVPlayer;
 			productName = HDAVPlayer;
@@ -1693,6 +1778,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "崔玉冠";
 				TargetAttributes = {
+					E9B97AED2011CA8B0050ECFF = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 56MY3ZN5V7;
+						ProvisioningStyle = Automatic;
+					};
 					E9E556D71F0BD3F900567110 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 56MY3ZN5V7;
@@ -1733,11 +1823,20 @@
 				E9E556D71F0BD3F900567110 /* HDAVPlayer */,
 				E9E556F31F0BD3F900567110 /* HDAVPlayerTests */,
 				E9E556FE1F0BD3F900567110 /* HDAVPlayerUITests */,
+				E9B97AED2011CA8B0050ECFF /* TodayWiget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E9B97AEC2011CA8B0050ECFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B97AF72011CA8B0050ECFF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9E556D61F0BD3F900567110 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1778,6 +1877,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E9B97AEA2011CA8B0050ECFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B97AF42011CA8B0050ECFF /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9E556D41F0BD3F900567110 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1849,6 +1956,8 @@
 				E9A1890E1F1CA45100640D53 /* HDQRCodeScanViewController.m in Sources */,
 				E9B6ED261F0C7B9B0072938A /* MJRefreshFooter.m in Sources */,
 				E95773F81F9DD6B8000AE338 /* Espresso.m in Sources */,
+				E9F767B82011EBA40050B5CC /* ExtensionNoteViewController.m in Sources */,
+				E957CD2F1F99EED40004E207 /* HDCalculateMinus.m in Sources */,
 				E95773FB1F9DD6C9000AE338 /* Decaf.m in Sources */,
 				E9B6ED511F0C7C510072938A /* RDVTabBarController.m in Sources */,
 				E9DFE1BC1FC3C61200D37BA6 /* imageListCell.m in Sources */,
@@ -1984,6 +2093,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E9B97AFA2011CA8B0050ECFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9B97AED2011CA8B0050ECFF /* TodayWiget */;
+			targetProxy = E9B97AF92011CA8B0050ECFF /* PBXContainerItemProxy */;
+		};
 		E9E556F61F0BD3F900567110 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E9E556D71F0BD3F900567110 /* HDAVPlayer */;
@@ -1997,6 +2111,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E9B97AF52011CA8B0050ECFF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B97AF62011CA8B0050ECFF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		E9E556E41F0BD3F900567110 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2016,6 +2138,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E9B97AFD2011CA8B0050ECFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodayWiget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer.TodayWiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9B97AFE2011CA8B0050ECFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodayWiget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer.TodayWiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E9E557061F0BD3F900567110 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2111,6 +2285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2133,6 +2308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2203,6 +2379,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E9B97AFC2011CA8B0050ECFF /* Build configuration list for PBXNativeTarget "TodayWiget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B97AFD2011CA8B0050ECFF /* Debug */,
+				E9B97AFE2011CA8B0050ECFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E9E556D31F0BD3F900567110 /* Build configuration list for PBXProject "HDAVPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

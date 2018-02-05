@@ -59,5 +59,22 @@
     return fileBasicInfo;
 }
 
+//- (HDNoteInfo *)insertHDNoteInfoIntoSource:(HDNoteModel *)model tableName:(NSString *)tableName {
+//    NSArray *insetedArray = [self objectsFromSourceWithTableName:tableName];
+//    for (HDNoteInfo *info in insetedArray) {
+//        if ([info.noteId isEqualToString:model.nodeId]) {
+//            return info;
+//        }
+//    }
+//    HDNoteInfo *info = [NSEntityDescription insertNewObjectForEntityForName:tableName inManagedObjectContext:self.managedObjectContext];
+//    info.noteId = model.nodeId;
+//    info.noteInfo = model.nodeInfo;
+//    NSError *error;
+//    if ([self.managedObjectContext save:&error]) {
+//        NSLog(@"保存成功!");
+//    }
+//    return info;
+//}
+
 
 @end

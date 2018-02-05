@@ -10,6 +10,8 @@
 #import "HDFileBasicInfo+CoreDataClass.h"
 #import "HDFileBasicInfoModel.h"
 
+
+
 @interface HDDatabaseManager : NSObject
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
@@ -19,5 +21,7 @@
 - (HDFileBasicInfo *)insertFileBasicInfoIntoSource:(HDFileBasicInfoModel*)model tableName:(NSString *)tableName;
 
 - (NSArray *)objectsFromSourceWithTableName:(NSString *)tableName;
+
+//- (HDNoteInfo *)insertHDNoteInfoIntoSource:(HDNoteModel *)model tableName:(NSString *)tableName;
 
 @end
