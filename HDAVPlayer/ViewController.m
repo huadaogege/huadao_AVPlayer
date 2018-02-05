@@ -31,6 +31,7 @@
 #import "HDFailedState.h"
 #import "HDUploadFileRequest.h"
 #import "Request.h"
+#import "HDWorkerFactory.h"
 
 @interface ViewController ()
 
@@ -43,6 +44,14 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
+    [self simpleFactory];
+}
+
+- (void)simpleFactory {
+    id <HDWorker> worker;
+    worker = [HDWorkerFactory workerWithProfessionName:@"Teacher"];
+    worker.name = @"huadao";
+    [worker WorkProduce];
 }
 
 /**
