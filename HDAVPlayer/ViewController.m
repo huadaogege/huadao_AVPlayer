@@ -10,7 +10,6 @@
 #import "HDFuncViewController.h"
 #import "HDConfig.h"
 #import "HDFmdbManager.h"
-#import "HDStrategyController.h"
 #import "Espresso.h"
 #import "Milk.h"
 #import "Mocha.h"
@@ -32,6 +31,7 @@
 #import "HDUploadFileRequest.h"
 #import "Request.h"
 #import "HDWorkerFactory.h"
+#import "HDCashContext.h"
 
 @interface ViewController ()
 
@@ -44,14 +44,29 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    [self simpleFactory];
+    [self strategy];
 }
 
+/**
+ 简单工厂模式
+ */
 - (void)simpleFactory {
     id <HDWorker> worker;
     worker = [HDWorkerFactory workerWithProfessionName:@"Teacher"];
     worker.name = @"huadao";
     [worker WorkProduce];
+}
+
+/**
+ 策略模式
+ */
+- (void)strategy {
+    HDCashContext *normalContext = [[HDCashContext alloc] initWithCashType:CashNormal];
+    NSLog(@"%f", [normalContext getCashResult:100]);
+    HDCashContext *returnContext = [[HDCashContext alloc] initWithCashType:CashReturn];
+    NSLog(@"%f", [returnContext getCashResult:100]);
+    HDCashContext *rebateContext = [[HDCashContext alloc] initWithCashType:CashRebate];
+    NSLog(@"%f", [rebateContext getCashResult:100]);
 }
 
 /**
@@ -92,13 +107,6 @@
 //- (void)didFailSelector:(HDRequest *)request {
 //    NSLog(@"%@", request);
 //}
-
-
-//策略模式
-- (void)strategy {
-    HDStrategyController *vc = [[HDStrategyController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
 
 //装饰者模式
 - (void)decorator {
