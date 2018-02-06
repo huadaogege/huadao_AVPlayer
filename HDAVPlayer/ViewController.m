@@ -10,9 +10,6 @@
 #import "HDFuncViewController.h"
 #import "HDConfig.h"
 #import "HDFmdbManager.h"
-#import "Espresso.h"
-#import "Milk.h"
-#import "Mocha.h"
 #import "HDFactory.h"
 #import "HDFactoryMultiply.h"
 #import "HDCalculatesMultiply.h"
@@ -33,6 +30,14 @@
 #import "HDWorkerFactory.h"
 #import "HDCashContext.h"
 
+#import "Espresso.h"
+#import "Decaf.h"
+#import "DarkRoast.h"
+#import "Milk.h"
+#import "Mocha.h"
+#import "Soy.h"
+
+
 @interface ViewController ()
 
 @end
@@ -44,7 +49,7 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    [self strategy];
+    [self decorater];
 }
 
 /**
@@ -67,6 +72,22 @@
     NSLog(@"%f", [returnContext getCashResult:100]);
     HDCashContext *rebateContext = [[HDCashContext alloc] initWithCashType:CashRebate];
     NSLog(@"%f", [rebateContext getCashResult:100]);
+}
+
+/**
+ 装饰模式
+ */
+- (void)decorater {
+    id <Component> espresso = [[Espresso alloc] init];
+    espresso = [[Milk alloc] initWithComponent:espresso];
+    espresso = [[Mocha alloc] initWithComponent:espresso];
+    NSLog(@"品名:卡布奇诺->配料:%@->售价:%f", [espresso getName], [espresso getCost]);
+    
+    id <Component> darkRoast = [[DarkRoast alloc] init];
+    darkRoast = [[Mocha alloc] initWithComponent:darkRoast];
+    darkRoast = [[Milk alloc] initWithComponent:darkRoast];
+    darkRoast = [[Soy alloc] initWithComponent:darkRoast];
+    NSLog(@"品名:拿铁->配料:%@->售价:%f", [darkRoast getName], [darkRoast getCost]);
 }
 
 /**
@@ -108,15 +129,7 @@
 //    NSLog(@"%@", request);
 //}
 
-//装饰者模式
-- (void)decorator {
-    id<ComponentProtocol> component = [[Espresso alloc] init];
-    NSLog(@"%@:%f",[component getName], [component cost]);
-    component = [[Milk alloc] initWithComponent:component];
-    NSLog(@"%@:%f",[component getName], [component cost]);
-    component = [[Mocha alloc] initWithComponent:component];
-    NSLog(@"%@:%f",[component getName], [component cost]);
-}
+
 
 //工厂方法模式
 - (void)methodFactory {

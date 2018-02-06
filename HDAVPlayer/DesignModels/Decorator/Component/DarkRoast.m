@@ -2,15 +2,15 @@
 //  DarkRoast.m
 //  HDAVPlayer
 //
-//  Created by huadao on 2017/10/23.
-//  Copyright © 2017年 崔玉冠. All rights reserved.
+//  Created by huadao on 2018/2/6.
+//  Copyright © 2018年 崔玉冠. All rights reserved.
 //
 
 #import "DarkRoast.h"
 
-@implementation DarkRoast{
-    NSString *_name;
-}
+@implementation DarkRoast
+
+@synthesize name = _name;
 
 - (instancetype)init {
     self = [super init];
@@ -24,8 +24,8 @@
     return _name;
 }
 
-- (double)cost {
-    return 3.0;
+- (double)getCost {
+    return 30.0;
 }
 
 @end

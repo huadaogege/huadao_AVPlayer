@@ -17,14 +17,6 @@
 		E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F251F1E094000D95557 /* HDClientViewController.xib */; };
 		E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F291F1E095600D95557 /* HDServerViewController.m */; };
 		E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */; };
-		E95773F21F9DD684000AE338 /* HouseBlend.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773F11F9DD684000AE338 /* HouseBlend.m */; };
-		E95773F51F9DD69C000AE338 /* DarkRoast.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773F41F9DD69C000AE338 /* DarkRoast.m */; };
-		E95773F81F9DD6B8000AE338 /* Espresso.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773F71F9DD6B8000AE338 /* Espresso.m */; };
-		E95773FB1F9DD6C9000AE338 /* Decaf.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773FA1F9DD6C9000AE338 /* Decaf.m */; };
-		E95773FE1F9DD6E0000AE338 /* Milk.m in Sources */ = {isa = PBXBuildFile; fileRef = E95773FD1F9DD6DF000AE338 /* Milk.m */; };
-		E95774011F9DD6F0000AE338 /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774001F9DD6F0000AE338 /* Mocha.m */; };
-		E95774041F9DD6FD000AE338 /* Soy.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774031F9DD6FD000AE338 /* Soy.m */; };
-		E95774071F9DD70C000AE338 /* Whip.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774061F9DD70C000AE338 /* Whip.m */; };
 		E957740D1F9DE803000AE338 /* HDFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E957740C1F9DE803000AE338 /* HDFactory.m */; };
 		E95774111F9DE95F000AE338 /* HDFactoryAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774101F9DE95F000AE338 /* HDFactoryAdd.m */; };
 		E95774141F9DE978000AE338 /* HDFactoryMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774131F9DE978000AE338 /* HDFactoryMinus.m */; };
@@ -58,6 +50,12 @@
 		E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B6C71F0CC21D0002292C /* HDFileManager.m */; };
 		E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72B1F0CC9130002292C /* GTMBase64.m */; };
 		E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */; };
+		E996B77D2029528200532B00 /* Espresso.m in Sources */ = {isa = PBXBuildFile; fileRef = E996B77C2029528200532B00 /* Espresso.m */; };
+		E996B780202952C600532B00 /* Decaf.m in Sources */ = {isa = PBXBuildFile; fileRef = E996B77F202952C600532B00 /* Decaf.m */; };
+		E996B783202958C400532B00 /* DarkRoast.m in Sources */ = {isa = PBXBuildFile; fileRef = E996B782202958C400532B00 /* DarkRoast.m */; };
+		E996B7872029591700532B00 /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = E996B7862029591700532B00 /* Mocha.m */; };
+		E996B78A2029592C00532B00 /* Milk.m in Sources */ = {isa = PBXBuildFile; fileRef = E996B7892029592C00532B00 /* Milk.m */; };
+		E996B78D2029593900532B00 /* Soy.m in Sources */ = {isa = PBXBuildFile; fileRef = E996B78C2029593900532B00 /* Soy.m */; };
 		E99793F21FC69C2A00A79647 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F11FC69C2A00A79647 /* VideoViewController.m */; };
 		E99793F51FC69C8C00A79647 /* CustomUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F41FC69C8C00A79647 /* CustomUISlider.m */; };
 		E99793F81FC69CB000A79647 /* CustomVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F61FC69CB000A79647 /* CustomVolumeView.m */; };
@@ -280,24 +278,6 @@
 		E91A3F281F1E095600D95557 /* HDServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDServerViewController.h; sourceTree = "<group>"; };
 		E91A3F291F1E095600D95557 /* HDServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDServerViewController.m; sourceTree = "<group>"; };
 		E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDServerViewController.xib; sourceTree = "<group>"; };
-		E95773EE1F9DD41F000AE338 /* ComponentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentProtocol.h; sourceTree = "<group>"; };
-		E95773EF1F9DD623000AE338 /* DecortorProcotol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecortorProcotol.h; sourceTree = "<group>"; };
-		E95773F01F9DD684000AE338 /* HouseBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseBlend.h; sourceTree = "<group>"; };
-		E95773F11F9DD684000AE338 /* HouseBlend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseBlend.m; sourceTree = "<group>"; };
-		E95773F31F9DD69C000AE338 /* DarkRoast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkRoast.h; sourceTree = "<group>"; };
-		E95773F41F9DD69C000AE338 /* DarkRoast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkRoast.m; sourceTree = "<group>"; };
-		E95773F61F9DD6B8000AE338 /* Espresso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espresso.h; sourceTree = "<group>"; };
-		E95773F71F9DD6B8000AE338 /* Espresso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espresso.m; sourceTree = "<group>"; };
-		E95773F91F9DD6C9000AE338 /* Decaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decaf.h; sourceTree = "<group>"; };
-		E95773FA1F9DD6C9000AE338 /* Decaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decaf.m; sourceTree = "<group>"; };
-		E95773FC1F9DD6DF000AE338 /* Milk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milk.h; sourceTree = "<group>"; };
-		E95773FD1F9DD6DF000AE338 /* Milk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milk.m; sourceTree = "<group>"; };
-		E95773FF1F9DD6F0000AE338 /* Mocha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mocha.h; sourceTree = "<group>"; };
-		E95774001F9DD6F0000AE338 /* Mocha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mocha.m; sourceTree = "<group>"; };
-		E95774021F9DD6FD000AE338 /* Soy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soy.h; sourceTree = "<group>"; };
-		E95774031F9DD6FD000AE338 /* Soy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soy.m; sourceTree = "<group>"; };
-		E95774051F9DD70C000AE338 /* Whip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whip.h; sourceTree = "<group>"; };
-		E95774061F9DD70C000AE338 /* Whip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Whip.m; sourceTree = "<group>"; };
 		E957740B1F9DE803000AE338 /* HDFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFactory.h; sourceTree = "<group>"; };
 		E957740C1F9DE803000AE338 /* HDFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFactory.m; sourceTree = "<group>"; };
 		E957740F1F9DE95F000AE338 /* HDFactoryAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFactoryAdd.h; sourceTree = "<group>"; };
@@ -371,6 +351,21 @@
 		E992B72C1F0CC9130002292C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E992B72E1F0CC9B10002292C /* HDFileBasicInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFileBasicInfoModel.h; sourceTree = "<group>"; };
 		E992B72F1F0CC9B10002292C /* HDFileBasicInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFileBasicInfoModel.m; sourceTree = "<group>"; };
+		E996B777202942EA00532B00 /* DecoratorREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DecoratorREADME.md; sourceTree = "<group>"; };
+		E996B77A202951E100532B00 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		E996B77B2029528200532B00 /* Espresso.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Espresso.h; sourceTree = "<group>"; };
+		E996B77C2029528200532B00 /* Espresso.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Espresso.m; sourceTree = "<group>"; };
+		E996B77E202952C600532B00 /* Decaf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decaf.h; sourceTree = "<group>"; };
+		E996B77F202952C600532B00 /* Decaf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decaf.m; sourceTree = "<group>"; };
+		E996B781202958C400532B00 /* DarkRoast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarkRoast.h; sourceTree = "<group>"; };
+		E996B782202958C400532B00 /* DarkRoast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkRoast.m; sourceTree = "<group>"; };
+		E996B7842029590400532B00 /* Decorater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decorater.h; sourceTree = "<group>"; };
+		E996B7852029591700532B00 /* Mocha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mocha.h; sourceTree = "<group>"; };
+		E996B7862029591700532B00 /* Mocha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mocha.m; sourceTree = "<group>"; };
+		E996B7882029592C00532B00 /* Milk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Milk.h; sourceTree = "<group>"; };
+		E996B7892029592C00532B00 /* Milk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Milk.m; sourceTree = "<group>"; };
+		E996B78B2029593900532B00 /* Soy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Soy.h; sourceTree = "<group>"; };
+		E996B78C2029593900532B00 /* Soy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Soy.m; sourceTree = "<group>"; };
 		E99793F01FC69C2A00A79647 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		E99793F11FC69C2A00A79647 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		E99793F31FC69C8C00A79647 /* CustomUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUISlider.h; sourceTree = "<group>"; };
@@ -803,42 +798,11 @@
 		E95773E91F9DD0A9000AE338 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
-				E95773EB1F9DD2FB000AE338 /* ConcerteDecortor */,
-				E95773EA1F9DD2F6000AE338 /* ConcreteComponent */,
+				E996B7792029516F00532B00 /* Component */,
+				E996B7782029516900532B00 /* Decorater */,
+				E996B777202942EA00532B00 /* DecoratorREADME.md */,
 			);
 			path = Decorator;
-			sourceTree = "<group>";
-		};
-		E95773EA1F9DD2F6000AE338 /* ConcreteComponent */ = {
-			isa = PBXGroup;
-			children = (
-				E95773EE1F9DD41F000AE338 /* ComponentProtocol.h */,
-				E95773F01F9DD684000AE338 /* HouseBlend.h */,
-				E95773F11F9DD684000AE338 /* HouseBlend.m */,
-				E95773F31F9DD69C000AE338 /* DarkRoast.h */,
-				E95773F41F9DD69C000AE338 /* DarkRoast.m */,
-				E95773F61F9DD6B8000AE338 /* Espresso.h */,
-				E95773F71F9DD6B8000AE338 /* Espresso.m */,
-				E95773F91F9DD6C9000AE338 /* Decaf.h */,
-				E95773FA1F9DD6C9000AE338 /* Decaf.m */,
-			);
-			name = ConcreteComponent;
-			sourceTree = "<group>";
-		};
-		E95773EB1F9DD2FB000AE338 /* ConcerteDecortor */ = {
-			isa = PBXGroup;
-			children = (
-				E95773EF1F9DD623000AE338 /* DecortorProcotol.h */,
-				E95773FC1F9DD6DF000AE338 /* Milk.h */,
-				E95773FD1F9DD6DF000AE338 /* Milk.m */,
-				E95773FF1F9DD6F0000AE338 /* Mocha.h */,
-				E95774001F9DD6F0000AE338 /* Mocha.m */,
-				E95774021F9DD6FD000AE338 /* Soy.h */,
-				E95774031F9DD6FD000AE338 /* Soy.m */,
-				E95774051F9DD70C000AE338 /* Whip.h */,
-				E95774061F9DD70C000AE338 /* Whip.m */,
-			);
-			name = ConcerteDecortor;
 			sourceTree = "<group>";
 		};
 		E95774081F9DE750000AE338 /* MethodFactory */ = {
@@ -945,6 +909,34 @@
 				E992B72C1F0CC9130002292C /* GTMDefines.h */,
 			);
 			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		E996B7782029516900532B00 /* Decorater */ = {
+			isa = PBXGroup;
+			children = (
+				E996B7842029590400532B00 /* Decorater.h */,
+				E996B7852029591700532B00 /* Mocha.h */,
+				E996B7862029591700532B00 /* Mocha.m */,
+				E996B7882029592C00532B00 /* Milk.h */,
+				E996B7892029592C00532B00 /* Milk.m */,
+				E996B78B2029593900532B00 /* Soy.h */,
+				E996B78C2029593900532B00 /* Soy.m */,
+			);
+			path = Decorater;
+			sourceTree = "<group>";
+		};
+		E996B7792029516F00532B00 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E996B77A202951E100532B00 /* Component.h */,
+				E996B77B2029528200532B00 /* Espresso.h */,
+				E996B77C2029528200532B00 /* Espresso.m */,
+				E996B77E202952C600532B00 /* Decaf.h */,
+				E996B77F202952C600532B00 /* Decaf.m */,
+				E996B781202958C400532B00 /* DarkRoast.h */,
+				E996B782202958C400532B00 /* DarkRoast.m */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		E9A188E21F1C5C0E00640D53 /* Request */ = {
@@ -1919,13 +1911,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99793FF1FC6F08400A79647 /* HDUploadFileRequest.m in Sources */,
-				E95774071F9DD70C000AE338 /* Whip.m in Sources */,
 				E91A3F201F1E07C600D95557 /* AsyncSocket.m in Sources */,
 				E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */,
 				E9B6EDB21F0C7CA70072938A /* ioapi.c in Sources */,
 				E983C5252028656D0059168D /* HDCashNormal.m in Sources */,
-				E95774041F9DD6FD000AE338 /* Soy.m in Sources */,
 				E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */,
+				E996B783202958C400532B00 /* DarkRoast.m in Sources */,
 				E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */,
 				E983C518202847AE0059168D /* HDCooker.m in Sources */,
 				E99793FC1FC69D1500A79647 /* CustomGesView.m in Sources */,
@@ -1938,11 +1929,13 @@
 				E97B98541F9E01F2009481F5 /* AudiA8Car.m in Sources */,
 				E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */,
 				E9B6ED881F0C7C690072938A /* SSZipArchive.m in Sources */,
+				E996B78D2029593900532B00 /* Soy.m in Sources */,
 				E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */,
 				E97B98481F9DFF6E009481F5 /* AudiCar.m in Sources */,
 				E97B98571F9E0205009481F5 /* AudiQ7Car.m in Sources */,
 				E9A1891B1F1CA83000640D53 /* HDVoiceSpeakViewController.m in Sources */,
 				E9DFE1B21FC3C47100D37BA6 /* ImageCollectionViewCell.m in Sources */,
+				E996B78A2029592C00532B00 /* Milk.m in Sources */,
 				E9B6ED751F0C7C5F0072938A /* NSData+ImageContentType.m in Sources */,
 				E983C51B202847BB0059168D /* HDCoder.m in Sources */,
 				E9B6EDFB1F0C7CEE0072938A /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1969,7 +1962,6 @@
 				E983C528202865930059168D /* HDCashReturn.m in Sources */,
 				E95774141F9DE978000AE338 /* HDFactoryMinus.m in Sources */,
 				E9B6ECF21F0C7AB80072938A /* JSONModel+networking.m in Sources */,
-				E95773F21F9DD684000AE338 /* HouseBlend.m in Sources */,
 				E9AEC5551FA1BF5800B1992D /* HDFailedState.m in Sources */,
 				E9DFE1C71FC3CF2A00D37BA6 /* HDImageViewModel.m in Sources */,
 				E9B6ED801F0C7C5F0072938A /* UIImage+WebP.m in Sources */,
@@ -1988,9 +1980,7 @@
 				E957741A1F9DE9B9000AE338 /* HDFactoryMultiply.m in Sources */,
 				E9A1890E1F1CA45100640D53 /* HDQRCodeScanViewController.m in Sources */,
 				E9B6ED261F0C7B9B0072938A /* MJRefreshFooter.m in Sources */,
-				E95773F81F9DD6B8000AE338 /* Espresso.m in Sources */,
 				E9F767B82011EBA40050B5CC /* ExtensionNoteViewController.m in Sources */,
-				E95773FB1F9DD6C9000AE338 /* Decaf.m in Sources */,
 				E9B6ED511F0C7C510072938A /* RDVTabBarController.m in Sources */,
 				E983C515202847950059168D /* HDTeacher.m in Sources */,
 				E9DFE1BC1FC3C61200D37BA6 /* imageListCell.m in Sources */,
@@ -1998,7 +1988,6 @@
 				E9B6ECCD1F0C7A300072938A /* DBGuestureButton.m in Sources */,
 				E9B6EDA61F0C7C9F0072938A /* prng.c in Sources */,
 				E9A189261F1CD2DA00640D53 /* UIImage+Editer.m in Sources */,
-				E95774011F9DD6F0000AE338 /* Mocha.m in Sources */,
 				E9AEC5591FA1C0B500B1992D /* HDDown.m in Sources */,
 				E95774111F9DE95F000AE338 /* HDFactoryAdd.m in Sources */,
 				E9B6ECE91F0C7AB00072938A /* NSArray+JSONModel.m in Sources */,
@@ -2024,7 +2013,6 @@
 				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */,
 				E9DFE1C41FC3CD0400D37BA6 /* HDImageModel.m in Sources */,
-				E95773FE1F9DD6E0000AE338 /* Milk.m in Sources */,
 				E9B6ED231F0C7B9B0072938A /* MJRefreshAutoFooter.m in Sources */,
 				E983C512202847830059168D /* HDNurse.m in Sources */,
 				E9B6EDA41F0C7C9F0072938A /* fileenc.c in Sources */,
@@ -2040,6 +2028,7 @@
 				E9B6ED251F0C7B9B0072938A /* MJRefreshComponent.m in Sources */,
 				E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */,
 				E9E6CB671F31D73C009B3934 /* FMDatabaseQueue.m in Sources */,
+				E996B7872029591700532B00 /* Mocha.m in Sources */,
 				E9B6ED021F0C7AC80072938A /* LogHelper.mm in Sources */,
 				E983C5222028654C0059168D /* HDCashContext.m in Sources */,
 				E9E556E01F0BD3F900567110 /* AppDelegate.m in Sources */,
@@ -2051,6 +2040,7 @@
 				E9B6ED4F1F0C7C510072938A /* JRSwizzle.m in Sources */,
 				E9B6EDF91F0C7CEE0072938A /* AFAutoPurgingImageCache.m in Sources */,
 				E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */,
+				E996B77D2029528200532B00 /* Espresso.m in Sources */,
 				E9B6EDFC1F0C7CEE0072938A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */,
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
@@ -2081,7 +2071,6 @@
 				E9B6ED741F0C7C5F0072938A /* MKAnnotationView+WebCache.m in Sources */,
 				E9B6ED311F0C7BFD0072938A /* MJRefreshNormalHeader.m in Sources */,
 				E983C50F202847540059168D /* HDWorkerFactory.m in Sources */,
-				E95773F51F9DD69C000AE338 /* DarkRoast.m in Sources */,
 				E9E6CB6C1F31D99B009B3934 /* HDFmdbManager.m in Sources */,
 				E957741E1F9DEA7D000AE338 /* HDFactoryDivide.m in Sources */,
 				E9B6EDB41F0C7CA70072938A /* unzip.c in Sources */,
@@ -2102,6 +2091,7 @@
 				E9B6ED031F0C7AC80072938A /* LogUtil.m in Sources */,
 				E9B6ED7E1F0C7C5F0072938A /* UIImage+GIF.m in Sources */,
 				E957742A1F9DEB34000AE338 /* HDCalculatesDivide.m in Sources */,
+				E996B780202952C600532B00 /* Decaf.m in Sources */,
 				E9E556E91F0BD3F900567110 /* HDAVPlayer.xcdatamodeld in Sources */,
 				E910A15F1F0E7DD000C9D8C9 /* HDProgressView.m in Sources */,
 			);
