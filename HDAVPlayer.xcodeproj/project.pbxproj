@@ -26,12 +26,6 @@
 		E95774241F9DEB0E000AE338 /* HDCalculatesMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774231F9DEB0E000AE338 /* HDCalculatesMinus.m */; };
 		E95774271F9DEB21000AE338 /* HDCalculatesMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774261F9DEB21000AE338 /* HDCalculatesMultiply.m */; };
 		E957742A1F9DEB34000AE338 /* HDCalculatesDivide.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774291F9DEB34000AE338 /* HDCalculatesDivide.m */; };
-		E97B98481F9DFF6E009481F5 /* AudiCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98471F9DFF6E009481F5 /* AudiCar.m */; };
-		E97B984B1F9E002D009481F5 /* AudiCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B984A1F9E002D009481F5 /* AudiCarBuilder.m */; };
-		E97B984E1F9E00CC009481F5 /* AudiDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B984D1F9E00CC009481F5 /* AudiDirector.m */; };
-		E97B98511F9E01DE009481F5 /* AudiA6Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98501F9E01DE009481F5 /* AudiA6Car.m */; };
-		E97B98541F9E01F2009481F5 /* AudiA8Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98531F9E01F2009481F5 /* AudiA8Car.m */; };
-		E97B98571F9E0205009481F5 /* AudiQ7Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B98561F9E0205009481F5 /* AudiQ7Car.m */; };
 		E983C50F202847540059168D /* HDWorkerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E983C50E202847540059168D /* HDWorkerFactory.m */; };
 		E983C512202847830059168D /* HDNurse.m in Sources */ = {isa = PBXBuildFile; fileRef = E983C511202847830059168D /* HDNurse.m */; };
 		E983C515202847950059168D /* HDTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = E983C514202847950059168D /* HDTeacher.m */; };
@@ -61,6 +55,14 @@
 		E99793F81FC69CB000A79647 /* CustomVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793F61FC69CB000A79647 /* CustomVolumeView.m */; };
 		E99793FC1FC69D1500A79647 /* CustomGesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793FA1FC69D1500A79647 /* CustomGesView.m */; };
 		E99793FF1FC6F08400A79647 /* HDUploadFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E99793FE1FC6F08400A79647 /* HDUploadFileRequest.m */; };
+		E99C7165202C2D2C0080AAEE /* SonyCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C7164202C2D2C0080AAEE /* SonyCamera.m */; };
+		E99C7168202C2D9A0080AAEE /* SonyCameraBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C7167202C2D9A0080AAEE /* SonyCameraBuilder.m */; };
+		E99C716B202C2DB30080AAEE /* SonyCameraDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C716A202C2DB30080AAEE /* SonyCameraDirector.m */; };
+		E99C716E202C2E800080AAEE /* SonyA5100.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C716D202C2E800080AAEE /* SonyA5100.m */; };
+		E99C7171202C2E980080AAEE /* SonyA6000.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C7170202C2E980080AAEE /* SonyA6000.m */; };
+		E99C7174202C2EA80080AAEE /* SonyA7.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C7173202C2EA80080AAEE /* SonyA7.m */; };
+		E99C717A202C2ECF0080AAEE /* SonyA9.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C7179202C2ECF0080AAEE /* SonyA9.m */; };
+		E99C717D202C33CF0080AAEE /* DesignModes.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C717C202C33CF0080AAEE /* DesignModes.m */; };
 		E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC521F1D0B5000807899 /* NSString+Editer.m */; };
 		E99FFC561F1D0E2500807899 /* HDPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FFC551F1D0E2500807899 /* HDPlayerViewModel.m */; };
 		E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A188E41F1C5C5A00640D53 /* HDRequest.m */; };
@@ -297,18 +299,6 @@
 		E95774261F9DEB21000AE338 /* HDCalculatesMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculatesMultiply.m; sourceTree = "<group>"; };
 		E95774281F9DEB34000AE338 /* HDCalculatesDivide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculatesDivide.h; sourceTree = "<group>"; };
 		E95774291F9DEB34000AE338 /* HDCalculatesDivide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculatesDivide.m; sourceTree = "<group>"; };
-		E97B98461F9DFF6E009481F5 /* AudiCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiCar.h; sourceTree = "<group>"; };
-		E97B98471F9DFF6E009481F5 /* AudiCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiCar.m; sourceTree = "<group>"; };
-		E97B98491F9E002D009481F5 /* AudiCarBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiCarBuilder.h; sourceTree = "<group>"; };
-		E97B984A1F9E002D009481F5 /* AudiCarBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiCarBuilder.m; sourceTree = "<group>"; };
-		E97B984C1F9E00CC009481F5 /* AudiDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiDirector.h; sourceTree = "<group>"; };
-		E97B984D1F9E00CC009481F5 /* AudiDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiDirector.m; sourceTree = "<group>"; };
-		E97B984F1F9E01DE009481F5 /* AudiA6Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiA6Car.h; sourceTree = "<group>"; };
-		E97B98501F9E01DE009481F5 /* AudiA6Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiA6Car.m; sourceTree = "<group>"; };
-		E97B98521F9E01F2009481F5 /* AudiA8Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiA8Car.h; sourceTree = "<group>"; };
-		E97B98531F9E01F2009481F5 /* AudiA8Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiA8Car.m; sourceTree = "<group>"; };
-		E97B98551F9E0205009481F5 /* AudiQ7Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiQ7Car.h; sourceTree = "<group>"; };
-		E97B98561F9E0205009481F5 /* AudiQ7Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiQ7Car.m; sourceTree = "<group>"; };
 		E97E7EC51F0BD796002A0356 /* HDAVPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDAVPlayer.entitlements; sourceTree = "<group>"; };
 		E983C50C202846CE0059168D /* HDWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWorker.h; sourceTree = "<group>"; };
 		E983C50D202847540059168D /* HDWorkerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWorkerFactory.h; sourceTree = "<group>"; };
@@ -377,6 +367,23 @@
 		E99793FB1FC69D1500A79647 /* CustomGesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGesView.h; sourceTree = "<group>"; };
 		E99793FD1FC6F08400A79647 /* HDUploadFileRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDUploadFileRequest.h; sourceTree = "<group>"; };
 		E99793FE1FC6F08400A79647 /* HDUploadFileRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDUploadFileRequest.m; sourceTree = "<group>"; };
+		E99C7163202C2D2C0080AAEE /* SonyCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonyCamera.h; sourceTree = "<group>"; };
+		E99C7164202C2D2C0080AAEE /* SonyCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonyCamera.m; sourceTree = "<group>"; };
+		E99C7166202C2D9A0080AAEE /* SonyCameraBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonyCameraBuilder.h; sourceTree = "<group>"; };
+		E99C7167202C2D9A0080AAEE /* SonyCameraBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonyCameraBuilder.m; sourceTree = "<group>"; };
+		E99C7169202C2DB30080AAEE /* SonyCameraDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonyCameraDirector.h; sourceTree = "<group>"; };
+		E99C716A202C2DB30080AAEE /* SonyCameraDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonyCameraDirector.m; sourceTree = "<group>"; };
+		E99C716C202C2E800080AAEE /* SonyA5100.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonyA5100.h; sourceTree = "<group>"; };
+		E99C716D202C2E800080AAEE /* SonyA5100.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonyA5100.m; sourceTree = "<group>"; };
+		E99C716F202C2E980080AAEE /* SonyA6000.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonyA6000.h; sourceTree = "<group>"; };
+		E99C7170202C2E980080AAEE /* SonyA6000.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonyA6000.m; sourceTree = "<group>"; };
+		E99C7172202C2EA80080AAEE /* SonyA7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonyA7.h; sourceTree = "<group>"; };
+		E99C7173202C2EA80080AAEE /* SonyA7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonyA7.m; sourceTree = "<group>"; };
+		E99C7178202C2ECF0080AAEE /* SonyA9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonyA9.h; sourceTree = "<group>"; };
+		E99C7179202C2ECF0080AAEE /* SonyA9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonyA9.m; sourceTree = "<group>"; };
+		E99C717B202C33CF0080AAEE /* DesignModes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignModes.h; sourceTree = "<group>"; };
+		E99C717C202C33CF0080AAEE /* DesignModes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignModes.m; sourceTree = "<group>"; };
+		E99C717E202C389D0080AAEE /* BuilderREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BuilderREADME.md; sourceTree = "<group>"; };
 		E99FFC511F1D0B5000807899 /* NSString+Editer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Editer.h"; sourceTree = "<group>"; };
 		E99FFC521F1D0B5000807899 /* NSString+Editer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Editer.m"; sourceTree = "<group>"; };
 		E99FFC541F1D0E2500807899 /* HDPlayerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPlayerViewModel.h; sourceTree = "<group>"; };
@@ -850,18 +857,21 @@
 		E97B98451F9DFE93009481F5 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				E97B98461F9DFF6E009481F5 /* AudiCar.h */,
-				E97B98471F9DFF6E009481F5 /* AudiCar.m */,
-				E97B984F1F9E01DE009481F5 /* AudiA6Car.h */,
-				E97B98501F9E01DE009481F5 /* AudiA6Car.m */,
-				E97B98521F9E01F2009481F5 /* AudiA8Car.h */,
-				E97B98531F9E01F2009481F5 /* AudiA8Car.m */,
-				E97B98551F9E0205009481F5 /* AudiQ7Car.h */,
-				E97B98561F9E0205009481F5 /* AudiQ7Car.m */,
-				E97B98491F9E002D009481F5 /* AudiCarBuilder.h */,
-				E97B984A1F9E002D009481F5 /* AudiCarBuilder.m */,
-				E97B984C1F9E00CC009481F5 /* AudiDirector.h */,
-				E97B984D1F9E00CC009481F5 /* AudiDirector.m */,
+				E99C7163202C2D2C0080AAEE /* SonyCamera.h */,
+				E99C7164202C2D2C0080AAEE /* SonyCamera.m */,
+				E99C716C202C2E800080AAEE /* SonyA5100.h */,
+				E99C716D202C2E800080AAEE /* SonyA5100.m */,
+				E99C716F202C2E980080AAEE /* SonyA6000.h */,
+				E99C7170202C2E980080AAEE /* SonyA6000.m */,
+				E99C7172202C2EA80080AAEE /* SonyA7.h */,
+				E99C7173202C2EA80080AAEE /* SonyA7.m */,
+				E99C7178202C2ECF0080AAEE /* SonyA9.h */,
+				E99C7179202C2ECF0080AAEE /* SonyA9.m */,
+				E99C7166202C2D9A0080AAEE /* SonyCameraBuilder.h */,
+				E99C7167202C2D9A0080AAEE /* SonyCameraBuilder.m */,
+				E99C7169202C2DB30080AAEE /* SonyCameraDirector.h */,
+				E99C716A202C2DB30080AAEE /* SonyCameraDirector.m */,
+				E99C717E202C389D0080AAEE /* BuilderREADME.md */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -1578,6 +1588,8 @@
 		E9E2195E1F99EA9700368413 /* DesignModels */ = {
 			isa = PBXGroup;
 			children = (
+				E99C717B202C33CF0080AAEE /* DesignModes.h */,
+				E99C717C202C33CF0080AAEE /* DesignModes.m */,
 				E9B97AE5201192070050ECFF /* Delegate */,
 				E9AEC5461FA1BE7D00B1992D /* States */,
 				E97B98451F9DFE93009481F5 /* Builder */,
@@ -1922,17 +1934,16 @@
 				E99793FC1FC69D1500A79647 /* CustomGesView.m in Sources */,
 				E9B6ED7A1F0C7C5F0072938A /* SDWebImageDownloaderOperation.m in Sources */,
 				E9B6ECF01F0C7AB80072938A /* JSONAPI.m in Sources */,
+				E99C716E202C2E800080AAEE /* SonyA5100.m in Sources */,
 				E91A3F1A1F1E07BE00D95557 /* GCDAsyncSocket.m in Sources */,
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
 				E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */,
-				E97B98541F9E01F2009481F5 /* AudiA8Car.m in Sources */,
 				E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */,
 				E9B6ED881F0C7C690072938A /* SSZipArchive.m in Sources */,
 				E996B78D2029593900532B00 /* Soy.m in Sources */,
+				E99C7168202C2D9A0080AAEE /* SonyCameraBuilder.m in Sources */,
 				E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */,
-				E97B98481F9DFF6E009481F5 /* AudiCar.m in Sources */,
-				E97B98571F9E0205009481F5 /* AudiQ7Car.m in Sources */,
 				E9A1891B1F1CA83000640D53 /* HDVoiceSpeakViewController.m in Sources */,
 				E9DFE1B21FC3C47100D37BA6 /* ImageCollectionViewCell.m in Sources */,
 				E996B78A2029592C00532B00 /* Milk.m in Sources */,
@@ -1947,6 +1958,7 @@
 				E9B6EE011F0C7CEE0072938A /* UIWebView+AFNetworking.m in Sources */,
 				E9B6ED501F0C7C510072938A /* RDVTabBar.m in Sources */,
 				E9B6ED821F0C7C5F0072938A /* UIImageView+WebCache.m in Sources */,
+				E99C7174202C2EA80080AAEE /* SonyA7.m in Sources */,
 				E9E6CB641F31D73C009B3934 /* FMDatabase.m in Sources */,
 				E95774241F9DEB0E000AE338 /* HDCalculatesMinus.m in Sources */,
 				E9E556E31F0BD3F900567110 /* ViewController.m in Sources */,
@@ -1960,6 +1972,7 @@
 				E992B7301F0CC9B10002292C /* HDFileBasicInfoModel.m in Sources */,
 				E9B6EDA81F0C7C9F0072938A /* sha1.c in Sources */,
 				E983C528202865930059168D /* HDCashReturn.m in Sources */,
+				E99C717D202C33CF0080AAEE /* DesignModes.m in Sources */,
 				E95774141F9DE978000AE338 /* HDFactoryMinus.m in Sources */,
 				E9B6ECF21F0C7AB80072938A /* JSONModel+networking.m in Sources */,
 				E9AEC5551FA1BF5800B1992D /* HDFailedState.m in Sources */,
@@ -1968,6 +1981,7 @@
 				E9B6EDFE1F0C7CEE0072938A /* UIImageView+AFNetworking.m in Sources */,
 				E9B6ECCE1F0C7A300072938A /* DBGuestureLock.m in Sources */,
 				E9B6ED451F0C7C430072938A /* MJRefreshBackNormalFooter.m in Sources */,
+				E99C7165202C2D2C0080AAEE /* SonyCamera.m in Sources */,
 				E9B6ED301F0C7BFD0072938A /* MJRefreshGifHeader.m in Sources */,
 				E9B6ED271F0C7B9B0072938A /* MJRefreshHeader.m in Sources */,
 				E9B6EDA01F0C7C9F0072938A /* aescrypt.c in Sources */,
@@ -1992,8 +2006,8 @@
 				E95774111F9DE95F000AE338 /* HDFactoryAdd.m in Sources */,
 				E9B6ECE91F0C7AB00072938A /* NSArray+JSONModel.m in Sources */,
 				E9B6ECE61F0C7AA80072938A /* JSONModelError.m in Sources */,
+				E99C716B202C2DB30080AAEE /* SonyCameraDirector.m in Sources */,
 				E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */,
-				E97B984E1F9E00CC009481F5 /* AudiDirector.m in Sources */,
 				E9B97AE82011923B0050ECFF /* Request.m in Sources */,
 				E9B6ED7B1F0C7C5F0072938A /* SDWebImageManager.m in Sources */,
 				E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -2046,6 +2060,7 @@
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
 				E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */,
 				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,
+				E99C717A202C2ECF0080AAEE /* SonyA9.m in Sources */,
 				E9A189071F1CA44800640D53 /* HDPlayerViewController.m in Sources */,
 				E91A3F261F1E094000D95557 /* HDClientViewController.m in Sources */,
 				E992B6C51F0CC2150002292C /* HDDatabaseManager.m in Sources */,
@@ -2056,15 +2071,14 @@
 				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
 				E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */,
 				E9DFE1C11FC3C7EB00D37BA6 /* HDImageManager.m in Sources */,
-				E97B984B1F9E002D009481F5 /* AudiCarBuilder.m in Sources */,
 				E9A188F01F1C9ECF00640D53 /* HDFuncViewController.m in Sources */,
 				E9B6EDA11F0C7C9F0072938A /* aeskey.c in Sources */,
 				E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */,
 				E9B6ECF81F0C7ABF0072938A /* JSONValueTransformer.m in Sources */,
 				E9AEC5521FA1BF4300B1992D /* HDFinishedState.m in Sources */,
 				E9E6CB651F31D73C009B3934 /* FMDatabaseAdditions.m in Sources */,
+				E99C7171202C2E980080AAEE /* SonyA6000.m in Sources */,
 				E9B6ECD51F0C7A400072938A /* JSBadgeView.m in Sources */,
-				E97B98511F9E01DE009481F5 /* AudiA6Car.m in Sources */,
 				E9DFE1A81FC3C41D00D37BA6 /* ImagePreViewController.m in Sources */,
 				E9B6EDB31F0C7CA70072938A /* mztools.c in Sources */,
 				E9B6ED521F0C7C510072938A /* RDVTabBarItem.m in Sources */,
