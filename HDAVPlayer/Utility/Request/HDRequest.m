@@ -206,7 +206,7 @@ static NSString *__base_url;
 }
 
 - (void)handleSuccess:(NSURLSessionTask*) operation response:(id)responseObject {
-    NSLog(@"%@", responseObject);
+//    NSLog(@"%@", responseObject);
     self.result = responseObject;//[responseObject objectForKey:@"data"];
     if (self.delegate) {
         if ([self.delegate respondsToSelector:self.didFinishSelector]) {

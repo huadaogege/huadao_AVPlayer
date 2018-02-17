@@ -33,9 +33,9 @@
 }
 
 - (NSMutableArray *)fetchLocalFilesWithDesPath:(NSString *)desFilePath {
-    if (![HDConfig shareInsatnce].openSecrect) {
-        return nil;
-    }
+//    if (![HDConfig shareInsatnce].openSecrect) {
+//        return nil;
+//    }
     NSMutableArray *filesArray = [NSMutableArray arrayWithCapacity:1.0];
     NSArray *documentFiles = [self.fileManager contentsOfDirectoryAtPath:desFilePath error:nil];
     for (NSString *fileName in documentFiles) {

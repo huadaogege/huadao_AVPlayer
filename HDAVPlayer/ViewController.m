@@ -10,6 +10,11 @@
 #import "HDFuncViewController.h"
 #import "HDConfig.h"
 #import "HDFmdbManager.h"
+#import "HDRequest.h"
+#import "HDAppInfoRequest.h"
+#import "DesignModes.h"
+
+
 @interface ViewController ()
 
 @property (nonatomic, strong)NSString *target;
@@ -23,9 +28,8 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    [[HDFmdbManager shareInstance] initDatabase];
-    [[HDFmdbManager shareInstance] insert];
-    [[HDFmdbManager shareInstance] query];
+    DesignModes *designMode = [[DesignModes alloc] init];
+    [designMode designModa];
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {

@@ -12,6 +12,7 @@
 #import "HDPlayerViewController.h"
 #import "MJRefresh.h"
 #import "UIAlertController+Editer.h"
+#import "VideoViewController.h"
 
 #define Cell_Identifier @"__filelistcellidentifier"
 
@@ -70,10 +71,28 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     HDFileModel *model = self.dataArray[indexPath.row];
     NSString *filePath = model.filePath;
-    HDPlayerViewController *playerViewController = [[HDPlayerViewController alloc] init];
-    [self.vieController.navigationController presentViewController:playerViewController animated:YES completion:^{
-        [playerViewController playWithFilePath:filePath];
+    NSURL * url = [NSURL fileURLWithPath:filePath];
+    VideoViewController *videoViewController = [[VideoViewController alloc] init];
+    videoViewController.delegate = _viewController;
+    
+    MPMoviePlayerController *player = [videoViewController moviePlayer];
+    player.controlStyle = MPMovieControlStyleNone;
+    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(FinishedCallback:)
+//                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+//                                               object:nil];
+    
+    [_viewController presentViewController:videoViewController animated:YES completion:^{
+        [videoViewController setVideo:url progress:0];
+        [videoViewController play];
     }];
+    _viewController.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    _viewController.navigationController.navigationBarHidden = YES;
+    
+//    HDPlayerViewController *playerViewController = [[HDPlayerViewController alloc] init];
+//    [self.vieController.navigationController presentViewController:playerViewController animated:YES completion:^{
+//        [playerViewController playWithFilePath:filePath];
+//    }];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -93,7 +112,7 @@
                 [self.tableView reloadData];
             }
         }];
-        [self.vieController.navigationController presentViewController:alertController animated:YES completion:nil];
+        [self.viewController.navigationController presentViewController:alertController animated:YES completion:nil];
     }
 }
 
