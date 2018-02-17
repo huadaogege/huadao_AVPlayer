@@ -26,6 +26,15 @@
 		E95774241F9DEB0E000AE338 /* HDCalculatesMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774231F9DEB0E000AE338 /* HDCalculatesMinus.m */; };
 		E95774271F9DEB21000AE338 /* HDCalculatesMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774261F9DEB21000AE338 /* HDCalculatesMultiply.m */; };
 		E957742A1F9DEB34000AE338 /* HDCalculatesDivide.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774291F9DEB34000AE338 /* HDCalculatesDivide.m */; };
+		E975348720370AB000CA1A10 /* MvpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975348620370AB000CA1A10 /* MvpModel.swift */; };
+		E97534892037111400CA1A10 /* MvpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97534882037111400CA1A10 /* MvpView.swift */; };
+		E975348B2037114200CA1A10 /* MvpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975348A2037114200CA1A10 /* MvpPresenter.swift */; };
+		E975348F2037127B00CA1A10 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975348E2037127B00CA1A10 /* LoginView.swift */; };
+		E9753493203714D700CA1A10 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9753492203714D700CA1A10 /* LoginPresenter.swift */; };
+		E975349720371D2700CA1A10 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975349620371D2700CA1A10 /* LoginModel.swift */; };
+		E97534992037B94300CA1A10 /* HttpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97534982037B94300CA1A10 /* HttpUtils.swift */; };
+		E975349C2037DB8300CA1A10 /* MvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975349A2037DB8300CA1A10 /* MvpViewController.swift */; };
+		E975349D2037DB8300CA1A10 /* MvpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E975349B2037DB8300CA1A10 /* MvpViewController.xib */; };
 		E983C50F202847540059168D /* HDWorkerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E983C50E202847540059168D /* HDWorkerFactory.m */; };
 		E983C512202847830059168D /* HDNurse.m in Sources */ = {isa = PBXBuildFile; fileRef = E983C511202847830059168D /* HDNurse.m */; };
 		E983C515202847950059168D /* HDTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = E983C514202847950059168D /* HDTeacher.m */; };
@@ -299,6 +308,16 @@
 		E95774261F9DEB21000AE338 /* HDCalculatesMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculatesMultiply.m; sourceTree = "<group>"; };
 		E95774281F9DEB34000AE338 /* HDCalculatesDivide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCalculatesDivide.h; sourceTree = "<group>"; };
 		E95774291F9DEB34000AE338 /* HDCalculatesDivide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCalculatesDivide.m; sourceTree = "<group>"; };
+		E975348520370AAF00CA1A10 /* HDAVPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDAVPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		E975348620370AB000CA1A10 /* MvpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvpModel.swift; sourceTree = "<group>"; };
+		E97534882037111400CA1A10 /* MvpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvpView.swift; sourceTree = "<group>"; };
+		E975348A2037114200CA1A10 /* MvpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvpPresenter.swift; sourceTree = "<group>"; };
+		E975348E2037127B00CA1A10 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E9753492203714D700CA1A10 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E975349620371D2700CA1A10 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E97534982037B94300CA1A10 /* HttpUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtils.swift; sourceTree = "<group>"; };
+		E975349A2037DB8300CA1A10 /* MvpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvpViewController.swift; sourceTree = "<group>"; };
+		E975349B2037DB8300CA1A10 /* MvpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MvpViewController.xib; sourceTree = "<group>"; };
 		E97E7EC51F0BD796002A0356 /* HDAVPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDAVPlayer.entitlements; sourceTree = "<group>"; };
 		E983C50C202846CE0059168D /* HDWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWorker.h; sourceTree = "<group>"; };
 		E983C50D202847540059168D /* HDWorkerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWorkerFactory.h; sourceTree = "<group>"; };
@@ -852,6 +871,55 @@
 				E957741D1F9DEA7D000AE338 /* HDFactoryDivide.m */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		E9753481203709C000CA1A10 /* Mvp */ = {
+			isa = PBXGroup;
+			children = (
+				E975348C2037125000CA1A10 /* MvpImplement */,
+				E9753484203709F300CA1A10 /* MvpPresenter */,
+				E9753483203709E800CA1A10 /* MvpView */,
+				E9753482203709D600CA1A10 /* MvpModel */,
+			);
+			path = Mvp;
+			sourceTree = "<group>";
+		};
+		E9753482203709D600CA1A10 /* MvpModel */ = {
+			isa = PBXGroup;
+			children = (
+				E975348620370AB000CA1A10 /* MvpModel.swift */,
+				E975348520370AAF00CA1A10 /* HDAVPlayer-Bridging-Header.h */,
+			);
+			path = MvpModel;
+			sourceTree = "<group>";
+		};
+		E9753483203709E800CA1A10 /* MvpView */ = {
+			isa = PBXGroup;
+			children = (
+				E97534882037111400CA1A10 /* MvpView.swift */,
+			);
+			path = MvpView;
+			sourceTree = "<group>";
+		};
+		E9753484203709F300CA1A10 /* MvpPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				E975348A2037114200CA1A10 /* MvpPresenter.swift */,
+			);
+			path = MvpPresenter;
+			sourceTree = "<group>";
+		};
+		E975348C2037125000CA1A10 /* MvpImplement */ = {
+			isa = PBXGroup;
+			children = (
+				E975348E2037127B00CA1A10 /* LoginView.swift */,
+				E9753492203714D700CA1A10 /* LoginPresenter.swift */,
+				E975349620371D2700CA1A10 /* LoginModel.swift */,
+				E97534982037B94300CA1A10 /* HttpUtils.swift */,
+				E975349A2037DB8300CA1A10 /* MvpViewController.swift */,
+				E975349B2037DB8300CA1A10 /* MvpViewController.xib */,
+			);
+			path = MvpImplement;
 			sourceTree = "<group>";
 		};
 		E97B98451F9DFE93009481F5 /* Builder */ = {
@@ -1590,6 +1658,7 @@
 			children = (
 				E99C717B202C33CF0080AAEE /* DesignModes.h */,
 				E99C717C202C33CF0080AAEE /* DesignModes.m */,
+				E9753481203709C000CA1A10 /* Mvp */,
 				E9B97AE5201192070050ECFF /* Delegate */,
 				E9AEC5461FA1BE7D00B1992D /* States */,
 				E97B98451F9DFE93009481F5 /* Builder */,
@@ -1820,6 +1889,7 @@
 					E9E556D71F0BD3F900567110 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 56MY3ZN5V7;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1883,6 +1953,7 @@
 				E9A189111F1CA45100640D53 /* HDQRCodeShowViewController.xib in Resources */,
 				E9A188EA1F1C600F00640D53 /* RequestList.plist in Resources */,
 				E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */,
+				E975349D2037DB8300CA1A10 /* MvpViewController.xib in Resources */,
 				E9DFE1B81FC3C55100D37BA6 /* HDImageListViewController.xib in Resources */,
 				E9DFE1A91FC3C41D00D37BA6 /* ImagePreViewController.xib in Resources */,
 				E9A1891C1F1CA83000640D53 /* HDVoiceSpeakViewController.xib in Resources */,
@@ -1936,6 +2007,7 @@
 				E9B6ECF01F0C7AB80072938A /* JSONAPI.m in Sources */,
 				E99C716E202C2E800080AAEE /* SonyA5100.m in Sources */,
 				E91A3F1A1F1E07BE00D95557 /* GCDAsyncSocket.m in Sources */,
+				E97534892037111400CA1A10 /* MvpView.swift in Sources */,
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
 				E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */,
@@ -2017,6 +2089,7 @@
 				E9B6ED831F0C7C5F0072938A /* UIView+WebCacheOperation.m in Sources */,
 				E9B6EDA21F0C7C9F0072938A /* aestab.c in Sources */,
 				E9B6ECBD1F0C7A210072938A /* AFHTTPSessionManager.m in Sources */,
+				E9753493203714D700CA1A10 /* LoginPresenter.swift in Sources */,
 				E95774211F9DEAFB000AE338 /* HDCalculatesAdd.m in Sources */,
 				E9A189101F1CA45100640D53 /* HDQRCodeShowViewController.m in Sources */,
 				E9B6ECF11F0C7AB80072938A /* JSONHTTPClient.m in Sources */,
@@ -2039,6 +2112,7 @@
 				E9B6ED771F0C7C5F0072938A /* SDWebImageCompat.m in Sources */,
 				E9B6ED071F0C7ACF0072938A /* MBProgressHUD.m in Sources */,
 				E9B6ECC21F0C7A210072938A /* AFURLSessionManager.m in Sources */,
+				E975348720370AB000CA1A10 /* MvpModel.swift in Sources */,
 				E9B6ED251F0C7B9B0072938A /* MJRefreshComponent.m in Sources */,
 				E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */,
 				E9E6CB671F31D73C009B3934 /* FMDatabaseQueue.m in Sources */,
@@ -2049,8 +2123,10 @@
 				E9B6EDFA1F0C7CEE0072938A /* AFImageDownloader.m in Sources */,
 				E9A189061F1CA44800640D53 /* HDFileListViewController.m in Sources */,
 				E9E6CB661F31D73C009B3934 /* FMDatabasePool.m in Sources */,
+				E97534992037B94300CA1A10 /* HttpUtils.swift in Sources */,
 				E9B6ED811F0C7C5F0072938A /* UIImageView+HighlightedWebCache.m in Sources */,
 				E9B6ED141F0C7ADB0072938A /* UIScrollView+MJExtension.m in Sources */,
+				E975349720371D2700CA1A10 /* LoginModel.swift in Sources */,
 				E9B6ED4F1F0C7C510072938A /* JRSwizzle.m in Sources */,
 				E9B6EDF91F0C7CEE0072938A /* AFAutoPurgingImageCache.m in Sources */,
 				E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */,
@@ -2059,6 +2135,7 @@
 				E91A3F111F1DDF1700D95557 /* UIAlertController+Editer.m in Sources */,
 				E9B6ED151F0C7ADB0072938A /* UIScrollView+MJRefresh.m in Sources */,
 				E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */,
+				E975348B2037114200CA1A10 /* MvpPresenter.swift in Sources */,
 				E9B6EC721F0C75A80072938A /* HDFileModel.m in Sources */,
 				E99C717A202C2ECF0080AAEE /* SonyA9.m in Sources */,
 				E9A189071F1CA44800640D53 /* HDPlayerViewController.m in Sources */,
@@ -2076,6 +2153,7 @@
 				E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */,
 				E9B6ECF81F0C7ABF0072938A /* JSONValueTransformer.m in Sources */,
 				E9AEC5521FA1BF4300B1992D /* HDFinishedState.m in Sources */,
+				E975349C2037DB8300CA1A10 /* MvpViewController.swift in Sources */,
 				E9E6CB651F31D73C009B3934 /* FMDatabaseAdditions.m in Sources */,
 				E99C7171202C2E980080AAEE /* SonyA6000.m in Sources */,
 				E9B6ECD51F0C7A400072938A /* JSBadgeView.m in Sources */,
@@ -2087,6 +2165,7 @@
 				E983C50F202847540059168D /* HDWorkerFactory.m in Sources */,
 				E9E6CB6C1F31D99B009B3934 /* HDFmdbManager.m in Sources */,
 				E957741E1F9DEA7D000AE338 /* HDFactoryDivide.m in Sources */,
+				E975348F2037127B00CA1A10 /* LoginView.swift in Sources */,
 				E9B6EDB41F0C7CA70072938A /* unzip.c in Sources */,
 				E9B6ED011F0C7AC80072938A /* log_crypt.cc in Sources */,
 				E9B6ED791F0C7C5F0072938A /* SDWebImageDownloader.m in Sources */,
@@ -2321,6 +2400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
@@ -2337,6 +2417,9 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HDAVPlayer/DesignModels/Mvp/MvpModel/HDAVPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2344,6 +2427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
@@ -2360,12 +2444,15 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HDAVPlayer/DesignModels/Mvp/MvpModel/HDAVPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E9E5570C1F0BD3F900567110 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				INFOPLIST_FILE = HDAVPlayerTests/Info.plist;
@@ -2379,6 +2466,7 @@
 		E9E5570D1F0BD3F900567110 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				INFOPLIST_FILE = HDAVPlayerTests/Info.plist;
@@ -2392,6 +2480,7 @@
 		E9E5570F1F0BD3F900567110 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				INFOPLIST_FILE = HDAVPlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2404,6 +2493,7 @@
 		E9E557101F0BD3F900567110 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 56MY3ZN5V7;
 				INFOPLIST_FILE = HDAVPlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

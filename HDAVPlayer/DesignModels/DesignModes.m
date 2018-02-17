@@ -29,6 +29,7 @@
 #import "Milk.h"
 #import "Mocha.h"
 #import "Soy.h"
+#import "HDAVPlayer-Swift.h"
 
 @implementation DesignModes
 
@@ -41,7 +42,7 @@
 }
 
 - (void)designModa {
-    [self builder];
+    [self mvpModels];
 }
 
 #pragma mark -- 1.简单工厂模式 --
@@ -121,6 +122,12 @@
     [down updateDownOperation];
     down.state = [[HDFinishedState alloc] init];
     [down updateDownOperation];
+}
+
+#pragma mark -- 8.mvp设计模式
+- (void)mvpModels {
+    MvpViewController * mvp = [[MvpViewController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = mvp;
 }
 
 @end
