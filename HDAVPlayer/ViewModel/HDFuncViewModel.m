@@ -14,6 +14,7 @@
 #import "HDClientViewController.h"
 #import "HDServerViewController.h"
 #import "HDImageListViewController.h"
+#import "HDCoreAnimationViewController.h"
 
 #define Cell_Identifier @"__funclistcellidentifier"
 
@@ -31,7 +32,7 @@
 
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithObjects:@"视频", @"生成二维码",@"扫描二维码", @"语音播报",@"通讯Server", @"通讯Client", @"图片预览", nil];
+        _dataArray = [NSMutableArray arrayWithObjects:@"视频", @"生成二维码",@"扫描二维码", @"语音播报",@"通讯Server", @"通讯Client", @"图片预览", @"核心动画", nil];
     }
     return _dataArray;
 }
@@ -73,6 +74,8 @@
         pushViewController = [[HDClientViewController alloc] init];
     } else if (indexPath.row == 6) {
         pushViewController = [[HDImageListViewController alloc] init];
+    } else if (indexPath.row == 7) {
+        pushViewController = [[HDCoreAnimationViewController alloc] init];
     }
     if (pushViewController) {
         [self.vieController.navigationController pushViewController:pushViewController animated:YES];

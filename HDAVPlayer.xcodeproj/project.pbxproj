@@ -17,6 +17,14 @@
 		E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F251F1E094000D95557 /* HDClientViewController.xib */; };
 		E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F291F1E095600D95557 /* HDServerViewController.m */; };
 		E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */; };
+		E94174E02043F63F00D6EF52 /* HDCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94174DE2043F63F00D6EF52 /* HDCoreAnimationViewController.m */; };
+		E94174E12043F63F00D6EF52 /* HDCoreAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94174DF2043F63F00D6EF52 /* HDCoreAnimationViewController.xib */; };
+		E94174E92043F6ED00D6EF52 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E94174E32043F6ED00D6EF52 /* 2.png */; };
+		E94174EA2043F6ED00D6EF52 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E94174E42043F6ED00D6EF52 /* 1.png */; };
+		E94174EB2043F6ED00D6EF52 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = E94174E52043F6ED00D6EF52 /* 0.png */; };
+		E94174EC2043F6ED00D6EF52 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E94174E62043F6ED00D6EF52 /* 3.png */; };
+		E94174ED2043F6ED00D6EF52 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E94174E72043F6ED00D6EF52 /* 4.png */; };
+		E94174EE2043F6ED00D6EF52 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = E94174E82043F6ED00D6EF52 /* 10.png */; };
 		E957740D1F9DE803000AE338 /* HDFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E957740C1F9DE803000AE338 /* HDFactory.m */; };
 		E95774111F9DE95F000AE338 /* HDFactoryAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774101F9DE95F000AE338 /* HDFactoryAdd.m */; };
 		E95774141F9DE978000AE338 /* HDFactoryMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = E95774131F9DE978000AE338 /* HDFactoryMinus.m */; };
@@ -289,6 +297,15 @@
 		E91A3F281F1E095600D95557 /* HDServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDServerViewController.h; sourceTree = "<group>"; };
 		E91A3F291F1E095600D95557 /* HDServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDServerViewController.m; sourceTree = "<group>"; };
 		E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDServerViewController.xib; sourceTree = "<group>"; };
+		E94174DD2043F63F00D6EF52 /* HDCoreAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCoreAnimationViewController.h; sourceTree = "<group>"; };
+		E94174DE2043F63F00D6EF52 /* HDCoreAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCoreAnimationViewController.m; sourceTree = "<group>"; };
+		E94174DF2043F63F00D6EF52 /* HDCoreAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDCoreAnimationViewController.xib; sourceTree = "<group>"; };
+		E94174E32043F6ED00D6EF52 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		E94174E42043F6ED00D6EF52 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E94174E52043F6ED00D6EF52 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		E94174E62043F6ED00D6EF52 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E94174E72043F6ED00D6EF52 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		E94174E82043F6ED00D6EF52 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
 		E957740B1F9DE803000AE338 /* HDFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFactory.h; sourceTree = "<group>"; };
 		E957740C1F9DE803000AE338 /* HDFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFactory.m; sourceTree = "<group>"; };
 		E957740F1F9DE95F000AE338 /* HDFactoryAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFactoryAdd.h; sourceTree = "<group>"; };
@@ -821,6 +838,29 @@
 			path = Communite;
 			sourceTree = "<group>";
 		};
+		E94174DC2043F60E00D6EF52 /* coreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E94174DD2043F63F00D6EF52 /* HDCoreAnimationViewController.h */,
+				E94174DE2043F63F00D6EF52 /* HDCoreAnimationViewController.m */,
+				E94174DF2043F63F00D6EF52 /* HDCoreAnimationViewController.xib */,
+			);
+			path = coreAnimation;
+			sourceTree = "<group>";
+		};
+		E94174E22043F6D400D6EF52 /* imagefiles */ = {
+			isa = PBXGroup;
+			children = (
+				E94174E52043F6ED00D6EF52 /* 0.png */,
+				E94174E42043F6ED00D6EF52 /* 1.png */,
+				E94174E32043F6ED00D6EF52 /* 2.png */,
+				E94174E62043F6ED00D6EF52 /* 3.png */,
+				E94174E72043F6ED00D6EF52 /* 4.png */,
+				E94174E82043F6ED00D6EF52 /* 10.png */,
+			);
+			path = imagefiles;
+			sourceTree = "<group>";
+		};
 		E95773E91F9DD0A9000AE338 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -1214,6 +1254,7 @@
 				E9B6EC681F0C75450072938A /* HDViewController.m */,
 				E9A188EE1F1C9ECF00640D53 /* HDFuncViewController.h */,
 				E9A188EF1F1C9ECF00640D53 /* HDFuncViewController.m */,
+				E94174DC2043F60E00D6EF52 /* coreAnimation */,
 				E9DFE1A41FC3C3C200D37BA6 /* ImagePreview */,
 				E91A3F221F1E089100D95557 /* Communite */,
 				E9A189171F1CA7F000640D53 /* VoiceSpeak */,
@@ -1744,6 +1785,7 @@
 		E9E556DB1F0BD3F900567110 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E94174E22043F6D400D6EF52 /* imagefiles */,
 				E9E556DC1F0BD3F900567110 /* main.m */,
 				E9B6EC771F0C762B0072938A /* Common_Macro.h */,
 				E9B6EC781F0C762B0072938A /* HD_Prefix.pch */,
@@ -1945,20 +1987,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94174ED2043F6ED00D6EF52 /* 4.png in Resources */,
 				E9E556EE1F0BD3F900567110 /* LaunchScreen.storyboard in Resources */,
 				E9DFE1BD1FC3C61200D37BA6 /* imageListCell.xib in Resources */,
 				E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */,
+				E94174E12043F63F00D6EF52 /* HDCoreAnimationViewController.xib in Resources */,
 				E9A189131F1CA6EB00640D53 /* HDQRCode.bundle in Resources */,
 				E9A1890F1F1CA45100640D53 /* HDQRCodeScanViewController.xib in Resources */,
+				E94174E92043F6ED00D6EF52 /* 2.png in Resources */,
 				E9A189111F1CA45100640D53 /* HDQRCodeShowViewController.xib in Resources */,
+				E94174EA2043F6ED00D6EF52 /* 1.png in Resources */,
 				E9A188EA1F1C600F00640D53 /* RequestList.plist in Resources */,
 				E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */,
 				E975349D2037DB8300CA1A10 /* MvpViewController.xib in Resources */,
+				E94174EC2043F6ED00D6EF52 /* 3.png in Resources */,
 				E9DFE1B81FC3C55100D37BA6 /* HDImageListViewController.xib in Resources */,
 				E9DFE1A91FC3C41D00D37BA6 /* ImagePreViewController.xib in Resources */,
 				E9A1891C1F1CA83000640D53 /* HDVoiceSpeakViewController.xib in Resources */,
 				E9DFE1B31FC3C47100D37BA6 /* ImageCollectionViewCell.xib in Resources */,
+				E94174EB2043F6ED00D6EF52 /* 0.png in Resources */,
 				E9E556EB1F0BD3F900567110 /* Assets.xcassets in Resources */,
+				E94174EE2043F6ED00D6EF52 /* 10.png in Resources */,
 				E9B6ED121F0C7ADB0072938A /* MJRefresh.bundle in Resources */,
 				E9E556E61F0BD3F900567110 /* Main.storyboard in Resources */,
 			);
@@ -2160,6 +2209,7 @@
 				E9DFE1A81FC3C41D00D37BA6 /* ImagePreViewController.m in Sources */,
 				E9B6EDB31F0C7CA70072938A /* mztools.c in Sources */,
 				E9B6ED521F0C7C510072938A /* RDVTabBarItem.m in Sources */,
+				E94174E02043F63F00D6EF52 /* HDCoreAnimationViewController.m in Sources */,
 				E9B6ED741F0C7C5F0072938A /* MKAnnotationView+WebCache.m in Sources */,
 				E9B6ED311F0C7BFD0072938A /* MJRefreshNormalHeader.m in Sources */,
 				E983C50F202847540059168D /* HDWorkerFactory.m in Sources */,

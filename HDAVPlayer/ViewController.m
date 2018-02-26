@@ -26,8 +26,8 @@
     HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
     [self initRootViewController:funcViewController];
     [HDConfig videoPlayerSettingWithController:self];
-    DesignModes *designMode = [[DesignModes alloc] init];
-    [designMode designModa];
+//    DesignModes *designMode = [[DesignModes alloc] init];
+//    [designMode designModa];
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {
