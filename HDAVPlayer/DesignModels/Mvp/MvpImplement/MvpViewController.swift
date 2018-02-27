@@ -23,7 +23,7 @@ class MvpViewController: UIViewController, LoginView {
     }
     
     @IBAction func loginRequest(_ sender: Any) {
-        self.presenter.login(name: "cuiyuguan", pwd: "cyg08212611")
+        self.presenter.login(name: "cuiyuguan", pwd: "cuiyuguan")
     }
     
     
