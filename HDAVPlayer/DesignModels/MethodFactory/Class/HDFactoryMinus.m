@@ -11,7 +11,7 @@
 
 @implementation HDFactoryMinus
 
-- (id<HDCalculates>)createFactory {
++ (id<HDCalculates>)createFactory {
     return [[HDCalculatesMinus alloc] init];
 }
 
