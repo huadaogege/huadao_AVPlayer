@@ -95,6 +95,7 @@
 		E9A1892A1F1CD87000640D53 /* HDViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A189291F1CD87000640D53 /* HDViewModel.m */; };
 		E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */; };
 		E9A189301F1CE24500640D53 /* HDFuncViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */; };
+		E9A569A1204C253000014ED9 /* Arithmetics.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A569A0204C253000014ED9 /* Arithmetics.m */; };
 		E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5481FA1BEFA00B1992D /* HDDownState.m */; };
 		E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */; };
 		E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */; };
@@ -444,6 +445,8 @@
 		E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDVideoViewModel.m; sourceTree = "<group>"; };
 		E9A1892E1F1CE24500640D53 /* HDFuncViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFuncViewModel.h; sourceTree = "<group>"; };
 		E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFuncViewModel.m; sourceTree = "<group>"; };
+		E9A5699F204C253000014ED9 /* Arithmetics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arithmetics.h; sourceTree = "<group>"; };
+		E9A569A0204C253000014ED9 /* Arithmetics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arithmetics.m; sourceTree = "<group>"; };
 		E9AEC5471FA1BEFA00B1992D /* HDDownState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDownState.h; sourceTree = "<group>"; };
 		E9AEC5481FA1BEFA00B1992D /* HDDownState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDownState.m; sourceTree = "<group>"; };
 		E9AEC54A1FA1BF1400B1992D /* HDDowningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDowningState.h; sourceTree = "<group>"; };
@@ -1115,6 +1118,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E9A5699E204C248400014ED9 /* Arithmetics */ = {
+			isa = PBXGroup;
+			children = (
+				E9A5699F204C253000014ED9 /* Arithmetics.h */,
+				E9A569A0204C253000014ED9 /* Arithmetics.m */,
+			);
+			path = Arithmetics;
+			sourceTree = "<group>";
+		};
 		E9AEC5461FA1BE7D00B1992D /* States */ = {
 			isa = PBXGroup;
 			children = (
@@ -1722,6 +1734,7 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9A5699E204C248400014ED9 /* Arithmetics */,
 				E9B97AE92011C9DD0050ECFF /* Extension */,
 				E9E2195E1F99EA9700368413 /* DesignModels */,
 				E9A189271F1CD83A00640D53 /* ViewModel */,
@@ -2015,6 +2028,7 @@
 				E9B6ED881F0C7C690072938A /* SSZipArchive.m in Sources */,
 				E996B78D2029593900532B00 /* Soy.m in Sources */,
 				E99C7168202C2D9A0080AAEE /* SonyCameraBuilder.m in Sources */,
+				E9A569A1204C253000014ED9 /* Arithmetics.m in Sources */,
 				E9B6EC6A1F0C75450072938A /* HDViewController.m in Sources */,
 				E9A1891B1F1CA83000640D53 /* HDVoiceSpeakViewController.m in Sources */,
 				E9DFE1B21FC3C47100D37BA6 /* ImageCollectionViewCell.m in Sources */,
