@@ -11,6 +11,6 @@
 
 @interface HDFactory : NSObject<HDCalculates>
 
-- (id<HDCalculates>)createFactory;
++ (id<HDCalculates>)createFactory;
 
 @end

@@ -42,7 +42,7 @@
 }
 
 - (void)designModa {
-    [self mvpModels];
+    [self methodFactory];
 }
 
 #pragma mark -- 1.简单工厂模式 --
@@ -103,11 +103,10 @@
 
 #pragma mark -- 6.工厂方法模式 --
 - (void)methodFactory {
-    HDFactory *factory = [[HDFactoryMultiply alloc] init];
-    id<HDCalculates> calculate = [factory createFactory];
-    calculate.number_A = 10;
-    calculate.number_B = 2;
-    NSLog(@"%f", [calculate calculate]);
+    id<HDCalculates> factory = [HDFactoryMultiply createFactory];
+    factory.number_A = 10;
+    factory.number_B = 2;
+    NSLog(@"%f", [factory calculate]);
 }
 
 #pragma mark -- 7.状态模式 --
