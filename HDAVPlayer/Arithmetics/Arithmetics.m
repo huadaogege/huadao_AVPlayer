@@ -32,6 +32,7 @@ static id instance;
     return instance;
 }
 
+
 - (void)quickSortArray:(NSMutableArray*)array
              leftIndex:(NSInteger)leftIndex
             rightIndex:(NSInteger)rightIndex {
