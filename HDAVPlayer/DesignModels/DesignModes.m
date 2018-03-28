@@ -29,7 +29,7 @@
 #import "Milk.h"
 #import "Mocha.h"
 #import "Soy.h"
-#import "HDAVPlayer-Swift.h"
+#import "MVPViewController.h"
 
 @implementation DesignModes
 
@@ -42,7 +42,7 @@
 }
 
 - (void)designModa {
-    [self methodFactory];
+    [self mvpModels];
 }
 
 #pragma mark -- 1.简单工厂模式 --
@@ -125,7 +125,7 @@
 
 #pragma mark -- 8.mvp设计模式
 - (void)mvpModels {
-    MvpViewController * mvp = [[MvpViewController alloc] init];
+    MVPViewController * mvp = [[MVPViewController alloc] init];
     [UIApplication sharedApplication].keyWindow.rootViewController = mvp;
 }
 
