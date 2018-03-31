@@ -30,6 +30,7 @@
 #import "Mocha.h"
 #import "Soy.h"
 #import "MVPViewController.h"
+#import "MVVMViewController.h"
 
 @implementation DesignModes
 
@@ -42,7 +43,7 @@
 }
 
 - (void)designModa {
-    [self mvpModels];
+    [self mvvmModels];
 }
 
 #pragma mark -- 1.简单工厂模式 --
@@ -127,6 +128,11 @@
 - (void)mvpModels {
     MVPViewController * mvp = [[MVPViewController alloc] init];
     [UIApplication sharedApplication].keyWindow.rootViewController = mvp;
+}
+
+- (void)mvvmModels {
+    MVVMViewController * mvvm = [[MVVMViewController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = mvvm;
 }
 
 @end

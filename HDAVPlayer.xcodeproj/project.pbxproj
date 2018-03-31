@@ -17,10 +17,16 @@
 		E91A3F271F1E094000D95557 /* HDClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F251F1E094000D95557 /* HDClientViewController.xib */; };
 		E91A3F2B1F1E095600D95557 /* HDServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A3F291F1E095600D95557 /* HDServerViewController.m */; };
 		E91A3F2C1F1E095600D95557 /* HDServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */; };
+		E91BB221206FD215001B8FDA /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91BB220206FD215001B8FDA /* MVVMViewController.m */; };
+		E91BB224206FD265001B8FDA /* MVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = E91BB223206FD265001B8FDA /* MVVMView.m */; };
+		E91BB227206FD276001B8FDA /* MVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E91BB226206FD276001B8FDA /* MVVMModel.m */; };
+		E91BB22A206FD289001B8FDA /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E91BB229206FD289001B8FDA /* MVVMViewModel.m */; };
 		E91D616A206BE02E00AAD078 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D6169206BE02E00AAD078 /* MVPViewController.m */; };
 		E91D6170206BE10C00AAD078 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D616F206BE10C00AAD078 /* Presenter.m */; };
 		E91D6173206BE12000AAD078 /* MVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D6172206BE12000AAD078 /* MVPModel.m */; };
 		E91D6176206BE13900AAD078 /* MVPView.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D6175206BE13900AAD078 /* MVPView.m */; };
+		E9269A11206FAED700BF9721 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9269A0D206FAED600BF9721 /* NSObject+FBKVOController.m */; };
+		E9269A13206FAED700BF9721 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9269A10206FAED700BF9721 /* FBKVOController.m */; };
 		E94174E02043F63F00D6EF52 /* HDCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94174DE2043F63F00D6EF52 /* HDCoreAnimationViewController.m */; };
 		E94174E12043F63F00D6EF52 /* HDCoreAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94174DF2043F63F00D6EF52 /* HDCoreAnimationViewController.xib */; };
 		E94174E92043F6ED00D6EF52 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E94174E32043F6ED00D6EF52 /* 2.png */; };
@@ -293,6 +299,14 @@
 		E91A3F281F1E095600D95557 /* HDServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDServerViewController.h; sourceTree = "<group>"; };
 		E91A3F291F1E095600D95557 /* HDServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDServerViewController.m; sourceTree = "<group>"; };
 		E91A3F2A1F1E095600D95557 /* HDServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDServerViewController.xib; sourceTree = "<group>"; };
+		E91BB21F206FD215001B8FDA /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		E91BB220206FD215001B8FDA /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		E91BB222206FD265001B8FDA /* MVVMView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMView.h; sourceTree = "<group>"; };
+		E91BB223206FD265001B8FDA /* MVVMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMView.m; sourceTree = "<group>"; };
+		E91BB225206FD276001B8FDA /* MVVMModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMModel.h; sourceTree = "<group>"; };
+		E91BB226206FD276001B8FDA /* MVVMModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMModel.m; sourceTree = "<group>"; };
+		E91BB228206FD289001B8FDA /* MVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
+		E91BB229206FD289001B8FDA /* MVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
 		E91D6168206BE02E00AAD078 /* MVPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
 		E91D6169206BE02E00AAD078 /* MVPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPViewController.m; sourceTree = "<group>"; };
 		E91D616E206BE10C00AAD078 /* Presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
@@ -301,6 +315,10 @@
 		E91D6172206BE12000AAD078 /* MVPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPModel.m; sourceTree = "<group>"; };
 		E91D6174206BE13900AAD078 /* MVPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPView.h; sourceTree = "<group>"; };
 		E91D6175206BE13900AAD078 /* MVPView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPView.m; sourceTree = "<group>"; };
+		E9269A0C206FAED600BF9721 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		E9269A0D206FAED600BF9721 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		E9269A0F206FAED600BF9721 /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		E9269A10206FAED700BF9721 /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
 		E94174DD2043F63F00D6EF52 /* HDCoreAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCoreAnimationViewController.h; sourceTree = "<group>"; };
 		E94174DE2043F63F00D6EF52 /* HDCoreAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCoreAnimationViewController.m; sourceTree = "<group>"; };
 		E94174DF2043F63F00D6EF52 /* HDCoreAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDCoreAnimationViewController.xib; sourceTree = "<group>"; };
@@ -834,6 +852,21 @@
 			path = Communite;
 			sourceTree = "<group>";
 		};
+		E91BB21E206FD1F1001B8FDA /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E91BB21F206FD215001B8FDA /* MVVMViewController.h */,
+				E91BB220206FD215001B8FDA /* MVVMViewController.m */,
+				E91BB222206FD265001B8FDA /* MVVMView.h */,
+				E91BB223206FD265001B8FDA /* MVVMView.m */,
+				E91BB225206FD276001B8FDA /* MVVMModel.h */,
+				E91BB226206FD276001B8FDA /* MVVMModel.m */,
+				E91BB228206FD289001B8FDA /* MVVMViewModel.h */,
+				E91BB229206FD289001B8FDA /* MVVMViewModel.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 		E91D6167206BE01300AAD078 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +880,17 @@
 				E91D6175206BE13900AAD078 /* MVPView.m */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		E9269A0A206FAEBC00BF9721 /* KBKVO */ = {
+			isa = PBXGroup;
+			children = (
+				E9269A0F206FAED600BF9721 /* FBKVOController.h */,
+				E9269A10206FAED700BF9721 /* FBKVOController.m */,
+				E9269A0C206FAED600BF9721 /* NSObject+FBKVOController.h */,
+				E9269A0D206FAED600BF9721 /* NSObject+FBKVOController.m */,
+			);
+			path = KBKVO;
 			sourceTree = "<group>";
 		};
 		E94174DC2043F60E00D6EF52 /* coreAnimation */ = {
@@ -1183,6 +1227,7 @@
 		E9B6EC621F0C74080072938A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				E9269A0A206FAEBC00BF9721 /* KBKVO */,
 				E9E6CB581F31D6E7009B3934 /* Fmdb */,
 				E91A3F121F1E06FF00D95557 /* CocoaAsyncSocket */,
 				E992B7291F0CC9030002292C /* GTMBase64 */,
@@ -1670,6 +1715,7 @@
 			children = (
 				E99C717B202C33CF0080AAEE /* DesignModes.h */,
 				E99C717C202C33CF0080AAEE /* DesignModes.m */,
+				E91BB21E206FD1F1001B8FDA /* MVVM */,
 				E91D6167206BE01300AAD078 /* MVP */,
 				E9B97AE5201192070050ECFF /* Delegate */,
 				E9AEC5461FA1BE7D00B1992D /* States */,
@@ -2069,6 +2115,7 @@
 				E9B6ECF21F0C7AB80072938A /* JSONModel+networking.m in Sources */,
 				E9AEC5551FA1BF5800B1992D /* HDFailedState.m in Sources */,
 				E9DFE1C71FC3CF2A00D37BA6 /* HDImageViewModel.m in Sources */,
+				E91BB22A206FD289001B8FDA /* MVVMViewModel.m in Sources */,
 				E9B6ED801F0C7C5F0072938A /* UIImage+WebP.m in Sources */,
 				E9B6EDFE1F0C7CEE0072938A /* UIImageView+AFNetworking.m in Sources */,
 				E9B6ECCE1F0C7A300072938A /* DBGuestureLock.m in Sources */,
@@ -2101,12 +2148,14 @@
 				E9B6ECE61F0C7AA80072938A /* JSONModelError.m in Sources */,
 				E99C716B202C2DB30080AAEE /* SonyCameraDirector.m in Sources */,
 				E9B6EC761F0C75B10072938A /* HDFileViewCell.m in Sources */,
+				E9269A13206FAED700BF9721 /* FBKVOController.m in Sources */,
 				E9B97AE82011923B0050ECFF /* Request.m in Sources */,
 				E9B6ED7B1F0C7C5F0072938A /* SDWebImageManager.m in Sources */,
 				E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */,
 				E9B6ED3C1F0C7C390072938A /* MJRefreshAutoNormalFooter.m in Sources */,
 				E9B6EDA71F0C7C9F0072938A /* pwd2key.c in Sources */,
 				E9B6ECC01F0C7A210072938A /* AFURLRequestSerialization.m in Sources */,
+				E91BB221206FD215001B8FDA /* MVVMViewController.m in Sources */,
 				E9B6ED831F0C7C5F0072938A /* UIView+WebCacheOperation.m in Sources */,
 				E9B6EDA21F0C7C9F0072938A /* aestab.c in Sources */,
 				E9B6ECBD1F0C7A210072938A /* AFHTTPSessionManager.m in Sources */,
@@ -2121,6 +2170,7 @@
 				E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */,
 				E9DFE1C41FC3CD0400D37BA6 /* HDImageModel.m in Sources */,
 				E9B6ED231F0C7B9B0072938A /* MJRefreshAutoFooter.m in Sources */,
+				E91BB224206FD265001B8FDA /* MVVMView.m in Sources */,
 				E983C512202847830059168D /* HDNurse.m in Sources */,
 				E9B6EDA41F0C7C9F0072938A /* fileenc.c in Sources */,
 				E9B6ED7C1F0C7C5F0072938A /* SDWebImagePrefetcher.m in Sources */,
@@ -2179,6 +2229,7 @@
 				E9B6ED521F0C7C510072938A /* RDVTabBarItem.m in Sources */,
 				E94174E02043F63F00D6EF52 /* HDCoreAnimationViewController.m in Sources */,
 				E9B6ED741F0C7C5F0072938A /* MKAnnotationView+WebCache.m in Sources */,
+				E9269A11206FAED700BF9721 /* NSObject+FBKVOController.m in Sources */,
 				E9B6ED311F0C7BFD0072938A /* MJRefreshNormalHeader.m in Sources */,
 				E983C50F202847540059168D /* HDWorkerFactory.m in Sources */,
 				E9E6CB6C1F31D99B009B3934 /* HDFmdbManager.m in Sources */,
@@ -2197,6 +2248,7 @@
 				E9B6ED781F0C7C5F0072938A /* SDWebImageDecoder.m in Sources */,
 				E9B6ECBE1F0C7A210072938A /* AFNetworkReachabilityManager.m in Sources */,
 				E9DFE1B71FC3C55100D37BA6 /* HDImageListViewController.m in Sources */,
+				E91BB227206FD276001B8FDA /* MVVMModel.m in Sources */,
 				E9B6EDFD1F0C7CEE0072938A /* UIButton+AFNetworking.m in Sources */,
 				E9A188E81F1C5EA900640D53 /* HDJSONRequest.m in Sources */,
 				E9B6ED031F0C7AC80072938A /* LogUtil.m in Sources */,
