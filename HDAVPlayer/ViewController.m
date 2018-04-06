@@ -14,7 +14,11 @@
 #import "HDAppInfoRequest.h"
 #import "DesignModes.h"
 #import "Arithmetics.h"
+#import "CKeyChain.h"
 
+NSString * const KEY_USERNAME_PASSWORD = @"com.company.app.usernamepassword";
+NSString * const KEY_USERNAME = @"com.company.app.username";
+NSString * const KEY_PASSWORD = @"com.company.app.password";
 
 @interface ViewController ()
 
@@ -24,19 +28,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
-//    [self initRootViewController:funcViewController];
-//    [HDConfig videoPlayerSettingWithController:self];
     DesignModes *designMode = [[DesignModes alloc] init];
     [designMode designModa];
-//    Arithmetics *arithmetic = [Arithmetics shareInstance];
-//    NSMutableArray *sortArray = [NSMutableArray arrayWithObjects:@(8), @(6), @(0), @(9), @(7), @(4), @(2), @(1), @(3), @(5), nil];
-//    [arithmetic quickSortArray:sortArray leftIndex:0 rightIndex:sortArray.count - 1];
-//    NSLog(@"after sort: %@", sortArray);
-//    [arithmetic bubbleSort:sortArray];
-//    NSArray *source = @[@1, @2, @4, @5, @11, @13, @17, @22, @25, @38, @57];
-//    NSInteger index = [arithmetic binarySearch:source target:38];
-//    NSLog(@"38,index:%ld", (long)index);
+    //keyChain 使用范式
+    NSMutableDictionary *userNamePasswordDic = [[NSMutableDictionary alloc] init];
+    [userNamePasswordDic setObject:@"cuiyugaun" forKey:KEY_USERNAME];
+    [userNamePasswordDic setObject:@"cyg08212611" forKey:KEY_PASSWORD];
+    [CKeyChain save:KEY_USERNAME_PASSWORD data:userNamePasswordDic];
+    NSMutableDictionary *readUsernamePassword = (NSMutableDictionary *)[CKeyChain load:KEY_USERNAME_PASSWORD];
+    NSString *userName = [readUsernamePassword objectForKey:KEY_USERNAME];
+    NSString *password = [readUsernamePassword objectForKey:KEY_PASSWORD];
+    
     
 }
 

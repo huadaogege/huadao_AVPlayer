@@ -105,6 +105,7 @@
 		E9A1892D1F1CD89300640D53 /* HDVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892C1F1CD89300640D53 /* HDVideoViewModel.m */; };
 		E9A189301F1CE24500640D53 /* HDFuncViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */; };
 		E9A569A1204C253000014ED9 /* Arithmetics.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A569A0204C253000014ED9 /* Arithmetics.m */; };
+		E9A91666207740F400F638B1 /* CKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A91665207740F400F638B1 /* CKeyChain.m */; };
 		E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5481FA1BEFA00B1992D /* HDDownState.m */; };
 		E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */; };
 		E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */; };
@@ -475,6 +476,8 @@
 		E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFuncViewModel.m; sourceTree = "<group>"; };
 		E9A5699F204C253000014ED9 /* Arithmetics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arithmetics.h; sourceTree = "<group>"; };
 		E9A569A0204C253000014ED9 /* Arithmetics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arithmetics.m; sourceTree = "<group>"; };
+		E9A91664207740F400F638B1 /* CKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKeyChain.h; sourceTree = "<group>"; };
+		E9A91665207740F400F638B1 /* CKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKeyChain.m; sourceTree = "<group>"; };
 		E9AEC5471FA1BEFA00B1992D /* HDDownState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDownState.h; sourceTree = "<group>"; };
 		E9AEC5481FA1BEFA00B1992D /* HDDownState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDownState.m; sourceTree = "<group>"; };
 		E9AEC54A1FA1BF1400B1992D /* HDDowningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDowningState.h; sourceTree = "<group>"; };
@@ -1170,6 +1173,15 @@
 			path = Arithmetics;
 			sourceTree = "<group>";
 		};
+		E9A91663207740BF00F638B1 /* keyChainManager */ = {
+			isa = PBXGroup;
+			children = (
+				E9A91664207740F400F638B1 /* CKeyChain.h */,
+				E9A91665207740F400F638B1 /* CKeyChain.m */,
+			);
+			path = keyChainManager;
+			sourceTree = "<group>";
+		};
 		E9AEC5461FA1BE7D00B1992D /* States */ = {
 			isa = PBXGroup;
 			children = (
@@ -1252,6 +1264,7 @@
 			children = (
 				E9A189201F1CCFA100640D53 /* HDConfig.h */,
 				E9A189211F1CCFA100640D53 /* HDConfig.m */,
+				E9A91663207740BF00F638B1 /* keyChainManager */,
 				E9DFE1BE1FC3C7B400D37BA6 /* ImageManager */,
 				E9E6CB691F31D957009B3934 /* FmdbManager */,
 				E9A188FF1F1CA34D00640D53 /* VoiceSpeak */,
@@ -2177,6 +2190,7 @@
 				E9B6ED131F0C7ADB0072938A /* MJRefreshConst.m in Sources */,
 				E91D616A206BE02E00AAD078 /* MVPViewController.m in Sources */,
 				E9B6ED7D1F0C7C5F0072938A /* UIButton+WebCache.m in Sources */,
+				E9A91666207740F400F638B1 /* CKeyChain.m in Sources */,
 				E91D6173206BE12000AAD078 /* MVPModel.m in Sources */,
 				E9A188FE1F1CA34400640D53 /* HDQRCodeManager.m in Sources */,
 				E9A189301F1CE24500640D53 /* HDFuncViewModel.m in Sources */,
