@@ -39,7 +39,6 @@ NSString * const KEY_PASSWORD = @"com.company.app.password";
     NSString *userName = [readUsernamePassword objectForKey:KEY_USERNAME];
     NSString *password = [readUsernamePassword objectForKey:KEY_PASSWORD];
     
-    
 }
 
 - (void)initRootViewController:(HDViewController *)viewController {
