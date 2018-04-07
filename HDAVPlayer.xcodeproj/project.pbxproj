@@ -106,6 +106,9 @@
 		E9A189301F1CE24500640D53 /* HDFuncViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1892F1F1CE24500640D53 /* HDFuncViewModel.m */; };
 		E9A569A1204C253000014ED9 /* Arithmetics.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A569A0204C253000014ED9 /* Arithmetics.m */; };
 		E9A91666207740F400F638B1 /* CKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A91665207740F400F638B1 /* CKeyChain.m */; };
+		E9A9166A20776B7800F638B1 /* CEncryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9166920776B7800F638B1 /* CEncryptManager.m */; };
+		E9A9166D2077852300F638B1 /* uuaes.c in Sources */ = {isa = PBXBuildFile; fileRef = E9A9166B2077852300F638B1 /* uuaes.c */; };
+		E9A9166F2077B41000F638B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A9166E2077B41000F638B1 /* Security.framework */; };
 		E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5481FA1BEFA00B1992D /* HDDownState.m */; };
 		E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */; };
 		E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */; };
@@ -478,6 +481,11 @@
 		E9A569A0204C253000014ED9 /* Arithmetics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arithmetics.m; sourceTree = "<group>"; };
 		E9A91664207740F400F638B1 /* CKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKeyChain.h; sourceTree = "<group>"; };
 		E9A91665207740F400F638B1 /* CKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKeyChain.m; sourceTree = "<group>"; };
+		E9A9166820776B7800F638B1 /* CEncryptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEncryptManager.h; sourceTree = "<group>"; };
+		E9A9166920776B7800F638B1 /* CEncryptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEncryptManager.m; sourceTree = "<group>"; };
+		E9A9166B2077852300F638B1 /* uuaes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uuaes.c; sourceTree = "<group>"; };
+		E9A9166C2077852300F638B1 /* uuaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uuaes.h; sourceTree = "<group>"; };
+		E9A9166E2077B41000F638B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E9AEC5471FA1BEFA00B1992D /* HDDownState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDownState.h; sourceTree = "<group>"; };
 		E9AEC5481FA1BEFA00B1992D /* HDDownState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDownState.m; sourceTree = "<group>"; };
 		E9AEC54A1FA1BF1400B1992D /* HDDowningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDowningState.h; sourceTree = "<group>"; };
@@ -767,6 +775,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A9166F2077B41000F638B1 /* Security.framework in Frameworks */,
 				E9E6CB6E1F31E0A5009B3934 /* libsqlite3.0.tbd in Frameworks */,
 				E992B6C01F0CC0FE0002292C /* UIKit.framework in Frameworks */,
 				E992B6BE1F0CC0F80002292C /* SystemConfiguration.framework in Frameworks */,
@@ -996,6 +1005,7 @@
 		E992B6B81F0CC0EE0002292C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9A9166E2077B41000F638B1 /* Security.framework */,
 				E9E6CB6D1F31E0A5009B3934 /* libsqlite3.0.tbd */,
 				E992B6BF1F0CC0FE0002292C /* UIKit.framework */,
 				E992B6BD1F0CC0F80002292C /* SystemConfiguration.framework */,
@@ -1182,6 +1192,17 @@
 			path = keyChainManager;
 			sourceTree = "<group>";
 		};
+		E9A9166720776B4A00F638B1 /* encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				E9A9166820776B7800F638B1 /* CEncryptManager.h */,
+				E9A9166920776B7800F638B1 /* CEncryptManager.m */,
+				E9A9166B2077852300F638B1 /* uuaes.c */,
+				E9A9166C2077852300F638B1 /* uuaes.h */,
+			);
+			path = encrypt;
+			sourceTree = "<group>";
+		};
 		E9AEC5461FA1BE7D00B1992D /* States */ = {
 			isa = PBXGroup;
 			children = (
@@ -1264,6 +1285,7 @@
 			children = (
 				E9A189201F1CCFA100640D53 /* HDConfig.h */,
 				E9A189211F1CCFA100640D53 /* HDConfig.m */,
+				E9A9166720776B4A00F638B1 /* encrypt */,
 				E9A91663207740BF00F638B1 /* keyChainManager */,
 				E9DFE1BE1FC3C7B400D37BA6 /* ImageManager */,
 				E9E6CB691F31D957009B3934 /* FmdbManager */,
@@ -2087,6 +2109,7 @@
 				E99C716E202C2E800080AAEE /* SonyA5100.m in Sources */,
 				E91A3F1A1F1E07BE00D95557 /* GCDAsyncSocket.m in Sources */,
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,
+				E9A9166A20776B7800F638B1 /* CEncryptManager.m in Sources */,
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
 				E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */,
 				E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */,
@@ -2116,6 +2139,7 @@
 				E9B6ED3B1F0C7C390072938A /* MJRefreshAutoGifFooter.m in Sources */,
 				E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */,
 				E983C52B202865C60059168D /* HDCashRebate.m in Sources */,
+				E9A9166D2077852300F638B1 /* uuaes.c in Sources */,
 				E9B6ED3D1F0C7C390072938A /* MJRefreshAutoStateFooter.m in Sources */,
 				E9B6ECC81F0C7A290072938A /* LMAppController.m in Sources */,
 				E9B6ECC11F0C7A210072938A /* AFURLResponseSerialization.m in Sources */,
@@ -2496,7 +2520,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HDAVPlayer/HD_Prefix.pch;
 				INFOPLIST_FILE = HDAVPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
@@ -2523,7 +2547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HDAVPlayer/HD_Prefix.pch;
 				INFOPLIST_FILE = HDAVPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
