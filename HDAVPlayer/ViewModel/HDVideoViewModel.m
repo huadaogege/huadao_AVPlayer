@@ -24,7 +24,7 @@
         [_tableView registerClass:[HDFileViewCell class] forCellReuseIdentifier:Cell_Identifier];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        WeakSelf;
+        weakSelf(weakSelf);
         MJRefreshNormalHeader *freshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [weakSelf fetchFileData];
             [weakSelf.tableView.mj_header endRefreshing];
