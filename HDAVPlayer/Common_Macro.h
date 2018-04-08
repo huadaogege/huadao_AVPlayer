@@ -35,5 +35,7 @@ _Pragma("clang diagnostic pop")}
 #define WINDOW_SCALE_SIX Screen_width / 375.0
 //二维码标识
 #define QRCodeImageIdentifier @"CIQRCodeGenerator"
+//判断是否是iPhone X
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 #endif /* Common_Macro_h */

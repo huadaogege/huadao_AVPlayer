@@ -109,6 +109,9 @@
 		E9A9166A20776B7800F638B1 /* CEncryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9166920776B7800F638B1 /* CEncryptManager.m */; };
 		E9A9166D2077852300F638B1 /* uuaes.c in Sources */ = {isa = PBXBuildFile; fileRef = E9A9166B2077852300F638B1 /* uuaes.c */; };
 		E9A9166F2077B41000F638B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A9166E2077B41000F638B1 /* Security.framework */; };
+		E9A916862078E87100F638B1 /* CBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A916852078E87100F638B1 /* CBaseNavigationController.m */; };
+		E9A9168C2078EFE000F638B1 /* CBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9168B2078EFE000F638B1 /* CBaseViewController.m */; };
+		E9A9168F2078F26200F638B1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9168E2078F26200F638B1 /* TestViewController.m */; };
 		E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5481FA1BEFA00B1992D /* HDDownState.m */; };
 		E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */; };
 		E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */; };
@@ -486,6 +489,12 @@
 		E9A9166B2077852300F638B1 /* uuaes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uuaes.c; sourceTree = "<group>"; };
 		E9A9166C2077852300F638B1 /* uuaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uuaes.h; sourceTree = "<group>"; };
 		E9A9166E2077B41000F638B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E9A916842078E87100F638B1 /* CBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBaseNavigationController.h; sourceTree = "<group>"; };
+		E9A916852078E87100F638B1 /* CBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBaseNavigationController.m; sourceTree = "<group>"; };
+		E9A9168A2078EFE000F638B1 /* CBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBaseViewController.h; sourceTree = "<group>"; };
+		E9A9168B2078EFE000F638B1 /* CBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBaseViewController.m; sourceTree = "<group>"; };
+		E9A9168D2078F26200F638B1 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		E9A9168E2078F26200F638B1 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		E9AEC5471FA1BEFA00B1992D /* HDDownState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDownState.h; sourceTree = "<group>"; };
 		E9AEC5481FA1BEFA00B1992D /* HDDownState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDownState.m; sourceTree = "<group>"; };
 		E9AEC54A1FA1BF1400B1992D /* HDDowningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDowningState.h; sourceTree = "<group>"; };
@@ -1203,6 +1212,17 @@
 			path = encrypt;
 			sourceTree = "<group>";
 		};
+		E9A916832078E83900F638B1 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E9A916842078E87100F638B1 /* CBaseNavigationController.h */,
+				E9A916852078E87100F638B1 /* CBaseNavigationController.m */,
+				E9A9168A2078EFE000F638B1 /* CBaseViewController.h */,
+				E9A9168B2078EFE000F638B1 /* CBaseViewController.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
 		E9AEC5461FA1BE7D00B1992D /* States */ = {
 			isa = PBXGroup;
 			children = (
@@ -1815,6 +1835,9 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9A9168D2078F26200F638B1 /* TestViewController.h */,
+				E9A9168E2078F26200F638B1 /* TestViewController.m */,
+				E9A916832078E83900F638B1 /* BaseClasses */,
 				E9A5699E204C248400014ED9 /* Arithmetics */,
 				E9B97AE92011C9DD0050ECFF /* Extension */,
 				E9E2195E1F99EA9700368413 /* DesignModels */,
@@ -2111,6 +2134,7 @@
 				E9B6ED461F0C7C430072938A /* MJRefreshBackStateFooter.m in Sources */,
 				E9A9166A20776B7800F638B1 /* CEncryptManager.m in Sources */,
 				E9B6ED041F0C7AC80072938A /* UUMarsXogManager.mm in Sources */,
+				E9A9168C2078EFE000F638B1 /* CBaseViewController.m in Sources */,
 				E9A189221F1CCFA100640D53 /* HDConfig.m in Sources */,
 				E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */,
 				E9B6ED881F0C7C690072938A /* SSZipArchive.m in Sources */,
@@ -2140,6 +2164,7 @@
 				E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */,
 				E983C52B202865C60059168D /* HDCashRebate.m in Sources */,
 				E9A9166D2077852300F638B1 /* uuaes.c in Sources */,
+				E9A916862078E87100F638B1 /* CBaseNavigationController.m in Sources */,
 				E9B6ED3D1F0C7C390072938A /* MJRefreshAutoStateFooter.m in Sources */,
 				E9B6ECC81F0C7A290072938A /* LMAppController.m in Sources */,
 				E9B6ECC11F0C7A210072938A /* AFURLResponseSerialization.m in Sources */,
@@ -2206,6 +2231,7 @@
 				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */,
 				E9DFE1C41FC3CD0400D37BA6 /* HDImageModel.m in Sources */,
+				E9A9168F2078F26200F638B1 /* TestViewController.m in Sources */,
 				E9B6ED231F0C7B9B0072938A /* MJRefreshAutoFooter.m in Sources */,
 				E91BB224206FD265001B8FDA /* MVVMView.m in Sources */,
 				E983C512202847830059168D /* HDNurse.m in Sources */,
