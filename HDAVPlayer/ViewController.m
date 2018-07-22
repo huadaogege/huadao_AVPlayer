@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TestViewController.h"
 
 @interface ViewController ()
 
@@ -22,8 +21,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    TestViewController *testVc = [[TestViewController alloc] init];
-    [self.navigationController pushViewController:testVc animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

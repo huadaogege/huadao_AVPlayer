@@ -111,7 +111,6 @@
 		E9A9166F2077B41000F638B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A9166E2077B41000F638B1 /* Security.framework */; };
 		E9A916862078E87100F638B1 /* CBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A916852078E87100F638B1 /* CBaseNavigationController.m */; };
 		E9A9168C2078EFE000F638B1 /* CBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9168B2078EFE000F638B1 /* CBaseViewController.m */; };
-		E9A9168F2078F26200F638B1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9168E2078F26200F638B1 /* TestViewController.m */; };
 		E9AEC5491FA1BEFA00B1992D /* HDDownState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC5481FA1BEFA00B1992D /* HDDownState.m */; };
 		E9AEC54C1FA1BF1400B1992D /* HDDowningState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54B1FA1BF1400B1992D /* HDDowningState.m */; };
 		E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AEC54E1FA1BF2A00B1992D /* HDPauseState.m */; };
@@ -217,6 +216,8 @@
 		E9B97AF72011CA8B0050ECFF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B97AF52011CA8B0050ECFF /* MainInterface.storyboard */; };
 		E9B97AFB2011CA8B0050ECFF /* TodayWiget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9B97AEE2011CA8B0050ECFF /* TodayWiget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */; };
+		E9D8435021047D32001FA66C /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D8434F21047D32001FA66C /* WaterFlowViewController.m */; };
+		E9D8435321047E5C001FA66C /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D8435221047E5C001FA66C /* WaterFlowLayout.m */; };
 		E9DFE1A81FC3C41D00D37BA6 /* ImagePreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DFE1A61FC3C41D00D37BA6 /* ImagePreViewController.m */; };
 		E9DFE1A91FC3C41D00D37BA6 /* ImagePreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DFE1A71FC3C41D00D37BA6 /* ImagePreViewController.xib */; };
 		E9DFE1B21FC3C47100D37BA6 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DFE1B01FC3C47100D37BA6 /* ImageCollectionViewCell.m */; };
@@ -493,8 +494,6 @@
 		E9A916852078E87100F638B1 /* CBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBaseNavigationController.m; sourceTree = "<group>"; };
 		E9A9168A2078EFE000F638B1 /* CBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBaseViewController.h; sourceTree = "<group>"; };
 		E9A9168B2078EFE000F638B1 /* CBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBaseViewController.m; sourceTree = "<group>"; };
-		E9A9168D2078F26200F638B1 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		E9A9168E2078F26200F638B1 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		E9AEC5471FA1BEFA00B1992D /* HDDownState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDownState.h; sourceTree = "<group>"; };
 		E9AEC5481FA1BEFA00B1992D /* HDDownState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDownState.m; sourceTree = "<group>"; };
 		E9AEC54A1FA1BF1400B1992D /* HDDowningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDowningState.h; sourceTree = "<group>"; };
@@ -716,6 +715,10 @@
 		E9B97AF82011CA8B0050ECFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9C603CC1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalPageFlowlayout.h; sourceTree = "<group>"; };
 		E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalPageFlowlayout.m; sourceTree = "<group>"; };
+		E9D8434E21047D32001FA66C /* WaterFlowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
+		E9D8434F21047D32001FA66C /* WaterFlowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
+		E9D8435121047E5C001FA66C /* WaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
+		E9D8435221047E5C001FA66C /* WaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
 		E9DFE1A51FC3C41D00D37BA6 /* ImagePreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePreViewController.h; sourceTree = "<group>"; };
 		E9DFE1A61FC3C41D00D37BA6 /* ImagePreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePreViewController.m; sourceTree = "<group>"; };
 		E9DFE1A71FC3C41D00D37BA6 /* ImagePreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePreViewController.xib; sourceTree = "<group>"; };
@@ -1325,6 +1328,7 @@
 				E9B6EC681F0C75450072938A /* HDViewController.m */,
 				E9A188EE1F1C9ECF00640D53 /* HDFuncViewController.h */,
 				E9A188EF1F1C9ECF00640D53 /* HDFuncViewController.m */,
+				E9D8434D21047D0C001FA66C /* WaterFlow */,
 				E94174DC2043F60E00D6EF52 /* coreAnimation */,
 				E9DFE1A41FC3C3C200D37BA6 /* ImagePreview */,
 				E91A3F221F1E089100D95557 /* Communite */,
@@ -1732,6 +1736,17 @@
 			path = TodayWiget;
 			sourceTree = "<group>";
 		};
+		E9D8434D21047D0C001FA66C /* WaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8434E21047D32001FA66C /* WaterFlowViewController.h */,
+				E9D8434F21047D32001FA66C /* WaterFlowViewController.m */,
+				E9D8435121047E5C001FA66C /* WaterFlowLayout.h */,
+				E9D8435221047E5C001FA66C /* WaterFlowLayout.m */,
+			);
+			path = WaterFlow;
+			sourceTree = "<group>";
+		};
 		E9DFE1A41FC3C3C200D37BA6 /* ImagePreview */ = {
 			isa = PBXGroup;
 			children = (
@@ -1835,8 +1850,6 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
-				E9A9168D2078F26200F638B1 /* TestViewController.h */,
-				E9A9168E2078F26200F638B1 /* TestViewController.m */,
 				E9A916832078E83900F638B1 /* BaseClasses */,
 				E9A5699E204C248400014ED9 /* Arithmetics */,
 				E9B97AE92011C9DD0050ECFF /* Extension */,
@@ -2161,6 +2174,7 @@
 				E95774241F9DEB0E000AE338 /* HDCalculatesMinus.m in Sources */,
 				E9E556E31F0BD3F900567110 /* ViewController.m in Sources */,
 				E9B6ED3B1F0C7C390072938A /* MJRefreshAutoGifFooter.m in Sources */,
+				E9D8435321047E5C001FA66C /* WaterFlowLayout.m in Sources */,
 				E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */,
 				E983C52B202865C60059168D /* HDCashRebate.m in Sources */,
 				E9A9166D2077852300F638B1 /* uuaes.c in Sources */,
@@ -2231,7 +2245,6 @@
 				E9B6EC731F0C75A80072938A /* HDModel.m in Sources */,
 				E91A3F211F1E07C600D95557 /* AsyncUdpSocket.m in Sources */,
 				E9DFE1C41FC3CD0400D37BA6 /* HDImageModel.m in Sources */,
-				E9A9168F2078F26200F638B1 /* TestViewController.m in Sources */,
 				E9B6ED231F0C7B9B0072938A /* MJRefreshAutoFooter.m in Sources */,
 				E91BB224206FD265001B8FDA /* MVVMView.m in Sources */,
 				E983C512202847830059168D /* HDNurse.m in Sources */,
@@ -2280,6 +2293,7 @@
 				E9E556DD1F0BD3F900567110 /* main.m in Sources */,
 				E992B6C81F0CC21D0002292C /* HDFileManager.m in Sources */,
 				E9DFE1C11FC3C7EB00D37BA6 /* HDImageManager.m in Sources */,
+				E9D8435021047D32001FA66C /* WaterFlowViewController.m in Sources */,
 				E9A188F01F1C9ECF00640D53 /* HDFuncViewController.m in Sources */,
 				E9B6EDA11F0C7C9F0072938A /* aeskey.c in Sources */,
 				E9AEC54F1FA1BF2A00B1992D /* HDPauseState.m in Sources */,

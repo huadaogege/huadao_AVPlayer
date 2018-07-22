@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "UUMarsXogManager.h"
 #import "CBaseNavigationController.h"
+#import "HDFuncViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +19,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController *viewController = [[ViewController alloc] init];
+    HDFuncViewController *viewController = [[HDFuncViewController alloc] init];
     CBaseNavigationController *navigationController = [[CBaseNavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = navigationController;
     [UUMarsXogManager initXlogerFilePath];
