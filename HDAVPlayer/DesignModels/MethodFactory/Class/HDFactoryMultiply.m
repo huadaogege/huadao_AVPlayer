@@ -11,7 +11,7 @@
 
 @implementation HDFactoryMultiply
 
-- (id<HDCalculates>)createFactory {
++ (id<HDCalculates>)createFactory {
     return [[HDCalculatesMultiply alloc] init];
 }
 

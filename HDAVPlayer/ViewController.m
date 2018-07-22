@@ -7,13 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HDFuncViewController.h"
-#import "HDConfig.h"
-#import "HDFmdbManager.h"
-#import "HDRequest.h"
-#import "HDAppInfoRequest.h"
-#import "DesignModes.h"
-
 
 @interface ViewController ()
 
@@ -25,16 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    HDFuncViewController *funcViewController = [[HDFuncViewController alloc] init];
-    [self initRootViewController:funcViewController];
-    [HDConfig videoPlayerSettingWithController:self];
-    DesignModes *designMode = [[DesignModes alloc] init];
-    [designMode designModa];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"首页";
 }
 
-- (void)initRootViewController:(HDViewController *)viewController {
-    [self.view addSubview:viewController.view];
-    [self addChildViewController:viewController];
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
 }
 
 - (void)didReceiveMemoryWarning {

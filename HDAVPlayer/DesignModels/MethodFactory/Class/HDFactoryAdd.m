@@ -11,7 +11,7 @@
 
 @implementation HDFactoryAdd
 
-- (id<HDCalculates>)createFactory {
++ (id<HDCalculates>)createFactory {
     return [[HDCalculatesAdd alloc] init];
 }
 
