@@ -210,6 +210,8 @@
 		E9B6EE001F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF61F0C7CEE0072938A /* UIRefreshControl+AFNetworking.m */; };
 		E9B6EE011F0C7CEE0072938A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */; };
 		E9B6EE031F0C7E950072938A /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B6EE021F0C7E950072938A /* mars.framework */; };
+		E9B80237210DDBBF00CAA186 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B80234210DDBBF00CAA186 /* WKWebViewController.m */; };
+		E9B80238210DDBBF00CAA186 /* JSOC.html in Resources */ = {isa = PBXBuildFile; fileRef = E9B80235210DDBBF00CAA186 /* JSOC.html */; };
 		E9B97AE82011923B0050ECFF /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B97AE72011923B0050ECFF /* Request.m */; };
 		E9B97AF02011CA8B0050ECFF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B97AEF2011CA8B0050ECFF /* NotificationCenter.framework */; };
 		E9B97AF42011CA8B0050ECFF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B97AF32011CA8B0050ECFF /* TodayViewController.m */; };
@@ -705,6 +707,9 @@
 		E9B6EDF71F0C7CEE0072938A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		E9B6EDF81F0C7CEE0072938A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E9B6EE021F0C7E950072938A /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		E9B80234210DDBBF00CAA186 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		E9B80235210DDBBF00CAA186 /* JSOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSOC.html; sourceTree = "<group>"; };
+		E9B80236210DDBBF00CAA186 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		E9B97AE62011923B0050ECFF /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		E9B97AE72011923B0050ECFF /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		E9B97AEE2011CA8B0050ECFF /* TodayWiget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWiget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1328,6 +1333,7 @@
 				E9B6EC681F0C75450072938A /* HDViewController.m */,
 				E9A188EE1F1C9ECF00640D53 /* HDFuncViewController.h */,
 				E9A188EF1F1C9ECF00640D53 /* HDFuncViewController.m */,
+				E9B80233210DDB9300CAA186 /* WKWebView */,
 				E9D8434D21047D0C001FA66C /* WaterFlow */,
 				E94174DC2043F60E00D6EF52 /* coreAnimation */,
 				E9DFE1A41FC3C3C200D37BA6 /* ImagePreview */,
@@ -1707,6 +1713,16 @@
 			path = aes;
 			sourceTree = "<group>";
 		};
+		E9B80233210DDB9300CAA186 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B80235210DDBBF00CAA186 /* JSOC.html */,
+				E9B80236210DDBBF00CAA186 /* WKWebViewController.h */,
+				E9B80234210DDBBF00CAA186 /* WKWebViewController.m */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
 		E9B97AE5201192070050ECFF /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -2014,12 +2030,12 @@
 				TargetAttributes = {
 					E9B97AED2011CA8B0050ECFF = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 56MY3ZN5V7;
+						DevelopmentTeam = ZQQMP3TJXZ;
 						ProvisioningStyle = Automatic;
 					};
 					E9E556D71F0BD3F900567110 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 56MY3ZN5V7;
+						DevelopmentTeam = ZQQMP3TJXZ;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2097,6 +2113,7 @@
 				E9E556EB1F0BD3F900567110 /* Assets.xcassets in Resources */,
 				E94174EE2043F6ED00D6EF52 /* 10.png in Resources */,
 				E9B6ED121F0C7ADB0072938A /* MJRefresh.bundle in Resources */,
+				E9B80238210DDBBF00CAA186 /* JSOC.html in Resources */,
 				E9E556E61F0BD3F900567110 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2173,6 +2190,7 @@
 				E9E6CB641F31D73C009B3934 /* FMDatabase.m in Sources */,
 				E95774241F9DEB0E000AE338 /* HDCalculatesMinus.m in Sources */,
 				E9E556E31F0BD3F900567110 /* ViewController.m in Sources */,
+				E9B80237210DDBBF00CAA186 /* WKWebViewController.m in Sources */,
 				E9B6ED3B1F0C7C390072938A /* MJRefreshAutoGifFooter.m in Sources */,
 				E9D8435321047E5C001FA66C /* WaterFlowLayout.m in Sources */,
 				E9A188E51F1C5C5A00640D53 /* HDRequest.m in Sources */,
@@ -2416,12 +2434,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				DEVELOPMENT_TEAM = ZQQMP3TJXZ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TodayWiget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer.TodayWiget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.360.tianji.hd.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2442,12 +2460,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				DEVELOPMENT_TEAM = ZQQMP3TJXZ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TodayWiget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer.TodayWiget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.360.tianji.hd.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2551,7 +2569,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				DEVELOPMENT_TEAM = ZQQMP3TJXZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2563,7 +2581,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.360.tianji.hd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HDAVPlayer/DesignModels/Mvp/MvpModel/HDAVPlayer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2578,7 +2596,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HDAVPlayer/HDAVPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				DEVELOPMENT_TEAM = ZQQMP3TJXZ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2590,7 +2608,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = huadao.HDAVPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.360.tianji.hd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HDAVPlayer/DesignModels/Mvp/MvpModel/HDAVPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -45,7 +45,10 @@
 }
 
 - (UIBarButtonItem *)createBackButton {
-    return [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"video_back"] style:UIBarButtonItemStylePlain target:self action:@selector(popSelf)];
+    return [[UIBarButtonItem alloc] initWithTitle:@"返回"
+                                            style:UIBarButtonItemStylePlain
+                                           target:self
+                                           action:@selector(popSelf)];
 }
 
 - (void)popSelf {
