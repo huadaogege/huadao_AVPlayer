@@ -217,6 +217,7 @@
 		E9B97AF42011CA8B0050ECFF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B97AF32011CA8B0050ECFF /* TodayViewController.m */; };
 		E9B97AF72011CA8B0050ECFF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B97AF52011CA8B0050ECFF /* MainInterface.storyboard */; };
 		E9B97AFB2011CA8B0050ECFF /* TodayWiget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9B97AEE2011CA8B0050ECFF /* TodayWiget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9C415DC216EE6FE002CCCCE /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C415DB216EE6FE002CCCCE /* CalculateManager.m */; };
 		E9C603CE1FC5901B00CCA0F3 /* HorizontalPageFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */; };
 		E9D8435021047D32001FA66C /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D8434F21047D32001FA66C /* WaterFlowViewController.m */; };
 		E9D8435321047E5C001FA66C /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D8435221047E5C001FA66C /* WaterFlowLayout.m */; };
@@ -718,6 +719,8 @@
 		E9B97AF32011CA8B0050ECFF /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		E9B97AF62011CA8B0050ECFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E9B97AF82011CA8B0050ECFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C415DA216EE6FE002CCCCE /* CalculateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
+		E9C415DB216EE6FE002CCCCE /* CalculateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
 		E9C603CC1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalPageFlowlayout.h; sourceTree = "<group>"; };
 		E9C603CD1FC5901A00CCA0F3 /* HorizontalPageFlowlayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalPageFlowlayout.m; sourceTree = "<group>"; };
 		E9D8434E21047D32001FA66C /* WaterFlowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
@@ -1752,6 +1755,23 @@
 			path = TodayWiget;
 			sourceTree = "<group>";
 		};
+		E9C415D8216EE6BA002CCCCE /* programIdea */ = {
+			isa = PBXGroup;
+			children = (
+				E9C415D9216EE6D2002CCCCE /* chainingMode */,
+			);
+			path = programIdea;
+			sourceTree = "<group>";
+		};
+		E9C415D9216EE6D2002CCCCE /* chainingMode */ = {
+			isa = PBXGroup;
+			children = (
+				E9C415DA216EE6FE002CCCCE /* CalculateManager.h */,
+				E9C415DB216EE6FE002CCCCE /* CalculateManager.m */,
+			);
+			path = chainingMode;
+			sourceTree = "<group>";
+		};
 		E9D8434D21047D0C001FA66C /* WaterFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -1866,6 +1886,7 @@
 				E9E556DF1F0BD3F900567110 /* AppDelegate.m */,
 				E9E556E11F0BD3F900567110 /* ViewController.h */,
 				E9E556E21F0BD3F900567110 /* ViewController.m */,
+				E9C415D8216EE6BA002CCCCE /* programIdea */,
 				E9A916832078E83900F638B1 /* BaseClasses */,
 				E9A5699E204C248400014ED9 /* Arithmetics */,
 				E9B97AE92011C9DD0050ECFF /* Extension */,
@@ -2150,6 +2171,7 @@
 				E99793FF1FC6F08400A79647 /* HDUploadFileRequest.m in Sources */,
 				E91A3F201F1E07C600D95557 /* AsyncSocket.m in Sources */,
 				E99FFC531F1D0B5000807899 /* NSString+Editer.m in Sources */,
+				E9C415DC216EE6FE002CCCCE /* CalculateManager.m in Sources */,
 				E9B6EDB21F0C7CA70072938A /* ioapi.c in Sources */,
 				E983C5252028656D0059168D /* HDCashNormal.m in Sources */,
 				E992B72D1F0CC9130002292C /* GTMBase64.m in Sources */,

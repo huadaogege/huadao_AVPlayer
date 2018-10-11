@@ -25,8 +25,8 @@
                   symbolName = "-[HDFuncViewController jsonDidFinishSelector:]"
                   moduleName = "HDAVPlayer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuiyuguan/GIT_HUB/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
-                  timestampString = "554561616.043763"
+                  urlString = "file:///Users/cuiyuguan/Git-hub/hd_player/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
+                  timestampString = "560921084.088998"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
@@ -40,8 +40,8 @@
                   symbolName = "-[HDFuncViewController jsonDidFinishSelector:]"
                   moduleName = "HDAVPlayer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuiyuguan/GIT_HUB/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
-                  timestampString = "554561616.045543"
+                  urlString = "file:///Users/cuiyuguan/Git-hub/hd_player/huadao_AVPlayer/HDAVPlayer/ViewController/HDFuncViewController.m"
+                  timestampString = "560921084.0927171"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
@@ -58,28 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HDAVPlayer/ViewController/WKWebView/WKWebViewController.m"
-            timestampString = "554561615.954408"
+            timestampString = "560916028.917915"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
             landmarkName = "-webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HDAVPlayer/ViewController/WKWebView/WKWebViewController.m"
-            timestampString = "554561615.95482"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-userContentController:didReceiveScriptMessage:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

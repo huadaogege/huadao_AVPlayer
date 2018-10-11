@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CalculateManager.h"
 
 @interface ViewController ()
 
@@ -20,9 +21,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"首页";
+    [self programIdea];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)programIdea {
+//  链式编程
+    int result = [CalculateManager makeCalculate:^(CalculateManager * _Nonnull make) {
+        make.add(2).add(3).add(5).minus(6);
+    }];
+    NSLog(@"result = %d", result);
     
 }
 
