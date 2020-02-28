@@ -100,4 +100,32 @@ static id instance;
     return -1;
 }
 
+// 无重复字符的最长子串
+
+- (void)getMaxString:(NSString *)originString {
+    NSString *maxString = @"";
+    NSString *tempString = @"";
+    NSInteger count = originString.length;
+    for (int i = 0; i < count; i++) {
+        NSString *c = [originString substringWithRange:NSMakeRange(i, 1)];
+        NSLog(@"%@", c);
+        if (![tempString containsString:c]) {
+            tempString = [tempString stringByAppendingString:c];
+        } else {
+            if (maxString.length < tempString.length) {
+                maxString = tempString;
+            }
+            NSString *temp = [NSString stringWithString:maxString];
+            NSInteger index = [temp rangeOfString:c].location;
+            tempString = [temp substringFromIndex:index + 1];
+            maxString = [tempString stringByAppendingString:c];
+            tempString = maxString;
+        }
+    }
+    if (maxString.length < tempString.length) {
+        maxString = tempString;
+    }
+    NSLog(@"%@", maxString);
+}
+
 @end
